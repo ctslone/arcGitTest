@@ -1,0 +1,1 @@
+{"Release":"004010X098A1","DocumentType":"997","TransactionSet":[{"Id":"ST"},{"Id":"LHEADER","Loop":[{"Id":"AK1"},{"Id":"LAK2","Min":0,"Max":"unbounded","Loop":[{"Id":"AK2"},{"Id":"LAK3","Min":0,"Max":"unbounded","Loop":[{"Id":"AK3"},{"Id":"AK4","Min":0,"Max":99}]},{"Id":"AK5"}]},{"Id":"AK9"}]},{"Id":"SE"}]}

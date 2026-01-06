@@ -1,0 +1,2676 @@
+<!DOCTYPE html><html lang="en-us"><head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  
+  <meta http-equiv="Pragma" content="no-cache">
+
+
+  
+	<title>CData Arc - How to Upgrade CData Arc | Version 26.1.9502</title>
+  
+  
+  <link rel="stylesheet" href="assets/font/css/fontello-embedded.css">
+  
+  <link rel="stylesheet" href="assets/css/just-the-docs.css?1767662960">
+  <script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
+  
+  <script type="text/javascript" src="assets/js/es6/dist/toc.js"></script>
+  <script>
+    new TOC(".scroll-content", 2)
+  </script>
+  
+  
+    <script type="text/javascript" src="assets/js/site-app.js?1767662960"></script>
+  
+  
+
+  
+    <script type="text/javascript" src="assets/js/vendor/lunr.min.js"></script>
+  
+  
+    <script type="text/javascript" src="assets/js/just-the-docs-app.js?1767662960"></script>
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+</head>
+
+<body>
+
+  <div class="page-wrap">
+    <div class="side-bar">
+      
+      
+      <style>
+				.search-icon {
+					fill: #177cb8 !important;
+				}
+				.search-input {
+					color: #177cb8 !important;
+				}
+				.search-input::placeholder {
+					color: #bbbbbb !important;
+				}
+				.search-input-wrap {
+					border-bottom: #177cb8 1px solid;
+				}
+				.navigation {
+					padding-top: 25px !important;
+				}
+				.search-results-wrap {
+					top: 20px !important;
+					max-height: calc(100vh - 50px);
+  				overflow-y: auto;
+				}
+			</style>
+      
+      <span class="fs-8" style="position: absolute; top: 8px; right: -10px; color: white;"><div class="js-main-nav-trigger navigation-list-toggle" type="button" data-text-toggle="Hide"><span class="navigation-list-toggle-icon icon-menu"></span></div></span>
+      <div class="navigation main-nav js-main-nav initial">
+        
+				<div class="search-input-wrap">
+					<input type="text" class="js-search-input search-input" tabindex="0" placeholder="Search" aria-label="Search" autocomplete="off">
+					<svg width="14" height="14" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg" class="search-icon"><title>Search</title><g fill-rule="nonzero"><path d="M17.332 20.735c-5.537 0-10-4.6-10-10.247 0-5.646 4.463-10.247 10-10.247 5.536 0 10 4.601 10 10.247s-4.464 10.247-10 10.247zm0-4c3.3 0 6-2.783 6-6.247 0-3.463-2.7-6.247-6-6.247s-6 2.784-6 6.247c0 3.464 2.7 6.247 6 6.247z"/><path d="M11.672 13.791L.192 25.271 3.02 28.1 14.5 16.62z"/></g></svg>
+				</div>
+				<div class="js-search-results search-results-wrap"></div>
+        
+        <nav role="navigation" aria-label="Main navigation">
+<ul class="navigation-list"><li class="navigation-list-item"><span class="caret active"></span>
+            
+            
+    		<a class="navigation-list-link" href="index.html" title="index">Getting Started</a>
+<ul class="navigation-list-child-list active"><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Quick-Start-Guide.html" title="Quick-Start-Guide">Quick-Start Guide</a></li><li class="navigation-list-item"><span class="caret active"></span>
+            
+            
+    		<a class="navigation-list-link" href="Installation-Configuration.html" title="Installation-Configuration">Installation and Configuration</a>
+<ul class="navigation-list-child-list active"><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Starting-Server.html" title="Starting-Server">Starting the Server</a></li><li class="navigation-list-item"><span class="caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Cross-Platform-Edition.html" title="Cross-Platform-Edition">Cross-Platform Edition</a>
+<ul class="navigation-list-child-list"><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Arc-Properties-Configuration.html" title="Arc-Properties-Configuration">arc.properties Configuration</a></li></ul></li><li class="navigation-list-item"><span class="caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Windows-Edition.html" title="Windows-Edition">.NET Edition</a>
+<ul class="navigation-list-child-list"><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="DMZ-Gateway.html" title="DMZ-Gateway">DMZ Gateway</a></li></ul></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Custom-Master-Key.html" title="Custom-Master-Key">Defining a Custom Master Key</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Cloud-Marketplaces.html" title="Cloud-Marketplaces">Cloud Marketplaces</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Clustering.html" title="Clustering">Clustering</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Separate-API-Endpoints.html" title="Separate-API-Endpoints">Separate API Endpoints</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link active" href="How-to-Upgrade.html" title="How-to-Upgrade">How to Upgrade</a></li></ul></li><li class="navigation-list-item"><span class="caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Administration.html" title="Administration">Administration</a>
+<ul class="navigation-list-child-list"><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Dashboard.html" title="Dashboard">Dashboard Page</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Profiles.html" title="Profiles">Profiles Page</a></li><li class="navigation-list-item"><span class="caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Settings-Page.html" title="Settings-Page">Settings Page</a>
+<ul class="navigation-list-child-list"><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="User-Roles.html" title="User-Roles">User Management and Roles</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Certificates.html" title="Certificates">Certificates</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Alerts.html" title="Alerts">Alerts</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Connections.html" title="Connections">Connections</a></li><li class="navigation-list-item"><span class="caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Security.html" title="Security">Security</a>
+<ul class="navigation-list-child-list"><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Single-Sign-On.html" title="Single-Sign-On">SSO and User Provisioning</a></li><li class="navigation-list-item"><span class="caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Sign-In-Settings.html" title="Sign-In-Settings">Sign In Settings</a>
+<ul class="navigation-list-child-list"><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="2FA.html" title="2FA">Two-Factor Authentication</a></li></ul></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Network-Access.html" title="Network-Access">Network Access</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Admin-API-Settings.html" title="Admin-API-Settings">Admin API Settings</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Proxy-Settings.html" title="Proxy-Settings">Proxy Settings</a></li></ul></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Global-Settings-Vault.html" title="Global-Settings-Vault">Vault</a></li><li class="navigation-list-item"><span class="caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Advanced-Settings.html" title="Advanced-Settings">Advanced</a>
+<ul class="navigation-list-child-list"><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Cleanup-Settings.html" title="Cleanup-Settings">Cleanup Settings</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Performance-Settings.html" title="Performance-Settings">Performance Settings</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="AI-Settings.html" title="AI-Settings">AI Settings</a></li><li class="navigation-list-item"><span class="caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Migration.html" title="Migration">Migration</a>
+<ul class="navigation-list-child-list"><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Importing-Exporting-Flows.html" title="Importing-Exporting-Flows">Importing and Exporting</a></li></ul></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Additional-Settings.html" title="Additional-Settings">Additional Settings</a></li></ul></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="License-Settings.html" title="License-Settings">License</a></li></ul></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Activity.html" title="Activity">Activity Page</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Reports.html" title="Reports">Reports</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Security-Best-Practices.html" title="Security-Best-Practices">Security Best Practices</a></li></ul></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Architecture.html" title="Architecture">Architecture</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Glossary.html" title="Glossary">Glossary</a></li><li class="navigation-list-item"><span class="caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="current.html" title="current">Release Notes</a>
+<ul class="navigation-list-child-list"><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="current.html" title="current">Current Release (26.1.9502)</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="2025-09.html" title="2025-09">September 2025 (25.2.9376)</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="2025-04.html" title="2025-04">April 2025 (25.1.9273)</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="2024-12.html" title="2024-12">December 2024 (24.3.9159)</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="2024-07.html" title="2024-07">July 2024 (24.2.9039)</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="2024-04.html" title="2024-04">April 2024 (24.1.8949)</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="2024-01.html" title="2024-01">January 2024 (23.4.8839)</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="2023-10.html" title="2023-10">October 2023 (23.3.8698)</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="2023-07.html" title="2023-07">July 2023 (23.2.8601)</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="2023-04.html" title="2023-04">April 2023 (23.0.8517)</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="2023-01.html" title="2023-01">January 2023 (22.0.8473)</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="2022-10.html" title="2022-10">October 2022 (22.0.8336)</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="2022-06.html" title="2022-06">June 2022 (22.0.8215)</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="2022-04.html" title="2022-04">April 2022 (21.0.8126)</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="2022-01.html" title="2022-01">January 2022 (21.0.8054)</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="2021-06.html" title="2021-06">June 2021 (21.0.7832)</a></li></ul></li></ul></li><li class="navigation-list-item"><span class="caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Flows.html" title="Flows">Flows</a>
+<ul class="navigation-list-child-list"><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Designing-a-Flow.html" title="Designing-a-Flow">Designing a Flow</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Common-Flows.html" title="Common-Flows">Common Flows</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Error-Handling.html" title="Error-Handling">Error Handling</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Workspaces.html" title="Workspaces">Workspaces</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Flow-API.html" title="Flow-API">Flow API</a></li></ul></li><li class="navigation-list-item"><span class="caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="TPMC.html" title="TPMC">EDI Trading Partner Management Console</a>
+<ul class="navigation-list-child-list"><li class="navigation-list-item"><span class="caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="EDI-Partners-Tab.html" title="EDI-Partners-Tab">Managing Partners</a>
+<ul class="navigation-list-child-list"><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Partner-Dashboard.html" title="Partner-Dashboard">Partner Dashboard</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Partner-User-Access.html" title="Partner-User-Access">Partner User Access</a></li></ul></li><li class="navigation-list-item"><span class="caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="EDI-Documents-Tab.html" title="EDI-Documents-Tab">Managing Documents</a>
+<ul class="navigation-list-child-list"><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="EDI-Mapping.html" title="EDI-Mapping">Document Workflow Mappings</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Workflow-NoMapping.html" title="Workflow-NoMapping">Document Workflow Without Mapping</a></li></ul></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="E2E-Workflow-Testing.html" title="E2E-Workflow-Testing">End to End Workflow Testing</a></li></ul></li><li class="navigation-list-item"><span class="caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Connectors.html" title="Connectors">Connectors</a>
+<ul class="navigation-list-child-list"><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Connectors.html" title="Connectors">Overview</a></li><li class="navigation-list-item"><span class="caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Core-Connectors.html" title="Core-Connectors">Core</a>
+<ul class="navigation-list-child-list"><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="AI.html" title="AI">AI</a></li><li class="navigation-list-item"><span class="caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="API.html" title="API">API</a>
+<ul class="navigation-list-child-list"><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="API-Config.html" title="API-Config">Configure a Connector</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="API-EstabConn.html" title="API-EstabConn">Establish a Connection</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="API-FirstConn.html" title="API-FirstConn">Build Your First API</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="API-Resources.html" title="API-Resources">API Resources</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="API-Actions.html" title="API-Actions">API Actions</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="API-Query.html" title="API-Query">Query Your API</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="API-Mgmt.html" title="API-Mgmt">API Management</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="API-Auth.html" title="API-Auth">Authentication</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="API-AOF.html" title="API-AOF">Additional Output Formats</a></li></ul></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Batch-Create.html" title="Batch-Create">Batch Create</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Batch-Merge.html" title="Batch-Merge">Batch Merge</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Batch-Split.html" title="Batch-Split">Batch Split</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Branch.html" title="Branch">Branch</a></li><li class="navigation-list-item"><span class="caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="CData.html" title="CData">CData</a>
+<ul class="navigation-list-child-list"><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="CData.html" title="CData">Setup</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="CData-AC.html" title="CData-AC">Advanced Configuration</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="CData-Upsert.html" title="CData-Upsert">Upsert</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="CData-Lookup.html" title="CData-Lookup">Lookup</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="CData-LSP.html" title="CData-LSP">Lookup Stored Procedure</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="CData-Select.html" title="CData-Select">Select</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="CData-ESP.html" title="CData-ESP">Execute Stored Procedure</a></li></ul></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Copy.html" title="Copy">Copy</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="CSV.html" title="CSV">CSV</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Map.html" title="Map">CSV Map</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Encoding.html" title="Encoding">Encoding</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Email-Receive.html" title="Email-Receive">Email Receive</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Email-Send.html" title="Email-Send">Email Send</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Excel.html" title="Excel">Excel</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="File.html" title="File">File</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Flat-File.html" title="Flat-File">Flat File</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Form.html" title="Form">Form</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="ICAP.html" title="ICAP">ICAP</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="JSON.html" title="JSON">JSON</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Notify.html" title="Notify">Notify</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="PSV.html" title="PSV">PSV</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="REST.html" title="REST">REST</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="RSS.html" title="RSS">RSS</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Schedule.html" title="Schedule">Schedule</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Script.html" title="Script">Script</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="SOAP.html" title="SOAP">SOAP</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Split.html" title="Split">Split</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="TCP-Server.html" title="TCP-Server">TCP Server</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="TSV.html" title="TSV">TSV</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Validate.html" title="Validate">Validate</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Webhook.html" title="Webhook">Webhook</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Workspace-Receive.html" title="Workspace-Receive">Workspace Receive</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Workspace-Send.html" title="Workspace-Send">Workspace Send</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="XML-Group.html" title="XML-Group">XML Group</a></li><li class="navigation-list-item"><span class="caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="XML-Map.html" title="XML-Map">XML Map</a>
+<ul class="navigation-list-child-list"><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="XML-Map.html" title="XML-Map">Overview</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="XML-Map-Configuration.html" title="XML-Map-Configuration">Configuration</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="XML-Map-Template-Files.html" title="XML-Map-Template-Files">Generating Template Files</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="XML-Map-Designer.html" title="XML-Map-Designer">Using the Mapping Editor</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="XML-Map-Advanced.html" title="XML-Map-Advanced">Advanced</a></li></ul></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="XSD.html" title="XSD">XSD</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="XSLT.html" title="XSLT">XSLT</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Zip.html" title="Zip">Zip</a></li></ul></li><li class="navigation-list-item"><span class="caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="MFT-Connectors.html" title="MFT-Connectors">MFT</a>
+<ul class="navigation-list-child-list"><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="AS2.html" title="AS2">AS2</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="AS3.html" title="AS3">AS3</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="AS4.html" title="AS4">AS4</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="AS4V1.html" title="AS4V1">AS4 V1 (Deprecated)</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Azure-Blob.html" title="Azure-Blob">Azure Blob</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Box.html" title="Box">Box</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Dropbox.html" title="Dropbox">Dropbox</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="FTP.html" title="FTP">FTP</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="FTP-Server.html" title="FTP-Server">FTP Server</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="GISB.html" title="GISB">GISB</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Google-Drive.html" title="Google-Drive">Google Drive</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Google-Storage.html" title="Google-Storage">Google Storage</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="OFTP.html" title="OFTP">OFTP</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="OneDrive.html" title="OneDrive">OneDrive</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="OpenPGP.html" title="OpenPGP">OpenPGP</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Peppol.html" title="Peppol">Peppol</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="RNIF.html" title="RNIF">RosettaNet</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="S3.html" title="S3">S3</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="SCP.html" title="SCP">SCP</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="SFTP.html" title="SFTP">SFTP</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="SFTP-Server.html" title="SFTP-Server">SFTP Server</a></li><li class="navigation-list-item"><span class="caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="SharePoint.html" title="SharePoint">SharePoint</a>
+<ul class="navigation-list-child-list"><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="SharePoint.html" title="SharePoint">Connection Setup</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="SharePoint-Config.html" title="SharePoint-Config">Configuration</a></li></ul></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="WebDAV.html" title="WebDAV">WebDAV</a></li></ul></li><li class="navigation-list-item"><span class="caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="EDI-Connectors.html" title="EDI-Connectors">EDI</a>
+<ul class="navigation-list-child-list"><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="EANCOM.html" title="EANCOM">EANCOM</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="EDIFACT.html" title="EDIFACT">EDIFACT</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="HL7.html" title="HL7">HL7</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="HL7MLLP.html" title="HL7MLLP">HL7 MLLP</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="IATAPADIS.html" title="IATAPADIS">IATA PADIS</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Label.html" title="Label">Label</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="PDF-Label.html" title="PDF-Label">PDF Label</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="PIP.html" title="PIP">PIP</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="TRADACOMS.html" title="TRADACOMS">TRADACOMS</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="VDA.html" title="VDA">VDA</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="X12.html" title="X12">X12</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="ZUGFeRD.html" title="ZUGFeRD">ZUGFeRD</a></li></ul></li><li class="navigation-list-item"><span class="caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Database-Connectors.html" title="Database-Connectors">Database</a>
+<ul class="navigation-list-child-list"><li class="navigation-list-item"><span class="caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Database.html" title="Database">Database</a>
+<ul class="navigation-list-child-list"><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Database.html" title="Database">Setup</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Database-Upsert.html" title="Database-Upsert">Upsert</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Database-Lookup.html" title="Database-Lookup">Lookup</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Database-LSP.html" title="Database-LSP">Lookup Stored Procedure</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Database-Select.html" title="Database-Select">Select</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Database-ESP.html" title="Database-ESP">Execute Stored Procedure</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Database-AC.html" title="Database-AC">Advanced Configuration</a></li></ul></li><li class="navigation-list-item"><span class="caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="DB2.html" title="DB2">DB2</a>
+<ul class="navigation-list-child-list"><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="DB2.html" title="DB2">Setup</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="DB2-Upsert.html" title="DB2-Upsert">Upsert</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="DB2-Lookup.html" title="DB2-Lookup">Lookup</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="DB2-LSP.html" title="DB2-LSP">Lookup Stored Procedure</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="DB2-Select.html" title="DB2-Select">Select</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="DB2-ESP.html" title="DB2-ESP">Execute Stored Procedure</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="DB2-AC.html" title="DB2-AC">Advanced Configuration</a></li></ul></li><li class="navigation-list-item"><span class="caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="DB2IBMi.html" title="DB2IBMi">DB2 for IBM i</a>
+<ul class="navigation-list-child-list"><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="DB2IBMi.html" title="DB2IBMi">Setup</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="DB2IBMi-Upsert.html" title="DB2IBMi-Upsert">Upsert</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="DB2IBMi-Lookup.html" title="DB2IBMi-Lookup">Lookup</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="DB2IBMi-LSP.html" title="DB2IBMi-LSP">Lookup Stored Procedure</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="DB2IBMi-Select.html" title="DB2IBMi-Select">Select</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="DB2IBMi-ESP.html" title="DB2IBMi-ESP">Execute Stored Procedure</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="DB2IBMi-AC.html" title="DB2IBMi-AC">Advanced Configuration</a></li></ul></li><li class="navigation-list-item"><span class="caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="MySQL.html" title="MySQL">MySQL</a>
+<ul class="navigation-list-child-list"><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="MySQL.html" title="MySQL">Setup</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="MySQL-Upsert.html" title="MySQL-Upsert">Upsert</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="MySQL-Lookup.html" title="MySQL-Lookup">Lookup</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="MySQL-LSP.html" title="MySQL-LSP">Lookup Stored Procedure</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="MySQL-Select.html" title="MySQL-Select">Select</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="MySQL-ESP.html" title="MySQL-ESP">Execute Stored Procedure</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="MySQL-AC.html" title="MySQL-AC">Advanced Configuration</a></li></ul></li><li class="navigation-list-item"><span class="caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Oracle.html" title="Oracle">Oracle</a>
+<ul class="navigation-list-child-list"><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Oracle.html" title="Oracle">Setup</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Oracle-Upsert.html" title="Oracle-Upsert">Upsert</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Oracle-Lookup.html" title="Oracle-Lookup">Lookup</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Oracle-LSP.html" title="Oracle-LSP">Lookup Stored Procedure</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Oracle-Select.html" title="Oracle-Select">Select</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Oracle-ESP.html" title="Oracle-ESP">Execute Stored Procedure</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Oracle-AC.html" title="Oracle-AC">Advanced Configuration</a></li></ul></li><li class="navigation-list-item"><span class="caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="PostgreSQL.html" title="PostgreSQL">PostgreSQL</a>
+<ul class="navigation-list-child-list"><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="PostgreSQL.html" title="PostgreSQL">Setup</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="PostgreSQL-Upsert.html" title="PostgreSQL-Upsert">Upsert</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="PostgreSQL-Lookup.html" title="PostgreSQL-Lookup">Lookup</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="PostgreSQL-LSP.html" title="PostgreSQL-LSP">Lookup Stored Procedure</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="PostgreSQL-Select.html" title="PostgreSQL-Select">Select</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="PostgreSQL-ESP.html" title="PostgreSQL-ESP">Execute Stored Procedure</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="PostgreSQL-AC.html" title="PostgreSQL-AC">Advanced Configuration</a></li></ul></li><li class="navigation-list-item"><span class="caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="SQL-Server.html" title="SQL-Server">SQL Server</a>
+<ul class="navigation-list-child-list"><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="SQL-Server.html" title="SQL-Server">Setup</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="SQL-Server-Upsert.html" title="SQL-Server-Upsert">Upsert</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="SQL-Server-Lookup.html" title="SQL-Server-Lookup">Lookup</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="SQL-Server-LSP.html" title="SQL-Server-LSP">Lookup Stored Procedure</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="SQL-Server-Select.html" title="SQL-Server-Select">Select</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="SQL-Server-ESP.html" title="SQL-Server-ESP">Execute Stored Procedure</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="SQL-Server-AC.html" title="SQL-Server-AC">Advanced Configuration</a></li></ul></li><li class="navigation-list-item"><span class="caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="SQLite.html" title="SQLite">SQLite</a>
+<ul class="navigation-list-child-list"><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="SQLite.html" title="SQLite">Setup</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="SQLite-Upsert.html" title="SQLite-Upsert">Upsert</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="SQLite-Lookup.html" title="SQLite-Lookup">Lookup</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="SQLite-LSP.html" title="SQLite-LSP">Lookup Stored Procedure</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="SQLite-Select.html" title="SQLite-Select">Select</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="SQLite-ESP.html" title="SQLite-ESP">Execute Stored Procedure</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="SQLite-AC.html" title="SQLite-AC">Advanced Configuration</a></li></ul></li></ul></li><li class="navigation-list-item"><span class="caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Other-Connectors.html" title="Other-Connectors">Other</a>
+<ul class="navigation-list-child-list"><li class="navigation-list-item"><span class="caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="AdobeCommerce.html" title="AdobeCommerce">Adobe Commerce</a>
+<ul class="navigation-list-child-list"><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="AdobeCommerce.html" title="AdobeCommerce">Setup</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="AdobeCommerce-Upsert.html" title="AdobeCommerce-Upsert">Upsert</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="AdobeCommerce-Lookup.html" title="AdobeCommerce-Lookup">Lookup</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="AdobeCommerce-LSP.html" title="AdobeCommerce-LSP">Lookup Stored Procedure</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="AdobeCommerce-Select.html" title="AdobeCommerce-Select">Select</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="AdobeCommerce-ESP.html" title="AdobeCommerce-ESP">Execute Stored Procedures</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="AdobeCommerce-AC.html" title="AdobeCommerce-AC">Advanced Configuration</a></li></ul></li><li class="navigation-list-item"><span class="caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="AmazonMarketplace.html" title="AmazonMarketplace">Amazon Marketplace</a>
+<ul class="navigation-list-child-list"><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="AmazonMarketplace.html" title="AmazonMarketplace">Setup</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="AmazonMarketplace-Upsert.html" title="AmazonMarketplace-Upsert">Upsert</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="AmazonMarketplace-Lookup.html" title="AmazonMarketplace-Lookup">Lookup</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="AmazonMarketplace-LSP.html" title="AmazonMarketplace-LSP">Lookup Stored Procedure</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="AmazonMarketplace-Select.html" title="AmazonMarketplace-Select">Select</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="AmazonMarketplace-ESP.html" title="AmazonMarketplace-ESP">Execute Stored Procedure</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="AmazonMarketplace-ConfirmShipment.html" title="AmazonMarketplace-ConfirmShipment">Confirm Shipment</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="AmazonMarketplace-SubmitVendorOrderAcknowledgement.html" title="AmazonMarketplace-SubmitVendorOrderAcknowledgement">Submit Vendor Order Acknowledgement</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="AmazonMarketplace-SubmitVendorShipmentConfirmations.html" title="AmazonMarketplace-SubmitVendorShipmentConfirmations">Submit Vendor Shipment Confirmations</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="AmazonMarketplace-SubmitVendorPayments.html" title="AmazonMarketplace-SubmitVendorPayments">Submit Vendor Payments</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="AmazonMarketplace-UI.html" title="AmazonMarketplace-UI">Update Inventory</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="AmazonMarketplace-AC.html" title="AmazonMarketplace-AC">Advanced Configuration</a></li></ul></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="AMQP.html" title="AMQP">AMQP</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="ApacheKafka.html" title="ApacheKafka">Apache Kafka</a></li><li class="navigation-list-item"><span class="caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="BigCommerce.html" title="BigCommerce">BigCommerce</a>
+<ul class="navigation-list-child-list"><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="BigCommerce.html" title="BigCommerce">Setup</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="BigCommerce-Upsert.html" title="BigCommerce-Upsert">Upsert</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="BigCommerce-Lookup.html" title="BigCommerce-Lookup">Lookup</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="BigCommerce-LSP.html" title="BigCommerce-LSP">Lookup Stored Procedure</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="BigCommerce-Select.html" title="BigCommerce-Select">Select</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="BigCommerce-ESP.html" title="BigCommerce-ESP">Execute Stored Procedure</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="BigCommerce-AC.html" title="BigCommerce-AC">Advanced Configuration</a></li></ul></li><li class="navigation-list-item"><span class="caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Databricks.html" title="Databricks">Databricks</a>
+<ul class="navigation-list-child-list"><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Databricks.html" title="Databricks">Setup</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Databricks-Upsert.html" title="Databricks-Upsert">Upsert</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Databricks-Lookup.html" title="Databricks-Lookup">Lookup</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Databricks-LSP.html" title="Databricks-LSP">Lookup Stored Procedure</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Databricks-Select.html" title="Databricks-Select">Select</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Databricks-ESP.html" title="Databricks-ESP">Execute Stored Procedure</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Databricks-AC.html" title="Databricks-AC">Advanced Configuration</a></li></ul></li><li class="navigation-list-item"><span class="caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="D365.html" title="D365">Dynamics 365</a>
+<ul class="navigation-list-child-list"><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="D365.html" title="D365">Setup</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="D365-Upsert.html" title="D365-Upsert">Upsert</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="D365-Lookup.html" title="D365-Lookup">Lookup</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="D365-LSP.html" title="D365-LSP">Lookup Stored Procedure</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="D365-Select.html" title="D365-Select">Select</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="D365-ESP.html" title="D365-ESP">Execute Stored Procedure</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="D365-AC.html" title="D365-AC">Advanced Configuration</a></li></ul></li><li class="navigation-list-item"><span class="caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Dynamics365BC.html" title="Dynamics365BC">Dynamics 365 Business Central</a>
+<ul class="navigation-list-child-list"><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Dynamics365BC.html" title="Dynamics365BC">Setup</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Dynamics365BC-Upsert.html" title="Dynamics365BC-Upsert">Upsert</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Dynamics365BC-Lookup.html" title="Dynamics365BC-Lookup">Lookup</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Dynamics365BC-LSP.html" title="Dynamics365BC-LSP">Lookup Stored Procedure</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Dynamics365BC-Select.html" title="Dynamics365BC-Select">Select</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Dynamics365BC-ESP.html" title="Dynamics365BC-ESP">Execute Stored Procedure</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Dynamics365BC-AC.html" title="Dynamics365BC-AC">Advanced Configuration</a></li></ul></li><li class="navigation-list-item"><span class="caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="ExactOnline.html" title="ExactOnline">Exact Online</a>
+<ul class="navigation-list-child-list"><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="ExactOnline.html" title="ExactOnline">Setup</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="ExactOnline-Upsert.html" title="ExactOnline-Upsert">Upsert</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="ExactOnline-Lookup.html" title="ExactOnline-Lookup">Lookup</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="ExactOnline-LSP.html" title="ExactOnline-LSP">Lookup Stored Procedure</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="ExactOnline-Select.html" title="ExactOnline-Select">Select</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="ExactOnline-ESP.html" title="ExactOnline-ESP">Execute Stored Procedure</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="ExactOnline-AC.html" title="ExactOnline-AC">Advanced Configuration</a></li></ul></li><li class="navigation-list-item"><span class="caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="FHIR.html" title="FHIR">FHIR</a>
+<ul class="navigation-list-child-list"><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="FHIR.html" title="FHIR">Setup</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="FHIR-Lookup.html" title="FHIR-Lookup">Lookup</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="FHIR-LSP.html" title="FHIR-LSP">Lookup Stored Procedure</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="FHIR-Select.html" title="FHIR-Select">Select</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="FHIR-ESP.html" title="FHIR-ESP">Execute Stored Procedure</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="FHIR-AC.html" title="FHIR-AC">Advanced Configuration</a></li></ul></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="IBMMQ.html" title="IBMMQ">IBM MQ</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Infor.html" title="Infor">Infor CloudSuite Industrial</a></li><li class="navigation-list-item"><span class="caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Kintone.html" title="Kintone">Kintone</a>
+<ul class="navigation-list-child-list"><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Kintone.html" title="Kintone">Setup</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Kintone-Upsert.html" title="Kintone-Upsert">Upsert</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Kintone-Lookup.html" title="Kintone-Lookup">Lookup</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Kintone-LSP.html" title="Kintone-LSP">Lookup Stored Procedure</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Kintone-Select.html" title="Kintone-Select">Select</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Kintone-ESP.html" title="Kintone-ESP">Execute Stored Procedure</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Kintone-AC.html" title="Kintone-AC">Advanced Configuration</a></li></ul></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="MQTT.html" title="MQTT">MQTT</a></li><li class="navigation-list-item"><span class="caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="NetSuite.html" title="NetSuite">NetSuite</a>
+<ul class="navigation-list-child-list"><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="NetSuite.html" title="NetSuite">Setup</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="NetSuite-Upsert.html" title="NetSuite-Upsert">Upsert</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="NetSuite-Lookup.html" title="NetSuite-Lookup">Lookup</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="NetSuite-LSP.html" title="NetSuite-LSP">Lookup Stored Procedure</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="NetSuite-Select.html" title="NetSuite-Select">Select</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="NetSuite-ESP.html" title="NetSuite-ESP">Execute Stored Procedure</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="NetSuite-AC.html" title="NetSuite-AC">Advanced Configuration</a></li></ul></li><li class="navigation-list-item"><span class="caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Odoo.html" title="Odoo">Odoo</a>
+<ul class="navigation-list-child-list"><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Odoo.html" title="Odoo">Setup</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Odoo-Upsert.html" title="Odoo-Upsert">Upsert</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Odoo-Lookup.html" title="Odoo-Lookup">Lookup</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Odoo-LSP.html" title="Odoo-LSP">Lookup Stored Procedure</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Odoo-Select.html" title="Odoo-Select">Select</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Odoo-ESP.html" title="Odoo-ESP">Execute Stored Procedure</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Odoo-AC.html" title="Odoo-AC">Advanced Configuration</a></li></ul></li><li class="navigation-list-item"><span class="caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="QBO.html" title="QBO">QuickBooks Online</a>
+<ul class="navigation-list-child-list"><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="QBO.html" title="QBO">Setup</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="QBO-Upsert.html" title="QBO-Upsert">Upsert</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="QBO-Lookup.html" title="QBO-Lookup">Lookup</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="QBO-LSP.html" title="QBO-LSP">Lookup Stored Procedure</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="QBO-Select.html" title="QBO-Select">Select</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="QBO-ESP.html" title="QBO-ESP">Execute Stored Procedure</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="QBO-AC.html" title="QBO-AC">Advanced Configuration</a></li></ul></li><li class="navigation-list-item"><span class="caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="SageIntacct.html" title="SageIntacct">Sage Intacct</a>
+<ul class="navigation-list-child-list"><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="SageIntacct.html" title="SageIntacct">Setup</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="SageIntacct-Upsert.html" title="SageIntacct-Upsert">Upsert</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="SageIntacct-Lookup.html" title="SageIntacct-Lookup">Lookup</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="SageIntacct-LSP.html" title="SageIntacct-LSP">Lookup Stored Procedure</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="SageIntacct-Select.html" title="SageIntacct-Select">Select</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="SageIntacct-ESP.html" title="SageIntacct-ESP">Execute Stored Procedure</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="SageIntacct-AC.html" title="SageIntacct-AC">Advanced Configuration</a></li></ul></li><li class="navigation-list-item"><span class="caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Salesforce.html" title="Salesforce">Salesforce</a>
+<ul class="navigation-list-child-list"><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Salesforce.html" title="Salesforce">Setup</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Salesforce-Upsert.html" title="Salesforce-Upsert">Upsert</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Salesforce-Lookup.html" title="Salesforce-Lookup">Lookup</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Salesforce-LSP.html" title="Salesforce-LSP">Lookup Stored Procedure</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Salesforce-Select.html" title="Salesforce-Select">Select</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Salesforce-Upload.html" title="Salesforce-Upload">Upload</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Salesforce-Download.html" title="Salesforce-Download">Download</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Salesforce-ESP.html" title="Salesforce-ESP">Execute Stored Procedure</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Salesforce-AC.html" title="Salesforce-AC">Advanced Configuration</a></li></ul></li><li class="navigation-list-item"><span class="caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="SAPIDoc.html" title="SAPIDoc">SAP IDoc</a>
+<ul class="navigation-list-child-list"><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="SAPIDoc-Send.html" title="SAPIDoc-Send">Send</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="SAPIDoc-Receive.html" title="SAPIDoc-Receive">Receive</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="SAPIDoc-Translate.html" title="SAPIDoc-Translate">Translate</a></li></ul></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="SAPIDoc-V1.html" title="SAPIDoc-V1">SAP IDoc V1 (Deprecated)</a></li><li class="navigation-list-item"><span class="caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="ShipStation.html" title="ShipStation">ShipStation</a>
+<ul class="navigation-list-child-list"><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="ShipStation.html" title="ShipStation">Setup</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="ShipStation-Lookup.html" title="ShipStation-Lookup">Lookup</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Shipstation-LSP.html" title="Shipstation-LSP">Lookup Stored Procedure</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="ShipStation-Select.html" title="ShipStation-Select">Select</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="ShipStation-ESP.html" title="ShipStation-ESP">Execute Stored Procedure</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="ShipStation-CSL.html" title="ShipStation-CSL">Create Shipment Label</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="ShipStation-AC.html" title="ShipStation-AC">Advanced Configuration</a></li></ul></li><li class="navigation-list-item"><span class="caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Shopify.html" title="Shopify">Shopify</a>
+<ul class="navigation-list-child-list"><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Shopify.html" title="Shopify">Setup</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Shopify-Upsert.html" title="Shopify-Upsert">Upsert</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Shopify-Lookup.html" title="Shopify-Lookup">Lookup</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Shopify-LSP.html" title="Shopify-LSP">Lookup Stored Procedure</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Shopify-Select.html" title="Shopify-Select">Select</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Shopify-ESP.html" title="Shopify-ESP">Execute Stored Procedure</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Shopify-AC.html" title="Shopify-AC">Advanced Configuration</a></li></ul></li><li class="navigation-list-item"><span class="caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Snowflake.html" title="Snowflake">Snowflake</a>
+<ul class="navigation-list-child-list"><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Snowflake.html" title="Snowflake">Setup</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Snowflake-Upsert.html" title="Snowflake-Upsert">Upsert</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Snowflake-Lookup.html" title="Snowflake-Lookup">Lookup</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Snowflake-LSP.html" title="Snowflake-LSP">Lookup Stored Procedure</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Snowflake-Select.html" title="Snowflake-Select">Select</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Snowflake-ESP.html" title="Snowflake-ESP">Execute Stored Procedure</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Snowflake-AC.html" title="Snowflake-AC">Advanced Configuration</a></li></ul></li><li class="navigation-list-item"><span class="caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Square.html" title="Square">Square</a>
+<ul class="navigation-list-child-list"><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Square.html" title="Square">Setup</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Square-Upsert.html" title="Square-Upsert">Upsert</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Square-Lookup.html" title="Square-Lookup">Lookup</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Square-LSP.html" title="Square-LSP">Lookup Stored Procedure</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Square-Select.html" title="Square-Select">Select</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Square-ESP.html" title="Square-ESP">Execute Stored Procedure</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Square-AC.html" title="Square-AC">Advanced Configuration</a></li></ul></li><li class="navigation-list-item"><span class="caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Stripe.html" title="Stripe">Stripe</a>
+<ul class="navigation-list-child-list"><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Stripe.html" title="Stripe">Setup</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Stripe-Upsert.html" title="Stripe-Upsert">Upsert</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Stripe-Lookup.html" title="Stripe-Lookup">Lookup</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Stripe-LSP.html" title="Stripe-LSP">Lookup Stored Procedure</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Stripe-Select.html" title="Stripe-Select">Select</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Stripe-ESP.html" title="Stripe-ESP">Execute Stored Procedure</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Stripe-AC.html" title="Stripe-AC">Advanced Configuration</a></li></ul></li><li class="navigation-list-item"><span class="caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Tally.html" title="Tally">Tally</a>
+<ul class="navigation-list-child-list"><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Tally.html" title="Tally">Setup</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Tally-Lookup.html" title="Tally-Lookup">Lookup</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Tally-LSP.html" title="Tally-LSP">Lookup Stored Procedure</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Tally-Select.html" title="Tally-Select">Select</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Tally-ESP.html" title="Tally-ESP">Execute Stored Procedure</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Tally-ExportReport.html" title="Tally-ExportReport">Export Report</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Tally-AC.html" title="Tally-AC">Advanced Configuration</a></li></ul></li><li class="navigation-list-item"><span class="caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="WooCommerce.html" title="WooCommerce">WooCommerce</a>
+<ul class="navigation-list-child-list"><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="WooCommerce.html" title="WooCommerce">Setup</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="WooCommerce-Upsert.html" title="WooCommerce-Upsert">Upsert</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="WooCommerce-Lookup.html" title="WooCommerce-Lookup">Lookup</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="WooCommerce-LSP.html" title="WooCommerce-LSP">Lookup Stored Procedure</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="WooCommerce-Select.html" title="WooCommerce-Select">Select</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="WooCommerce-ESP.html" title="WooCommerce-ESP">Execute Stored Procedure</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="WooCommerce-AC.html" title="WooCommerce-AC">Advanced Configuration</a></li></ul></li><li class="navigation-list-item"><span class="caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="ZohoCRM.html" title="ZohoCRM">Zoho CRM</a>
+<ul class="navigation-list-child-list"><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="ZohoCRM.html" title="ZohoCRM">Setup</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="ZohoCRM-Upsert.html" title="ZohoCRM-Upsert">Upsert</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="ZohoCRM-Lookup.html" title="ZohoCRM-Lookup">Lookup</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="ZohoCRM-LSP.html" title="ZohoCRM-LSP">Lookup Stored Procedure</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="ZohoCRM-Select.html" title="ZohoCRM-Select">Select</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="ZohoCRM-ESP.html" title="ZohoCRM-ESP">Execute Stored Procedure</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="ZohoCRM-AC.html" title="ZohoCRM-AC">Advanced Configuration</a></li></ul></li><li class="navigation-list-item"><span class="caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="ZohoInventory.html" title="ZohoInventory">Zoho Inventory</a>
+<ul class="navigation-list-child-list"><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="ZohoInventory.html" title="ZohoInventory">Setup</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="ZohoInventory-Upsert.html" title="ZohoInventory-Upsert">Upsert</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="ZohoInventory-Lookup.html" title="ZohoInventory-Lookup">Lookup</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="ZohoInventory-LSP.html" title="ZohoInventory-LSP">Lookup Stored Procedure</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="ZohoInventory-Select.html" title="ZohoInventory-Select">Select</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="ZohoInventory-ESP.html" title="ZohoInventory-ESP">Execute Stored Procedure</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="ZohoInventory-AC.html" title="ZohoInventory-AC">Advanced Configuration</a></li></ul></li></ul></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Bulk-Edit-Connectors.html" title="Bulk-Edit-Connectors">Connector View and Bulk Editing Connectors</a></li></ul></li><li class="navigation-list-item"><span class="caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Mapping.html" title="Mapping">Mapping</a>
+<ul class="navigation-list-child-list"><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="MappingConfig.html" title="MappingConfig">Configure the Mapping</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="MappingNodeValueEditor.html" title="MappingNodeValueEditor">Using the Node Value Editor</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="MappingConditionEditor.html" title="MappingConditionEditor">Using the Condition Editor</a></li></ul></li><li class="navigation-list-item"><span class="caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="How-To.html" title="How-To">How-To Guides</a>
+<ul class="navigation-list-child-list"><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="How-To.html" title="How-To">Overview</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Configure-AS2.html" title="Configure-AS2">Configure an AS2 Connection</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Configure-AS4.html" title="Configure-AS4">Configure an AS4 Connection</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Configure-OFTP.html" title="Configure-OFTP">Configure an OFTP Connection</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="EDI-Quickstart-Excel.html" title="EDI-Quickstart-Excel">EDI QuickStart with Excel</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="EDI850-CSV.html" title="EDI850-CSV">Map EDI to CSV</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="MySQL-EDI810.html" title="MySQL-EDI810">Map MySQL Output to EDI</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Back-Up-Migrate-ArcESB.html" title="Back-Up-Migrate-ArcESB">Backup or Migrate CData Arc</a></li></ul></li><li class="navigation-list-item"><span class="caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Admin-API.html" title="Admin-API">Admin API</a>
+<ul class="navigation-list-child-list"><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Admin-API.html" title="Admin-API">Overview</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Admin-API-Authentication.html" title="Admin-API-Authentication">Authentication</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Admin-API-CORS.html" title="Admin-API-CORS">Cross-Origin Resource Sharing (CORS)</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Admin-API-Resources.html" title="Admin-API-Resources">Resources</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Admin-API-Filtering.html" title="Admin-API-Filtering">Filtering</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Admin-API-Actions.html" title="Admin-API-Actions">Actions</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Admin-API-Examples.html" title="Admin-API-Examples">Example Use Cases</a></li></ul></li><li class="navigation-list-item"><span class="caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Scripting.html" title="Scripting">Scripting</a>
+<ul class="navigation-list-child-list"><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Scripting.html" title="Scripting">Overview</a></li><li class="navigation-list-item"><span class="caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="ArcScript.html" title="ArcScript">ArcScript</a>
+<ul class="navigation-list-child-list"><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Introduction-to-ArcScript.html" title="Introduction-to-ArcScript">Introduction to ArcScript</a></li><li class="navigation-list-item"><span class="caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Keywords.html" title="Keywords">Keywords</a>
+<ul class="navigation-list-child-list"><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="op_arcBreak.html" title="op_arcBreak">arc:break</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="op_arcCache.html" title="op_arcCache">arc:cache</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="op_arcCall.html" title="op_arcCall">arc:call</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="op_arcCase.html" title="op_arcCase">arc:case</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="op_arcCatch.html" title="op_arcCatch">arc:catch</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="op_arcCheck.html" title="op_arcCheck">arc:check</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="op_arcContinue.html" title="op_arcContinue">arc:continue</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="op_arcDefault.html" title="op_arcDefault">arc:default</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="op_arcElse.html" title="op_arcElse">arc:else</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="op_arcEnum.html" title="op_arcEnum">arc:enum</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="op_arcEquals.html" title="op_arcEquals">arc:equals</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="op_arcExists.html" title="op_arcExists">arc:exists</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="op_arcFinally.html" title="op_arcFinally">arc:finally</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="op_arcFirst.html" title="op_arcFirst">arc:first</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="op_arcIf.html" title="op_arcIf">arc:if</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="op_arcImport.html" title="op_arcImport">arc:import</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="op_arcInclude.html" title="op_arcInclude">arc:include</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="op_arcIncludeC.html" title="op_arcIncludeC">arc:includec</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="op_arcInfo.html" title="op_arcInfo">arc:info</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="op_arcLast.html" title="op_arcLast">arc:last</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="op_arcMap.html" title="op_arcMap">arc:map</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="op_arcMatch.html" title="op_arcMatch">arc:match</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="op_arcNotEquals.html" title="op_arcNotEquals">arc:notequals</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="op_arcNull.html" title="op_arcNull">arc:null</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="op_arcNotNull.html" title="op_arcNotNull">arc:notnull</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="op_arcPush.html" title="op_arcPush">arc:push</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="op_arcRender.html" title="op_arcRender">arc:render</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="op_arcRestrict.html" title="op_arcRestrict">arc:restrict</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="op_arcScript.html" title="op_arcScript">arc:script</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="op_arcSelect.html" title="op_arcSelect">arc:select</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="op_arcSet.html" title="op_arcSet">arc:set</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="op_arcSetC.html" title="op_arcSetC">arc:setc</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="op_arcSetM.html" title="op_arcSetM">arc:setm</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="op_arcThrow.html" title="op_arcThrow">arc:throw</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="op_arcTry.html" title="op_arcTry">arc:try</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="op_arcUnset.html" title="op_arcUnset">arc:unset</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="op_arcValidate.html" title="op_arcValidate">arc:validate</a></li></ul></li><li class="navigation-list-item"><span class="caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Operations.html" title="Operations">Operations</a>
+<ul class="navigation-list-child-list"><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="op_appSendEmail.html" title="op_appSendEmail">appSendEmail</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="op_cryptoDecrypt.html" title="op_cryptoDecrypt">cryptoDecrypt</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="op_cryptoEncrypt.html" title="op_cryptoEncrypt">cryptoEncrypt</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="op_dbBeginTransaction.html" title="op_dbBeginTransaction">dbBeginTransaction</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="op_dbCall.html" title="op_dbCall">dbCall</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="op_dbEndTransaction.html" title="op_dbEndTransaction">dbEndTransaction</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="op_dbListColumns.html" title="op_dbListColumns">dbListColumns</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="op_dbListTables.html" title="op_dbListTables">dbListTables</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="op_dbListViews.html" title="op_dbListViews">dbListViews</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="op_dbNonQuery.html" title="op_dbNonQuery">dbNonQuery</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="op_dbQuery.html" title="op_dbQuery">dbQuery</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="op_encDecode.html" title="op_encDecode">encDecode</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="op_encEncode.html" title="op_encEncode">encEncode</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="op_ExcelClose.html" title="op_ExcelClose">excelClose</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="op_ExcelGet.html" title="op_ExcelGet">excelGet</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="op_ExcelListSheets.html" title="op_ExcelListSheets">excelListSheets</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="op_ExcelOpen.html" title="op_ExcelOpen">excelOpen</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="op_FileCopy.html" title="op_FileCopy">fileCopy</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="op_FileCreate.html" title="op_FileCreate">fileCreate</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="op_FileDelete.html" title="op_FileDelete">fileDelete</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="op_FileListDir.html" title="op_FileListDir">fileListDir</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="op_FileMakeDir.html" title="op_FileMakeDir">fileMakeDir</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="op_FileMove.html" title="op_FileMove">fileMove</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="op_FileRead.html" title="op_FileRead">fileRead</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="op_FileReadLine.html" title="op_FileReadLine">fileReadLine</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="op_FileWrite.html" title="op_FileWrite">fileWrite</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="op_FlowExecute.html" title="op_FlowExecute">flowExecute</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="op_HTTPGet.html" title="op_HTTPGet">httpGet</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="op_HTTPPost.html" title="op_HTTPPost">httpPost</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="op_HTTPPut.html" title="op_HTTPPut">httpPut</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="op_HTTPUpload.html" title="op_HTTPUpload">httpUpload</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="op_integrityResetTampering.html" title="op_integrityResetTampering">integrityResetTampering</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="op_jsonClose.html" title="op_jsonClose">jsonClose</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="op_jsonDOMGet.html" title="op_jsonDOMGet">jsonDOMGet</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="op_jsonDOMSearch.html" title="op_jsonDOMSearch">jsonDOMSearch</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="op_jsonOpen.html" title="op_jsonOpen">jsonOpen</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="op_MessageRead.html" title="op_MessageRead">messageRead</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="op_MessageReadLine.html" title="op_MessageReadLine">messsageReadLine</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="op_SysExecute.html" title="op_SysExecute">sysExecute</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="op_threadSleep.html" title="op_threadSleep">threadSleep</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="op_XMLClose.html" title="op_XMLClose">xmlClose</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="op_XMLDOMGet.html" title="op_XMLDOMGet">xmlDOMGet</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="op_XMLDOMSearch.html" title="op_XMLDOMSearch">xmlDOMSearch</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="op_XMLOpen.html" title="op_XMLOpen">xmlOpen</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="op_ZipCompress.html" title="op_ZipCompress">zipCompress</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="op_ZipExtract.html" title="op_ZipExtract">zipExtract</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="op_ZipScan.html" title="op_ZipScan">zipScan</a></li></ul></li><li class="navigation-list-item"><span class="caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Formatters.html" title="Formatters">Formatters</a>
+<ul class="navigation-list-child-list"><li class="navigation-list-item"><span class="caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="String-Formatters.html" title="String-Formatters">String Formatters</a>
+<ul class="navigation-list-child-list"><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Capitalization-String-Formatters.html" title="Capitalization-String-Formatters">Capitalization Formatters</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Encoding-Decoding-String-Formatters.html" title="Encoding-Decoding-String-Formatters">Encoding/Decoding Formatters</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Logical-String-Formatters.html" title="Logical-String-Formatters">Logical Formatters</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Searching-String-Formatters.html" title="Searching-String-Formatters">Searching Formatters</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Transform-String-Formatters.html" title="Transform-String-Formatters">Transform Formatters</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Whitespace-String-Formatters.html" title="Whitespace-String-Formatters">Whitespace Formatters</a></li></ul></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Array-String-Formatters.html" title="Array-String-Formatters">Array Formatters</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Date-Formatters.html" title="Date-Formatters">Date Formatters</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Number-Formatters.html" title="Number-Formatters">Number Formatters</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="File-Formatters.html" title="File-Formatters">File Formatters</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Function-Formatters.html" title="Function-Formatters">Functions</a></li></ul></li></ul></li><li class="navigation-list-item"><span class="caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="PythonScripting.html" title="PythonScripting">Python</a>
+<ul class="navigation-list-child-list"><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="PythonPrerequisites.html" title="PythonPrerequisites">Prerequisites</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="WritingPython.html" title="WritingPython">Writing Python</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="ThirdPartyLibrarySupport.html" title="ThirdPartyLibrarySupport">Third-Party Library Support</a></li></ul></li></ul></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="License.html" title="License">Software License</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+            
+            
+    		<a class="navigation-list-link" href="Third-Party-Copyrights.html" title="Third-Party-Copyrights">Third-Party Copyrights</a></li></ul>
+</nav>
+
+      </div>
+      
+    </div>
+    <div class="main-content-wrap js-main-content" tabindex="0">
+      
+      <style>
+        .side-bar {
+          padding-top: 0;
+          margin-top: 0;
+          height: 100%;
+        }
+        .main-content-wrap.js-main-content > .main-content {
+          height: 100%;
+        }
+      </style>
+      
+      
+      <div class="main-content scroll-content">
+			
+			  
+			
+			<div id="main-content" class="page-content" role="main">
+				<div class="title-sm">
+	<h1>How to Upgrade CData Arc</h1>
+	
+		<p class="text-small text-grey-dk-100 mb-0 version-num">Version 26.1.9502</p>
+	
+    <hr>
+</div>
+
+
+<div id="table-of-contents" style="visibility: hidden;">
+  
+	  <p class="text-small text-grey-dk-100 mb-0 version-num toc">Version 26.1.9502</p>
+  
+    <ul class="section-nav">
+<li class="toc-entry toc-h2"><a href="#updating-from-an-earlier-build-of-cdata-arc-2024">Updating from an Earlier Build of CData Arc 2024</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#cross-platform-edition">Cross-Platform Edition</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#linux">Linux</a></li>
+<li class="toc-entry toc-h4"><a href="#windows">Windows</a></li>
+<li class="toc-entry toc-h4"><a href="#notes-for-java-users">Notes for Java users</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h3"><a href="#net-edition">.NET Edition</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#upgrading-from-cdata-arc-2022-or-2023">Upgrading from CData Arc 2022 or 2023</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#cross-platform-edition-1">Cross-Platform Edition</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#linux-1">Linux</a></li>
+<li class="toc-entry toc-h4"><a href="#windows-1">Windows</a></li>
+<li class="toc-entry toc-h4"><a href="#notes-for-java-users-1">Notes for Java users</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h3"><a href="#net-edition-1">.NET Edition</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#upgrading-from-arcesb-2021">Upgrading from ArcESB 2021</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#cross-platform-edition-2">Cross-Platform Edition</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#linux-2">Linux</a></li>
+<li class="toc-entry toc-h4"><a href="#windows-2">Windows</a></li>
+<li class="toc-entry toc-h4"><a href="#notes-for-java-users-2">Notes for Java users</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h3"><a href="#net-edition-2">.NET Edition</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#upgrading-from-arcesb-2020">Upgrading from ArcESB 2020</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#cross-platform-edition-3">Cross-Platform Edition</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#linux-3">Linux</a></li>
+<li class="toc-entry toc-h4"><a href="#windows-3">Windows</a></li>
+<li class="toc-entry toc-h4"><a href="#notes-for-java-users-3">Notes for Java users</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h3"><a href="#net-edition-3">.NET Edition</a></li>
+<li class="toc-entry toc-h3"><a href="#user-management">User Management</a></li>
+<li class="toc-entry toc-h3"><a href="#subfolders-in-file-based-connectors">Subfolders in File Based Connectors</a></li>
+<li class="toc-entry toc-h3"><a href="#overriding-local-folders">Overriding Local Folders</a></li>
+<li class="toc-entry toc-h3"><a href="#windows-application-directory">Windows Application Directory</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#upgrading-from-rssbus-connect-2016-2017-2018-or-2019">Upgrading from RSSBus Connect 2016, 2017, 2018, or 2019</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#cross-platform-edition-4">Cross-Platform Edition</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#linux-4">Linux</a></li>
+<li class="toc-entry toc-h4"><a href="#windows-4">Windows</a></li>
+<li class="toc-entry toc-h4"><a href="#notes-for-java-users-4">Notes for Java users</a></li>
+<li class="toc-entry toc-h4"><a href="#net-edition-4">.NET Edition</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h3"><a href="#transferring-configuration-data-manually">Transferring Configuration Data Manually</a></li>
+<li class="toc-entry toc-h3"><a href="#upgrading-application-data-source-connectors">Upgrading Application-Data Source Connectors</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#cdata-drivers">CData Drivers</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h3"><a href="#upgrading-external-connectors">Upgrading External Connectors</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#upgrading-from-as2-connector">Upgrading from AS2 Connector</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#installing-cdata-arc">Installing CData Arc</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#net-edition-users">.NET Edition Users</a></li>
+<li class="toc-entry toc-h4"><a href="#java-users">Java Users</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h3"><a href="#importing-profile-information">Importing Profile Information</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#import-automatically">Import Automatically</a></li>
+<li class="toc-entry toc-h4"><a href="#import-using-the-admin-api">Import Using the Admin API</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h3"><a href="#configuring-a-transparent-upgrade">Configuring a Transparent Upgrade</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#keeping-your-previous-folders">Keeping Your Previous Folders</a></li>
+<li class="toc-entry toc-h4"><a href="#switching-to-use-the-new-folders">Switching to Use the New Folders</a></li>
+<li class="toc-entry toc-h4"><a href="#using-a-new-url">Using a New URL</a></li>
+<li class="toc-entry toc-h4"><a href="#using-the-existing-url">Using the Existing URL</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#upgrading-an-amazon-ami">Upgrading an Amazon AMI</a></li>
+</ul>
+</div>
+
+
+<div id="page-content">
+    <div class="title-lg">
+		<h1>How to Upgrade CData Arc</h1>
+		
+        <hr>
+    </div>
+    
+    <p>CData Arc 2026 is the latest version of several earlier application releases, including the following:</p>
+
+<ul>
+  <li>
+    <p>CData Arc 2022 and 2023</p>
+  </li>
+  <li>
+    <p>ArcESB 2020 and 2021</p>
+  </li>
+  <li>
+    <p>RSSBus Connect 2016, 2017, 2018, and 2019</p>
+  </li>
+  <li>
+    <p>AS2 connector V2 (/n software)</p>
+  </li>
+  <li>
+    <p>AS2 connector V3, FTP connector V1, OFTP connector V2, and SFTP connector V1 (RSSBus)</p>
+  </li>
+  <li>
+    <p>IP*Works! EDI AS2 connector V7 (/n software)</p>
+  </li>
+</ul>
+
+<p><strong>Note</strong>: Upgrading to a new major version (for example, upgrading from Arc 2023 to Arc 2026) requires new product keys to license the application. You can request new keys from our sales team at <strong>arcsales@cdata.com</strong>.</p>
+
+<h2 id="updating-from-an-earlier-build-of-cdata-arc-2024">Updating from an Earlier Build of CData Arc 2024</h2>
+
+<h3 id="cross-platform-edition">Cross-Platform Edition</h3>
+
+<p>The Java Edition of Arc 2026 is shipped as setup.exe for Windows and in a compressed setup.tar.gz file for Linux. Follow the steps for your operating system to upgrade an existing installation of Arc 2026 to a newer build.</p>
+
+<h4 id="linux">Linux</h4>
+
+<ol>
+  <li>
+    <p>Stop the Arc server.</p>
+  </li>
+  <li>
+    <p>Unzip the arc.war file from the tar.gz archive and place it in <code class="highlighter-rouge">/opt/arc/webapp/</code>, overwriting the old file.</p>
+  </li>
+  <li>
+    <p>(Optional) Unzip the arc.jar file from the tar.gz archive and place it in <code class="highlighter-rouge">/opt/arc/</code>, overwriting the old file.</p>
+  </li>
+  <li>
+    <p>Start the server.</p>
+  </li>
+</ol>
+
+<h4 id="windows">Windows</h4>
+
+<ol>
+  <li>
+    <p>Stop the Arc server.</p>
+  </li>
+  <li>
+    <p>Run setup.exe.</p>
+  </li>
+  <li>
+    <p>Point the installer to the location where Arc is installed.</p>
+  </li>
+  <li>
+    <p>After the upgrade completes, start the server.</p>
+  </li>
+</ol>
+
+<h4 id="notes-for-java-users">Notes for Java users</h4>
+
+<ul>
+  <li>
+    <p>No matter how you choose to deploy Arc, the files and folders that are contained in the application directory (<em><code class="highlighter-rouge">ApplicationDirectory</code></em>) must be readable and writable by the user running the application. The service.sh script that is included with the Java Edition uses <strong>cdataarc</strong> as this user.</p>
+  </li>
+  <li>
+    <p>If the application was previously run as a different user and you want to restore the necessary permissions for a <strong>cdataarc</strong> user to run the application, the command should be similar to the following:</p>
+
+    <p><code class="highlighter-rouge">sudo chown -R cdataarc:cdataarc /opt/arc</code></p>
+  </li>
+</ul>
+
+<h3 id="net-edition">.NET Edition</h3>
+
+<p>Stop the server (either through the embedded web server UI or in IIS, if applicable) and run setup.exe. The setup detects the installation path, overwrites the older build, and leaves all configuration data intact.</p>
+
+<h2 id="upgrading-from-cdata-arc-2022-or-2023">Upgrading from CData Arc 2022 or 2023</h2>
+
+<h3 id="cross-platform-edition-1">Cross-Platform Edition</h3>
+
+<p>The Java Edition of Arc 2026 is shipped as setup.exe for Windows and in a compressed setup.tar.gz file for Linux. Follow the steps for your operating system to upgrade an existing installation of Arc 2022 or 2023 to Arc 2026.</p>
+
+<h4 id="linux-1">Linux</h4>
+
+<ol>
+  <li>
+    <p>Stop the Arc server.</p>
+  </li>
+  <li>
+    <p>Unzip the arc.war file from the tar.gz archive and place it in <code class="highlighter-rouge">/opt/arc/webapp/</code>, overwriting the old file.</p>
+  </li>
+  <li>
+    <p>(Optional) Unzip the arc.jar file from the tar.gz archive and place it in <code class="highlighter-rouge">/opt/arc/</code>, overwriting the old file.</p>
+  </li>
+  <li>
+    <p>Start the server.</p>
+  </li>
+</ol>
+
+<h4 id="windows-1">Windows</h4>
+
+<ol>
+  <li>
+    <p>Stop the Arc server.</p>
+  </li>
+  <li>
+    <p>Run setup.exe.</p>
+  </li>
+  <li>
+    <p>Point the installer to the location where Arc is installed.</p>
+  </li>
+  <li>
+    <p>After the upgrade completes, start the server.</p>
+  </li>
+</ol>
+
+<h4 id="notes-for-java-users-1">Notes for Java users</h4>
+
+<ul>
+  <li>
+    <p>No matter how you choose to deploy Arc, the files and folders that are contained in the application directory (<em><code class="highlighter-rouge">ApplicationDirectory</code></em>) must be readable and writable by the user running the application. The service.sh script that is included with the Java Edition uses <strong>cdataarc</strong> as this user.</p>
+  </li>
+  <li>
+    <p>If the application was previously run as a different user and you want to restore the necessary permissions for a <strong>cdataarc</strong> user to run the application, the command should be similar to the following:</p>
+
+    <p><code class="highlighter-rouge">sudo chown -R cdataarc:cdataarc /opt/arc</code></p>
+  </li>
+</ul>
+
+<h3 id="net-edition-1">.NET Edition</h3>
+<p>Arc 2026 functions as a drop-in upgrade to Arc 2022; simply running the Windows installer for Arc 2026 upgrades all necessary application resources.</p>
+
+<p>The Windows installer for Arc 2026 attempts to detect existing installations of ArcESB 2022 and preserve the connectors, flows, and settings from the existing installation. If ArcESB 2022 was not installed in the default location, you might need to point the Arc 2026 installer to the folder on disk where ArcESB 2022 was installed.</p>
+
+<h2 id="upgrading-from-arcesb-2021">Upgrading from ArcESB 2021</h2>
+
+<h3 id="cross-platform-edition-2">Cross-Platform Edition</h3>
+
+<p>The Java Edition of Arc 2026 is shipped as setup.exe for Windows and in a compressed setup.tar.gz file for Linux. Follow the steps for your operating system to upgrade an existing installation of ArcESB 2021 to Arc 2026.</p>
+
+<h4 id="linux-2">Linux</h4>
+
+<ol>
+  <li>
+    <p>Extract the tar.gz file to <code class="highlighter-rouge">/opt/arc/</code>.</p>
+  </li>
+  <li>
+    <p>Stop the server (for example, <code class="highlighter-rouge">sudo systemctl stop arcesb</code>).</p>
+  </li>
+  <li>
+    <p>If upgrading an installation that utilizes the Embedded Jetty Server, run <code class="highlighter-rouge">sudo bash /opt/arc/upgrade.sh</code>, optionally specifying the <code class="highlighter-rouge">-InstallDirectory</code> parameter if your previous installation used a non-default path. If upgrading an installation that utilizes an external servlet container (for example, Apache Tomcat or External Jetty), see the <a href="./Cross-Platform-Edition.html">instructions for your servlet container</a>.</p>
+  </li>
+  <li>
+    <p>Start the server either as a service (for example, <code class="highlighter-rouge">sudo systemctl start arc</code>) or in-process (for example, <code class="highlighter-rouge">java -jar arc.jar</code>).</p>
+  </li>
+</ol>
+
+<h4 id="windows-2">Windows</h4>
+
+<ol>
+  <li>
+    <p>Stop the Arc server.</p>
+  </li>
+  <li>
+    <p>Run setup.exe.</p>
+  </li>
+  <li>
+    <p>Point the installer to the location where Arc is installed.</p>
+  </li>
+  <li>
+    <p>After the upgrade completes, start the server.</p>
+  </li>
+</ol>
+
+<h4 id="notes-for-java-users-2">Notes for Java users</h4>
+
+<ul>
+  <li>
+    <p>No matter how you choose to deploy Arc, the files and folders that are contained in the application directory (<em><code class="highlighter-rouge">ApplicationDirectory</code></em>) must be readable and writable by the user running the application. The service.sh script that is included with the Java Edition uses <strong>cdataarc</strong> as this user.</p>
+  </li>
+  <li>
+    <p>If the application was previously run as a different user and you want to restore the necessary permissions for a <strong>cdataarc</strong> user to run the application, the command should be similar to the following:</p>
+
+    <p><code class="highlighter-rouge">sudo chown -R cdataarc:cdataarc /opt/arc</code></p>
+  </li>
+</ul>
+
+<h3 id="net-edition-2">.NET Edition</h3>
+<p>Arc 2026 functions as a drop-in upgrade to ArcESB 2021; simply running the Windows installer for Arc 2026 upgrades all necessary application resources.</p>
+
+<p>The Windows installer for Arc 2026 attempts to detect existing installations of ArcESB 2021 and preserve the connectors, flows, and settings from the existing installation. If ArcESB 2021 was not installed in the default location, you might need to point the Arc 2026 installer to the folder on disk where ArcESB 2021 was installed.</p>
+
+<h2 id="upgrading-from-arcesb-2020">Upgrading from ArcESB 2020</h2>
+
+<p>Before you begin, keep in mind that the current version of Arc includes several features that might cause the application to behave differently from an ArcESB 2020 installation:</p>
+
+<ul>
+  <li>
+    <p>Arc 2026 manages users within the application rather than through server configuration, so some user settings might not transfer. See <a href="#user-management">User Management</a> for more information.</p>
+  </li>
+  <li>
+    <p>Arc 2026 does not automatically preserve subfolder structures found on FTP and SFTP servers. See <a href="#subfolders-in-file-based-connectors">Subfolders in File Based Connectors</a> for more information.</p>
+  </li>
+  <li>
+    <p>Arc 2023 does not let you override local folders for individual connectors. See <a href="#overriding-local-folders">Overriding Local Folders</a> for more information.</p>
+  </li>
+  <li>
+    <p>Arc 2026 does not require Windows administrator privileges to run by default, so some folder permissions might need to be updated. See <a href="#windows-application-directory">Windows Application Directory</a> for more information.</p>
+  </li>
+</ul>
+
+<h3 id="cross-platform-edition-3">Cross-Platform Edition</h3>
+
+<p>The Java Edition of Arc 2026 is shipped as setup.exe for Windows and in a compressed setup.tar.gz file for Linux. Follow the steps for your operating system to upgrade an existing installation of ArcESB 2020 to Arc 2026.</p>
+
+<h4 id="linux-3">Linux</h4>
+
+<ol>
+  <li>
+    <p>Extract the tar.gz file to <code class="highlighter-rouge">/opt/arc/</code>.</p>
+  </li>
+  <li>
+    <p>Stop the server (for example, <code class="highlighter-rouge">sudo systemctl stop arcesb</code>).</p>
+  </li>
+  <li>
+    <p>If upgrading an installation that utilizes the Embedded Jetty Server, run <code class="highlighter-rouge">sudo bash /opt/arc/upgrade.sh</code>, optionally specifying the <code class="highlighter-rouge">-InstallDirectory</code> parameter if your previous installation used a non-default path. If upgrading an installation that utilizes an external servlet container (for example, Apache Tomcat or External Jetty), see the <a href="./Cross-Platform-Edition.html">instructions for your servlet container</a>.</p>
+  </li>
+  <li>
+    <p>Start the server either as a service (for example, <code class="highlighter-rouge">sudo systemctl start arc</code>) or in-process (for example, <code class="highlighter-rouge">java -jar arc.jar</code>).</p>
+  </li>
+</ol>
+
+<h4 id="windows-3">Windows</h4>
+
+<ol>
+  <li>
+    <p>Stop the Arc server.</p>
+  </li>
+  <li>
+    <p>Run setup.exe.</p>
+  </li>
+  <li>
+    <p>Point the installer to the location where Arc is installed.</p>
+  </li>
+  <li>
+    <p>After the upgrade completes, start the server.</p>
+  </li>
+</ol>
+
+<h4 id="notes-for-java-users-3">Notes for Java users</h4>
+
+<ul>
+  <li>
+    <p>No matter how you choose to deploy Arc, the files and folders that are contained in the application directory (<em><code class="highlighter-rouge">ApplicationDirectory</code></em>) must be readable and writable by the user running the application. The service.sh script that is included with the Java Edition uses <strong>cdataarc</strong> as this user.</p>
+  </li>
+  <li>
+    <p>If the application was previously run as a different user and you want to restore the necessary permissions for a <strong>cdataarc</strong> user to run the application, the command should be similar to the following:</p>
+
+    <p><code class="highlighter-rouge">sudo chown -R cdataarc:cdataarc /opt/arc</code></p>
+  </li>
+</ul>
+
+<h3 id="net-edition-3">.NET Edition</h3>
+<p>Arc 2026 functions as a drop-in upgrade to ArcESB 2020. Simply running the installer for Arc 2026 upgrades all necessary application resources.</p>
+
+<p>The installer for Arc 2026 attempts to detect existing installations of ArcESB 2020 and preserve the connectors, flows, and settings from the existing installation. If ArcESB 2020 was not installed in the default location, it might be necessary to point the Arc 2026 installer to the folder on disk where ArcESB 2020 was installed.</p>
+
+<p>Arc 2026 can be installed separately from ArcESB 2020 by directing the Arc 2026 installer to a different folder than the one in which ArcESB 2020 was installed. Installations do not interfere with each other as long as they are installed to different folders.</p>
+
+<h3 id="user-management">User Management</h3>
+
+<p>ArcESB 2020 and earlier managed users via the server configuration XML files (for example, Web.Config or server.xml). More recent versions of Arc bring user management within the application itself, on the <strong>Users</strong> tab in the <strong>Settings</strong> page.</p>
+
+<p>Users configured in versions prior to 2021 do not persist during the upgrade and must be re-created as necessary on the <strong>Users</strong> tab. See <a href="./User-Roles.html">User Roles</a> for more information.</p>
+
+<h3 id="subfolders-in-file-based-connectors">Subfolders in File Based Connectors</h3>
+
+<p><strong>Note:</strong> This section is relevant only for users with file-based connectors (including File, FTP, and SFTP) that preserve the folder structure from remote file systems.</p>
+
+<p>Previous versions of Arc exhibited the following behavior:</p>
+
+<p>These file-based connectors target a single folder on a remote server from which to upload or download files. When files should also be downloaded from subfolders within this target folder, this same subfolder structure was re-created locally in the connector&#x2019;s <code class="highlighter-rouge">Output</code> directory. Likewise for uploads, these connectors treated a file being in a subfolder of the Input directory as an indication of the subfolder the file should be placed in on the remote file system. This recreation of subfolder structure is what is meant by &#x201C;preserving subfolder structures&#x201D;.</p>
+
+<p>Arc 2026 requires the use of the File connector to mirror folder structures on remote systems. These file based connectors add a <strong>subfolder</strong> header to downloaded files if the file was stored in a subfolder of the target folder on the server. This <strong>subfolder</strong> header is used to automatically reproduce the subfolder structure when files are uploaded to remote file systems.</p>
+
+<h3 id="overriding-local-folders">Overriding Local Folders</h3>
+
+<p>Prior to ArcESB 2021, you could override the <code class="highlighter-rouge">Send</code>, <code class="highlighter-rouge">Receive</code>, and <code class="highlighter-rouge">Sent</code> folders for individual connectors by using <strong>Connector Settings</strong>. Starting with ArcESB 2021, these options are not in the interface, and direct overrides of connector folders are discouraged. Best practice is to <a href="./Designing-a-Flow.html#interacting-with-the-local-file-system">use a File connector</a> to manage local file systems.</p>
+
+<p>If necessary, you can still manually override the SendFolder, ReceiveFolder, and SentFolder properties of connectors in <strong>Connector Settings</strong> by using the field under <strong>Advanced</strong> &gt; <strong>Miscellaneous</strong> &gt; <strong>Other Settings</strong>. If these settings were overridden for a connector in a previous release, the configured settings are present here.</p>
+
+<p>If you choose to use this method to override local folders for the connector, set the value under <strong>Advanced</strong> &gt; <strong>Processing Delay</strong> to a non-zero value in seconds (for example, 10) to prevent Arc from processing files that are still being written by an external process.</p>
+
+<h3 id="windows-application-directory">Windows Application Directory</h3>
+
+<p>The Windows edition of Arc 2026 stores the Application Directory (which holds the data for flows, connectors, profile settings, and so on) in the <code class="highlighter-rouge">C:\ProgramData\CData\Arc</code> folder by default. Prior to ArcESB 2021, the Application Directory was in the <code class="highlighter-rouge">C:\Program Files</code> folder. This helps ensure that Arc 2026 can run without administrator privileges by default.</p>
+
+<p>When you upgrade from ArcESB 2020 or earlier to Arc 2026, the application re-uses the Application Directory from the older installation, but it still attempts to run without administrator privileges by default. As a result, it might be necessary to set the access permission rules on the Application Directory within <code class="highlighter-rouge">C:\Program Files</code> to allow Arc access with lower running permissions.</p>
+
+<p>For more information on the Application Directory, see <a href="Windows-Edition.html#configuring-the-application-directory">Configuring the Application Directory</a>.</p>
+
+<h2 id="upgrading-from-rssbus-connect-2016-2017-2018-or-2019">Upgrading from RSSBus Connect 2016, 2017, 2018, or 2019</h2>
+
+<p>This section describes the process of upgrading from an earlier release of RSSBus Connect.</p>
+
+<p><strong>Note</strong>: For help upgrading from an earlier version than RSSBus Connect 2016, see <a href="#upgrading-from-as2-connector">Upgrading from AS2 Connector</a>.</p>
+
+<p>Before you begin, keep in mind that the current version of Arc includes several features that might cause the application to behave differently from an RSSBus Connect installation:</p>
+
+<ul>
+  <li>
+    <p>Arc 2026 manages users within the application rather than through server configuration, so some user settings might not transfer. See <a href="#user-management">User Management</a> for more information.</p>
+  </li>
+  <li>
+    <p>Arc 2026 does not automatically preserve subfolder structures found on FTP and SFTP servers. See <a href="#subfolders-in-file-based-connectors">Subfolders in File Based Connectors</a> for more information.</p>
+  </li>
+  <li>
+    <p>Arc 2026 does not let you override local folders for individual connectors. See <a href="#overriding-local-folders">Overriding Local Folders</a> for more information.</p>
+  </li>
+  <li>
+    <p>Arc 2026 does not require Windows administrator privileges to run by default, so some folder permissions might need to be updated. See <a href="#windows-application-directory">Windows Application Directory</a> for more information.</p>
+  </li>
+</ul>
+
+<h3 id="cross-platform-edition-4">Cross-Platform Edition</h3>
+<p>The Java Edition of Arc 2026 is shipped as setup.exe for Windows and in a compressed setup.tar.gz file for Linux. Follow the steps for your operating system to upgrade an existing installation of RSSBus Connect Java Edition to Arc 2026:</p>
+
+<h4 id="linux-4">Linux</h4>
+
+<ol>
+  <li>
+    <p>Extract the tar.gz file to <code class="highlighter-rouge">/opt/arc/</code>.</p>
+  </li>
+  <li>
+    <p>Stop the server (for example, <code class="highlighter-rouge">sudo systemctl stop arcesb</code>).</p>
+  </li>
+  <li>
+    <p>If upgrading an installation that utilizes the Embedded Jetty Server, run <code class="highlighter-rouge">sudo bash /opt/arc/upgrade.sh</code>, optionally specifying the <code class="highlighter-rouge">-InstallDirectory</code> parameter if your previous installation used a non-default path. If upgrading an installation that utilizes an external servlet container (for example, Apache Tomcat or External Jetty), see the <a href="./Cross-Platform-Edition.html">instructions for your servlet container</a>.</p>
+  </li>
+  <li>
+    <p>Start the server either as a service (for example, <code class="highlighter-rouge">sudo systemctl start arc</code>) or in-process (for example, <code class="highlighter-rouge">java -jar arc.jar</code>).</p>
+  </li>
+</ol>
+
+<h4 id="windows-4">Windows</h4>
+
+<ol>
+  <li>
+    <p>Stop the Arc server.</p>
+  </li>
+  <li>
+    <p>Run setup.exe.</p>
+  </li>
+  <li>
+    <p>Point the installer to the location where Arc is installed.</p>
+  </li>
+  <li>
+    <p>After the upgrade completes, start the server.</p>
+  </li>
+</ol>
+
+<h4 id="notes-for-java-users-4">Notes for Java users</h4>
+
+<ul>
+  <li>
+    <p>No matter how you choose to deploy Arc, the files and folders that are contained in the application directory (<em><code class="highlighter-rouge">ApplicationDirectory</code></em>) must be readable and writable by the user running the application. The service.sh script that is included with the Java Edition uses <strong>cdataarc</strong> as this user.</p>
+  </li>
+  <li>
+    <p>If the application was previously run as a different user and you want to restore the necessary permissions for a <strong>cdataarc</strong> user to run the application, the command should be similar to the following:</p>
+
+    <p><code class="highlighter-rouge">sudo chown -R cdataarc:cdataarc /opt/arc</code></p>
+  </li>
+</ul>
+
+<h4 id="net-edition-4">.NET Edition</h4>
+<p>Upgrading to Arc 2026 from RSSBus Connect 2016, 2017, 2018, or 2019 can be a one-step in-place upgrade. Simply run the Arc installer to update application resources (EXE, DLL, JAR, and WAR files) without disturbing configuration data.</p>
+
+<p>If the Arc installer detects an RSSBus Connect installation, the installer uses this same installation path to store configuration data (profile, connectors/ports, certificates). Thus, the settings from older versions are used automatically by the new Arc installation.</p>
+
+<h3 id="transferring-configuration-data-manually">Transferring Configuration Data Manually</h3>
+
+<p>If an in-place upgrade is not possible, you can still transfer configuration data from previous versions of RSSBus Connect.</p>
+
+<p>The first transfer method is to export connector (port) settings from the older version, then import these connectors into the new version:</p>
+
+<ol>
+  <li>
+    <p>In RSSBus Connect, export connectors from the <strong>Ports</strong> tab by clicking <strong>Settings</strong> (the  gear icon) in the upper right of the window and selecting <strong>Export Port Settings</strong>. In later versions of RSSBus Connect (for example, RSSBus Connect 2019), you can export connectors from the <strong>Flows</strong> tab by right-clicking the connector (port) in the flow and selecting <strong>Export Port Settings</strong>.</p>
+  </li>
+  <li>
+    <p>In Arc, click <strong>Settings</strong>, then select <strong>Import Workspace</strong> to import the connectors from the <strong>Flows</strong> tab.</p>
+  </li>
+</ol>
+
+<p>The second method transfers all configuration data at once by managing folders on disk. All configuration information is held in the <code class="highlighter-rouge">data</code> folder of the installation directory. Copying the <code class="highlighter-rouge">data</code> folder from a previous version into the same folder in the latest version effectively copies the entire application configuration.</p>
+
+<p>The default installation directory for Arc is as follows:</p>
+
+<ul>
+  <li>
+    <p><strong>.NET Edition</strong>: <code class="highlighter-rouge">C:\Program Files\CData\CData Arc</code></p>
+  </li>
+  <li>
+    <p><strong>Java</strong>: <code class="highlighter-rouge">/opt/arc</code></p>
+  </li>
+</ul>
+
+<p>The default installation directory for RSSBus Connect is as follows:</p>
+
+<ul>
+  <li>
+    <p><strong>.NET Edition</strong>: <code class="highlighter-rouge">C:\Program Files\RSSBus\RSSBus Connect</code></p>
+  </li>
+  <li>
+    <p><strong>Java</strong>: <code class="highlighter-rouge">~/rssbus/connect</code></p>
+  </li>
+</ul>
+
+<p>On a Linux system, &#x2018;~&#x2019; resolves to the home directory of the user where the Java servlet is installed. On a Windows system, &#x2018;~&#x2019; resolves to <code class="highlighter-rouge">%ProgramData%</code>.</p>
+
+<p><strong>Note:</strong> If you do not see the Arc installation directory, check for the RSSBus Connect default installation directory. The Arc installer attempts to detect RSSBus Connect installations and use the pre-existing folder structure from RSSBus Connect.</p>
+
+<h3 id="upgrading-application-data-source-connectors">Upgrading Application-Data Source Connectors</h3>
+
+<p>Arc introduced a new approach to connecting to external data sources that are applications rather than traditional databases (for example, Salesforce, NetSuite, QuickBooks, and so on). In RSSBus Connect, each external data source application required a dedicated connector (port) to interface with the application. In Arc, a single connector called the <a href="./CData.html">CData connector</a> is used to connect to each application data source.</p>
+
+<h4 id="cdata-drivers">CData Drivers</h4>
+
+<p>The CData connector uses CData drivers to connect to a specific data source. <a href="https://www.cdata.com/" target="_blank">CData Software</a> provides the ADO.NET and JDBC drivers that enable connectivity to hundreds of cloud and on-premises applications, databases, and more. These drivers were used beneath the surface in previous RSSBus Connect connectors (ports), so the interface and approach to accessing data in these application data sources has not changed.</p>
+
+<p>To upgrade this set of connectors (ports) to Arc, you must install and configure the appropriate CData driver in a CData connector. See the <a href="./CData.html">CData Connector</a> documentation for details on installing CData drivers. Once the CData driver is installed and selected within the CData connector&#x2019;s settings, the CData connector can be configured with the same connection settings and credentials that were used in RSSBus Connect connectors (for example, the Salesforce connector, the HubSpot connector, and so on).</p>
+
+<h3 id="upgrading-external-connectors">Upgrading External Connectors</h3>
+
+<p>A small number of connectors that were previously external are now embedded in Arc 2026:</p>
+
+<ul>
+  <li>
+    <p>SQL Server</p>
+  </li>
+  <li>
+    <p>Oracle</p>
+  </li>
+  <li>
+    <p>PDF</p>
+  </li>
+</ul>
+
+<p>These connectors are installed appropriately along with the rest of the application, and no longer require additional downloads.</p>
+
+<!--- ### Overriding Local Folders
+
+In versions of Arc earlier than Arc 2026, you could override the `Send`, `Receive`, and `Sent` folders for individual connectors by using **Connector Settings**. Starting with Arc 2026, these options are no longer available in the interface, and direct overrides of connector folders are discouraged. Instead, it is recommended to [use a File connector](./Designing-a-Flow.html#interacting-with-the-local-file-system) to manage local file systems. 
+
+If needed, the SendFolder, ReceiveFolder, and SentFolder properties of connectors can still be overridden manually in **Connector Settings** by using the field under **Advanced** > **Miscellaneous** > **Other Settings**. If these settings were overridden for a connector in a previous release, the configured settings will be present here. 
+
+If you choose to use this method to override local folders for the connector, it is recommended that you set the value under **Advanced** > **Processing Delay** to a non-zero value in seconds (for example, 10) to prevent Arc from processing files that are still being written by an external process. --->
+
+<h2 id="upgrading-from-as2-connector">Upgrading from AS2 Connector</h2>
+
+<p>This section also applies to upgrading from <strong>FTP Connector</strong>, <strong>OFTP Connector</strong>, and <strong>SFTP Connector</strong>.</p>
+
+<h3 id="installing-cdata-arc">Installing CData Arc</h3>
+
+<h4 id="net-edition-users">.NET Edition Users</h4>
+
+<p>The Windows installation of Arc targets a different installation path than earlier versions of the product, and it listens on a different port. This change ensures that both releases can be run side-by-side without conflicting with one another. Simply run setup.exe and follow the prompts to install the application on the machine.</p>
+
+<h4 id="java-users">Java Users</h4>
+
+<p>As with previous versions of the AS2 connector (and other releases in the connector family), the application is provided as a distributable arc.war file. If you distribute this WAR file to your Java server by using the server&#x2019;s built-in deployment wizard, this replaces your existing installation of the AS2 connector in its entirety, including trading partner profiles.</p>
+
+<p>If you want to perform an in-place upgrade of the AS2 connector and still preserve your profile settings between installations, create a copy of your previous installation&#x2019;s <code class="highlighter-rouge">data</code> folder before you deploy the new package. This <code class="highlighter-rouge">data</code> folder is located in <code class="highlighter-rouge">/WEB-INF/data/</code>  under the existing web application folder. Once you copy this folder into a new location, deploy Arc in place of the existing installation. When you launch the application for the first time, the connectors (ports) are not configured. Click <strong>Import Profiles</strong> to specify the location where you copied your <code class="highlighter-rouge">data</code> folder to restore your profiles.</p>
+
+<p>Alternatively, you can rename the arc.war file that is provided with Arc to install this version of the application as a parallel application.</p>
+
+<h3 id="importing-profile-information">Importing Profile Information</h3>
+
+<p>If you are upgrading from an earlier version of the AS2 connector, SFTP connector, or other previous versions, you can detect and import your existing partner profile configurations using two methods.</p>
+
+<h4 id="import-automatically">Import Automatically</h4>
+
+<p>If you install the Windows edition of Arc on a machine where a previous version of the application was installed, the installation program attempts to detect the installation of the previous version, and it can import the profile settings from it. If it detects a partner profile with the same name as one already configured in Arc, this process creates a duplicate entry with a number appended to the identifying field to ensure that it is unique. You can safely delete duplicate profiles after they are imported.</p>
+
+<h4 id="import-using-the-admin-api">Import Using the Admin API</h4>
+
+<p>Arc&#x2019;s Admin API includes an <em>import</em> action that you can use to import settings from previous versions. The <strong>import</strong> action requires three parameters:</p>
+
+<ul>
+  <li>
+    <p><strong>Arcflow</strong>&#x2014;The base64-encoded string containing the flow data. This string can be generated by base64-encoding the entire file contents of a .arcflow file.</p>
+  </li>
+  <li>
+    <p><strong>Overwrite</strong>&#x2014;How Arc should respond if an imported profile/partner configuration causes a conflict with the current configuration. If the value is <strong>True</strong>, the existing configurations are overwritten. Otherwise, an error is generated.</p>
+  </li>
+  <li>
+    <p><strong>WorkspaceId</strong>&#x2014;The workspace into which the flow is imported. If this parameter is not specified, the application attempts to determine which workspace to import into (based on workspace values in the flow that is being imported) and falls back to the default workspace if necessary.</p>
+  </li>
+</ul>
+
+<p>All requests to the <strong>import</strong> action must be sent as HTTP POST requests.</p>
+
+<p>For more information about the Admin API, see <a href="./Admin-API.html">Admin API</a>.</p>
+
+<h3 id="configuring-a-transparent-upgrade">Configuring a Transparent Upgrade</h3>
+
+<p>After you run the Arc installer and import partner profiles from a previous installation, the new version has backwards compatibility for receiving URLs in the old version. However, there are two key differences:</p>
+
+<ul>
+  <li>
+    <p>Arc uses a different local port than the application server that hosted the previous installation of the application. This behavior avoids conflicts with the installation of a previous version of the AS2 connector so that you can maintain both versions of the application and transfer partners to the new version at your own pace.</p>
+  </li>
+  <li>
+    <p>The <code class="highlighter-rouge">Incoming</code>, <code class="highlighter-rouge">Outgoing</code>, and <code class="highlighter-rouge">Sent</code> folders from the previous installation of the AS2 connector are not imported automatically into the profiles that are used in Arc. By default, the application uses its own local file resources, so it does not interfere with the currently running instance of the application. This also ensures that, if automation is enabled in the previous profile, the application does not immediately begin sending files that are waiting to be sent in the older version of the AS2 connector.</p>
+  </li>
+</ul>
+
+<p>To replace your instance of the AS2 connector:</p>
+
+<ol>
+  <li>
+    <p>Determine whether to use the old folder structure from the previous installation of the AS2 connector, or the Arc default folder structure.</p>
+  </li>
+  <li>
+    <p>Determine whether to use your existing receiving URL, or a new one.</p>
+  </li>
+</ol>
+
+<h4 id="keeping-your-previous-folders">Keeping Your Previous Folders</h4>
+
+<p>The current version of Arc includes a File connector that lets you interact with external folders in the file system as a separate logical step in your message flow. This process lets you integrate with the local file system by using the same resources that you used previously. However, if you add additional connectors in the future, the application creates these in a different <code class="highlighter-rouge">data</code> folder by default.</p>
+
+<p>The following image shows an example of a flow that uses File connectors in this way:</p>
+
+<p><img src="assets/images/file_as2_flow.png" width="800"></p>
+
+<p>See <a href="./Designing-a-Flow.html#interacting-with-the-local-file-system">Interacting with the Local File System</a> for information about how to configure File connectors for this purpose.</p>
+
+<p><strong>Advantages</strong></p>
+
+<p>The existing back-end business logic is preserved for configured trading partners.</p>
+
+<p><strong>Disadvantages</strong></p>
+
+<p>Additional connectors use a different <code class="highlighter-rouge">data</code> folder by default.</p>
+
+<h4 id="switching-to-use-the-new-folders">Switching to Use the New Folders</h4>
+
+<p>If you plan to add more partners or configure additional connectors in Arc, it might be best to switch to the new default folder structure. This structure is described below.</p>
+
+<p>The Arc Application Directory contains all connector and profile configuration data. Each configured connector in Arc has its own folder within the <code class="highlighter-rouge">data</code> folder (for the default workspace) or an appropriate workspace folder within the <code class="highlighter-rouge">workspaces</code> folder. The connector-specific folder contains the following folders:</p>
+
+<ul>
+  <li>
+    <p><code class="highlighter-rouge">Logs</code>&#x2014;A folder where the connector writes connector-specific logs.</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">Pending</code>&#x2014;Connectors that wait for a partner response store pending messages in this folder (only certain connector types require this).</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">Receive</code>&#x2014;Connectors that receive or download files from an external source place those files in this folder.  Connectors that operate on local data (without sending or receiving from an external source) place files here after they are processed.</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">Send</code>&#x2014;Files placed in this folder are slated to be processed, sent, and uploaded by the connector.</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">Sent</code>&#x2014;The connector places a copy of processed, sent, and uploaded files in this folder.</p>
+  </li>
+</ul>
+
+<p>For AS2 connectors, place files that should be sent to external trading partners in the connector&#x2019;s <code class="highlighter-rouge">Send</code> folder, and pick up files that are received from external trading partners in the connector&#x2019;s <code class="highlighter-rouge">Receive</code> folder.</p>
+
+<p><strong>Advantages</strong></p>
+
+<p>A consistent folder structure is maintained if additional trading partners are configured.</p>
+
+<p><strong>Disadvantages</strong></p>
+
+<p>Business logic might need to be reconfigured to use the new folder structure.</p>
+
+<h4 id="using-a-new-url">Using a New URL</h4>
+
+<p>The server provided with Arc listens on different ports and uses different URLs for receiving AS2 transmissions than earlier releases. After you import your profiles into Arc, you must update your trading partners so that they are sending to your new Receiving URL.</p>
+
+<p>By default, the server provided with Arc listens in plain text on port 8001 and uses SSL/TLS on port 8401. You can find the Receiving URL by clicking <strong>Profile &gt; AS2</strong>.</p>
+
+<p><strong>Advantages</strong></p>
+
+<ul>
+  <li>
+    <p>Trading partners transition at their own pace.</p>
+  </li>
+  <li>
+    <p>There is no downtime.</p>
+  </li>
+</ul>
+
+<p><strong>Disadvantages</strong></p>
+
+<ul>
+  <li>
+    <p>Trading partners need to change your URL in the profile configuration on their end.</p>
+  </li>
+  <li>
+    <p>An additional port must be opened on the firewall.</p>
+  </li>
+  <li>
+    <p>Both versions of the application are maintained.</p>
+  </li>
+</ul>
+
+<h4 id="using-the-existing-url">Using the Existing URL</h4>
+
+<p>To receive requests on the same URL used by the previous version, stop the server hosting the previous version so that the same port can be assigned to Arc. You also need to assign the server to the port that you were using for the previous version. You can configure the port by right-clicking the icon in the system tray, then clicking <strong>Server Options</strong>. The application automatically recognizes requests to resources that were supported in previous versions of the application (<code class="highlighter-rouge">/as2connector/pub/ReceiveFile.rsb</code> and <code class="highlighter-rouge">/Receiver.aspx</code>, for instance) and forwards them to the appropriate resources in Arc.</p>
+
+<p><strong>Advantages</strong></p>
+
+<ul>
+  <li>
+    <p>Trading partners do not need to change profiles.</p>
+  </li>
+  <li>
+    <p>Maintain one system.</p>
+  </li>
+</ul>
+
+<p><strong>Disadvantages</strong></p>
+
+<ul>
+  <li>
+    <p>Downtime while old server is stopped to free up a port for the new server.</p>
+  </li>
+  <li>
+    <p>Existing profiles must first be imported.</p>
+  </li>
+</ul>
+
+<p><strong>Note</strong>: If the port that you configure is an SSL/TLS-enabled port, you also need to configure the SSL/TLS certificate that is used for the previous version of the AS2 connector on this port. If you previously hosted an SSL/TLS port in Arc, the same certificate store is the location of SSL/TLS certificates in Arc (the local machine&#x2019;s personal account).</p>
+
+<p>After you configure Arc to use the same port that you used in older versions of the application, you start receiving incoming transmissions at the folders configured above.</p>
+
+<h2 id="upgrading-an-amazon-ami">Upgrading an Amazon AMI</h2>
+
+<p>Arc 2026 has a dedicated AMI in the AWS Marketplace that you can use to create a new EC2 instance running Arc. To preserve all application data, follow the instructions in <a href="./Back-Up-Migrate-ArcESB.html#manual-backup">Manual Backup</a> to understand how to copy application folders directly from the file system. Follow these steps to make a persistent copy of the relevant folders:</p>
+
+<ol>
+  <li>
+    <p>Copy the folders from the Amazon VM to a local machine via a transfer protocol like SFTP or SCP.</p>
+  </li>
+  <li>
+    <p>Transfer the same folders to the EC2 instance created from the latest AMI.</p>
+  </li>
+</ol>
+
+</div>
+<script src="assets/js/image-lightbox.js"></script>
+
+	
+				
+			</div>
+		</div>
+    </div>
+  </div>
+  
+  
+
+
+</body></html>

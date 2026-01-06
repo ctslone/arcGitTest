@@ -1,0 +1,21 @@
+<svg id="65bfeee0-1455-44fa-b08a-df397bae0d63"   xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <defs>
+    <style>
+      .\33 b276ef6-4ce9-4f56-bbad-14abbabc5494 {
+        fill: #17244f;
+      }
+
+      .\33 5b94d75-584c-4fa6-b60c-b24d9ea6cb9b {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <title>d365 sales</title>
+  <g>
+    <polygon class="3b276ef6-4ce9-4f56-bbad-14abbabc5494" points="35.31 4.42 12.69 4.42 1.39 24 12.69 43.58 35.31 43.58 46.61 24 35.31 4.42"/>
+    <rect class="35b94d75-584c-4fa6-b60c-b24d9ea6cb9b" x="25.95" y="20.43" width="1.53" height="2.39"/>
+    <rect class="35b94d75-584c-4fa6-b60c-b24d9ea6cb9b" x="29.48" y="16.94" width="1.47" height="5.89"/>
+    <rect class="35b94d75-584c-4fa6-b60c-b24d9ea6cb9b" x="33.01" y="13.71" width="1.48" height="9.12"/>
+    <path class="35b94d75-584c-4fa6-b60c-b24d9ea6cb9b" d="M22.39,14.83V26H33.55A9.57,9.57,0,1,1,22.39,14.83m1.75-1.91A11.32,11.32,0,1,0,35.46,24.24H24.14V12.92Z"/>
+  </g>
+</svg>

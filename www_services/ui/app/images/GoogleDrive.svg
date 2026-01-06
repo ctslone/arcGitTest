@@ -1,0 +1,46 @@
+<svg id="cee868ae-4e13-48e0-91da-ac141d66f059"   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48">
+  <defs>
+    <style>
+      .bfeb2fd3-4e47-4dac-a7a4-45ca2682b54a {
+        fill: url(#561862e6-4274-467c-a4f6-4c8ecef9a0b1);
+      }
+
+      .d68cc13d-4e03-4914-b847-e4700838909f {
+        fill: url(#572dd058-086e-47ec-9191-6b2fe90395c2);
+      }
+
+      .\34 65bbd5e-3492-4227-9558-c24df8f90434 {
+        fill: url(#9e90ab4c-d473-44d7-a09c-47924973df5d);
+      }
+
+      .f806c0fc-6455-4a21-a901-1753dadccd53 {
+        opacity: 0.1;
+        isolation: isolate;
+      }
+    </style>
+    <linearGradient id="561862e6-4274-467c-a4f6-4c8ecef9a0b1" x1="-105.77" y1="223.06" x2="-105.6" y2="222.89" gradientTransform="matrix(172.7, 0, 0, -144.3, 18283.5, 32192.6)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f6c338"/>
+      <stop offset="0.52" stop-color="#ffd351"/>
+      <stop offset="1" stop-color="#f6c338"/>
+    </linearGradient>
+    <linearGradient id="572dd058-086e-47ec-9191-6b2fe90395c2" x1="-105.49" y1="225.53" x2="-105.66" y2="225.36" gradientTransform="matrix(211.6, 0, 0, -77.1, 22368, 17418.5)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#286ee6"/>
+      <stop offset="0.52" stop-color="#4286fb"/>
+      <stop offset="1" stop-color="#286ee6"/>
+    </linearGradient>
+    <linearGradient id="9e90ab4c-d473-44d7-a09c-47924973df5d" x1="-105.04" y1="222.69" x2="-105.09" y2="222.52" gradientTransform="matrix(128, 0, 0, -221.4, 13462, 49308.8)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#069b5a"/>
+      <stop offset="0.53" stop-color="#11aa62"/>
+      <stop offset="1" stop-color="#069b5a"/>
+    </linearGradient>
+  </defs>
+  <title>google drive</title>
+  <g>
+    <path class="bfeb2fd3-4e47-4dac-a7a4-45ca2682b54a" d="M16.88,5.51H32.09L46.4,30.17H31.15Z"/>
+    <path class="d68cc13d-4e03-4914-b847-e4700838909f" d="M46.4,30.17,38.77,43.35H10.24l7.63-13.18Z"/>
+    <path class="465bbd5e-3492-4227-9558-c24df8f90434" d="M10.24,43.35,2.65,30.17,16.88,5.51l7.64,13.21Z"/>
+    <path class="f806c0fc-6455-4a21-a901-1753dadccd53" d="M10.24,43.35l14.2-13.18H17.87Z"/>
+    <path class="f806c0fc-6455-4a21-a901-1753dadccd53" d="M46.4,30.17H31.17l-3.35-5.78Z"/>
+    <path class="f806c0fc-6455-4a21-a901-1753dadccd53" d="M16.88,5.51l4.4,18.8,3.24-5.59Z"/>
+  </g>
+</svg>

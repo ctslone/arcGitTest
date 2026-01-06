@@ -1,0 +1,15 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="linear-gradient" x1="24" y1="12.65" x2="24" y2="23.34" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2684fd"/>
+      <stop offset="1" stop-color="#0462de"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="13.92" y1="23.16" x2="21.45" y2="33.85" xlink:href="#linear-gradient"/>
+  </defs>
+  <title>opsgenie</title>
+  <g>
+    <circle cx="24" cy="13.74" r="10.29" style="fill: url(#linear-gradient)"/>
+    <path d="M6.54,25.87c2.46-1.42,7-3.5,8.62-4.22a.7.7,0,0,1,.89.27c1.58,2.51,8.8,13.29,18,14.93,0,0-6.57,7.9-10.29,7.9-3.51,0-15.94-14-17.56-18A.71.71,0,0,1,6.54,25.87Z" style="fill: url(#linear-gradient-2)"/>
+    <path d="M41.46,25.87c-2.46-1.42-7-3.5-8.62-4.22a.7.7,0,0,0-.89.27c-1.58,2.51-8.8,13.29-18,14.93,0,0,6.57,7.9,10.29,7.9,3.51,0,15.94-14,17.56-18A.71.71,0,0,0,41.46,25.87Z" style="fill: #2684fd"/>
+  </g>
+</svg>

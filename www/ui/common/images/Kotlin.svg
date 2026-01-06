@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="linear-gradient" x1="15.58" y1="191.42" x2="32.59" y2="174.41" gradientTransform="translate(0 -141)" gradientUnits="userSpaceOnUse">
+      <stop offset="0.1" stop-color="#0095d5"/>
+      <stop offset="0.3" stop-color="#238ad9"/>
+      <stop offset="0.62" stop-color="#557bde"/>
+      <stop offset="0.86" stop-color="#7472e2"/>
+      <stop offset="1" stop-color="#806ee3"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="8.52" y1="154.23" x2="18.4" y2="144.35" gradientTransform="translate(0 -141)" gradientUnits="userSpaceOnUse">
+      <stop offset="0.12" stop-color="#0095d5"/>
+      <stop offset="0.42" stop-color="#3c83dc"/>
+      <stop offset="0.7" stop-color="#6d74e1"/>
+      <stop offset="0.83" stop-color="#806ee3"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="-0.06" y1="180.09" x2="33.44" y2="146.59" gradientTransform="translate(0 -141)" gradientUnits="userSpaceOnUse">
+      <stop offset="0.11" stop-color="#c757bc"/>
+      <stop offset="0.21" stop-color="#d0609a"/>
+      <stop offset="0.43" stop-color="#e1725c"/>
+      <stop offset="0.6" stop-color="#ee7e2f"/>
+      <stop offset="0.74" stop-color="#f58613"/>
+      <stop offset="0.82" stop-color="#f88909"/>
+    </linearGradient>
+  </defs>
+  <title>Kotlin</title>
+  <g id="Salesforce_Pardot" data-name="Salesforce Pardot">
+    <g>
+      <polygon id="_Path_" data-name="&lt;Path&gt;" points="6 42 24.06 23.94 42 42 6 42" style="fill: url(#linear-gradient)"/>
+      <polygon points="6 6 24.06 6 6 25.5 6 6" style="fill: url(#linear-gradient-2)"/>
+      <polygon points="24.06 6 6 25.02 6 42 24.06 23.94 42 6 24.06 6" style="fill: url(#linear-gradient-3)"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,2 @@
+<arc:set attr="reset.logName" value="app_audits" />
+<arc:call op="integrityResetTampering" in="reset" />

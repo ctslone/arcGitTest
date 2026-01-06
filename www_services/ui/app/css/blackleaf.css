@@ -1,0 +1,46 @@
+.navbar {
+  background-color: #000000;
+  background-image: none !important;
+}
+
+.navbar-light .navbar-nav>.active>a,
+.navbar-light .navbar-nav>.active>a:hover,
+.navbar-light .navbar-nav>.active>a:focus {
+  background-color: #ECA920;
+  border-color: #ECA920;
+}
+
+.navbar-light .navbar-nav>li>a:hover {
+  background-color: #ECA92080;
+  border-color: #ECA92080;
+}
+
+.tab-underline.nav-tabs>li>a.active,
+.tab-underline.nav-tabs>div.nav-item>a.nav-link.active {
+  color: #000000;
+  border-bottom: #000000 4px solid !important;
+}
+
+.flow-nav .sub-header {
+  background-color: #000000 !important;
+  border-color: #000000 !important;
+}
+
+.btn-primary {
+  background-color: #000000;
+  border-color: #000000;
+}
+
+.btn-primary:hover,.btn-primary:focus {
+  background-color: #EEAA1E;
+  border-color: #EEAA1E;
+}
+
+.btn-primary[disabled].disabled,.btn-primary[disabled],.btn-primary[disabled]:hover,.btn-primary[disabled]:focus {
+  background-color: #EEAA1E80;
+  border-color: #EEAA1E80;
+}
+
+.flow-port .flow-port-img {
+  filter: grayscale(1);
+}

@@ -1,0 +1,53 @@
+.template-panel ul.dropdown-menu {
+  max-height: 35vh;
+  overflow-y: auto;
+}
+.template-panel ul.dropdown-menu li a {
+white-space: normal;
+word-wrap: break-word;
+}
+/* Searchable dropdown */
+.template-panel .dropdown-menu {
+  background: white;
+  padding: 0;
+}
+.template-panel li.search-box {
+  padding-top: 5px !important;
+  padding-bottom: 3px;
+  background-color: white;
+  position: sticky;
+  top: 0;
+}
+::-webkit-full-page-media, _:future, :root .template-panel li.search-box {
+  position: -webkit-sticky;
+}
+.template-panel li.search-box>div {
+  width: 100%;
+  padding: 0px 20px;
+}
+.template-panel li.search-box>div>.fa-search {
+  left: 30px;
+  position: absolute;
+  top: 10px;
+  z-index: 2;
+}
+.template-panel li.search-box>div>input {
+  padding-left: 31px;
+  border-radius: 5px !important;
+  margin: 1px;
+}
+.template-panel .dropdown-menu li.selected>a, .template-panel .dropdown-menu li.selected>a:focus {
+  background-color: #3283ca !important;
+  color: white !important;
+  font-weight: 500;
+}
+.template-panel .dropdown-menu li.upload-sample-file {
+  position: sticky;
+  bottom: 0;
+  background-color: white;
+  padding-bottom: 6px !important;
+  padding-top: 5px;
+}
+.template-panel .dropdown-menu li+li.upload-sample-file {
+  border-top: solid #e5e5e5 1px;
+}

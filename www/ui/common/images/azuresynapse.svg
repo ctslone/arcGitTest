@@ -1,0 +1,35 @@
+<svg id="CURRENT" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="linear-gradient" x1="24" y1="3.43" x2="24" y2="16.52" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0077d0"/>
+      <stop offset="1" stop-color="#005ba2"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="17.19" y1="19.74" x2="34.8" y2="9.32" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3aceeb"/>
+      <stop offset="1" stop-color="#4fe7ff"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="31.24" y1="28.03" x2="13.69" y2="38.3" xlink:href="#linear-gradient-2"/>
+    <linearGradient id="linear-gradient-4" x1="23.78" y1="-84.74" x2="34.27" y2="-78.47" gradientTransform="matrix(1.02, 0, 0, 1.06, -4.41, 109.36)" xlink:href="#linear-gradient-2"/>
+    <linearGradient id="linear-gradient-5" x1="31.01" y1="32.01" x2="31.01" y2="24.09" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1592b9"/>
+      <stop offset="0.12" stop-color="#22a5c9"/>
+      <stop offset="0.35" stop-color="#36c2e0"/>
+      <stop offset="0.57" stop-color="#44d6f1"/>
+      <stop offset="0.79" stop-color="#4ce3fc"/>
+      <stop offset="1" stop-color="#4fe7ff"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-6" x1="16.93" y1="23.58" x2="16.93" y2="15.66" xlink:href="#linear-gradient-5"/>
+  </defs>
+  <title>azuresynapse</title>
+  <g>
+    <g>
+      <path d="M42,13.78,24,3.57,6,13.79V34.22L24,44.43,42,34.21ZM24,40.61,9.37,32.31V15.7L24,7.39l14.63,8.3V32.3Z" style="fill: #0079d5"/>
+      <path d="M9.37,15.7,24,7.39l14.63,8.3L42,13.78,24,3.57,6,13.79Z" style="fill: url(#linear-gradient)"/>
+    </g>
+    <polygon points="18.31 20.56 14.73 18.66 33.09 8.72 36.66 10.75 18.31 20.56" style="fill: url(#linear-gradient-2)"/>
+    <polygon points="14.94 39.25 11.52 37.35 29.59 27.22 33.17 29.12 14.94 39.25" style="fill: url(#linear-gradient-3)"/>
+    <path d="M19.75,22.31s4.3-.61,7.82,4c0,0,5.33,1.05,3.12-2a12.6,12.6,0,0,0-10-5.64S17.76,19.63,19.75,22.31Z" style="fill: url(#linear-gradient-4)"/>
+    <ellipse cx="31.01" cy="28.1" rx="4.3" ry="4.1" style="fill: url(#linear-gradient-5)"/>
+    <ellipse cx="16.93" cy="19.67" rx="4.3" ry="4.1" style="fill: url(#linear-gradient-6)"/>
+  </g>
+</svg>

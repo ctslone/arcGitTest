@@ -1,0 +1,39 @@
+<svg id="a596f3f8-e065-4aab-b6ab-79fdd5670abf" data-name="Icons" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 108 72">
+  <defs>
+    <style>
+      .d5485f85-bdf9-4a02-9100-d140cc3fb964 {
+        fill: #fff;
+      }
+
+      .\32 c69e8ee-60ee-44dc-8997-4c55802f7a96 {
+        fill: #b8d433;
+      }
+
+      .\38 51c4021-8823-4bd2-b9b1-29c46a41245c {
+        mask: url(#e2d17674-b9a5-4776-83ea-88dd15e5e533);
+      }
+    </style>
+    <mask id="e2d17674-b9a5-4776-83ea-88dd15e5e533" x="9.33" y="27.32" width="13.09" height="12.8" maskUnits="userSpaceOnUse">
+      <g id="214e2006-b9a8-4779-ac49-135924af424e" data-name="mask-2">
+        <polygon id="281fbbc9-4516-4a20-ad34-c1e7cb03f829" data-name="path-1" class="d5485f85-bdf9-4a02-9100-d140cc3fb964" points="9.33 27.32 22.42 27.32 22.42 40.12 9.33 40.12 9.33 27.32"/>
+      </g>
+    </mask>
+  </defs>
+  <title>onda</title>
+  <g id="387dda83-a59e-4537-8a31-0f48ee0fe38f" data-name="Page-1">
+    <g id="8c3fb4cf-a1b1-42ea-ab44-5360a766a1c2" data-name="oanda-logo">
+      <path id="7e6c8d63-da88-45c1-8aa3-706ccbb29925" data-name="Shape" d="M37.71,42a6.41,6.41,0,1,1,6.47-6.41A6.3,6.3,0,0,1,37.71,42Zm0-14.1a7.69,7.69,0,1,0,0,15.38,7.69,7.69,0,1,0,0-15.38Z"/>
+      <path id="5e0d0b5c-2e8f-48d2-8580-681a933d051d" data-name="Shape" d="M78.47,43.08H73.61V28.29h4.86a7.55,7.55,0,0,1,7.64,7.64C86.11,39.77,83,43.08,78.47,43.08Zm-3.4-13.51V41.8h3.32a6.12,6.12,0,1,0,0-12.23Z"/>
+      <path id="8b6bf287-17ee-464b-8752-71050319a283" data-name="Shape" d="M89.12,38.63V30.44h.1L96,38.63Zm10.6,4.45h1.74L89.15,28.29H87.67V43.08h1.45V39.84H97Z"/>
+      <path id="a634a5a0-4c4e-4715-891c-41d5e14c9200" data-name="Shape" class="2c69e8ee-60ee-44dc-8997-4c55802f7a96" d="M11.46,43.48a8.78,8.78,0,0,0,7-.93l-7-8.44Z"/>
+      <g id="d6a56b6e-8c1c-455b-a0b6-b58c9bb5082d" data-name="Clipped">
+        <g class="851c4021-8823-4bd2-b9b1-29c46a41245c">
+          <path id="2ec00a73-4dc2-4274-9a6d-c5704a99b229" data-name="Shape" class="2c69e8ee-60ee-44dc-8997-4c55802f7a96" d="M11.46,28.64,21,40.12a8,8,0,0,0,1.4-4.54,8.38,8.38,0,0,0-8.5-8.26,8.7,8.7,0,0,0-4.59,1.31h2.13Z"/>
+        </g>
+      </g>
+      <path id="cdaa6c83-105c-41ce-8087-5c8f3e54c600" data-name="Shape" class="2c69e8ee-60ee-44dc-8997-4c55802f7a96" d="M5.42,35.58a8.12,8.12,0,0,0,2.43,5.77V29.81A8.09,8.09,0,0,0,5.42,35.58Z"/>
+      <polygon id="84cad9c2-0fd7-4b36-aa0d-8709f6aa4537" data-name="Shape" points="59.52 28.31 61.14 28.31 70.02 40.82 70.06 40.82 70.06 28.31 71.51 28.31 71.51 43.1 69.89 43.1 61.01 30.59 60.97 30.59 60.97 43.1 59.52 43.1 59.52 28.31"/>
+      <path id="7b447862-1d45-497a-bb99-31f519dadcbb" data-name="Shape" d="M48.34,38.65l3.54-8.8,3.51,8.8Zm8.83,4.45h1.55l-6-14.79H51.13L45,43.1h1.55l1.31-3.25h8Z"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,29 @@
+.navbar {
+  background-color: #E20020;
+  background-image: none !important;
+}
+
+.tab-underline.nav-tabs>li>a.active,
+.tab-underline.nav-tabs>div.nav-item>a.nav-link.active {
+  color: #E20020;
+  border-bottom: #E20020 4px solid !important;
+}
+
+.flow-nav .sub-header {
+  background-color: #E20020 !important;
+  border-color: #E20020 !important;
+}
+
+.btn-primary {
+  background-color: #E20020;
+  border-color: #E20020;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+  background-color: #9C0020;
+  border-color: #9C0020;
+}
+
+.flow-port .flow-port-img {
+  filter: grayscale(1);
+}

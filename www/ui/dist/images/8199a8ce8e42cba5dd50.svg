@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <title>validate</title>
+  <g id="Warstwa_1" data-name="Warstwa 1">
+    <path d="M40.37,27a6.55,6.55,0,1,1-.14-1.33A6.51,6.51,0,0,1,40.37,27Z" style="fill: #fff"/>
+    <g>
+      <path d="M35.89,35.4V42a1.67,1.67,0,0,1-1.67,1.67H9.38A1.67,1.67,0,0,1,7.71,42V6.05A1.67,1.67,0,0,1,9.38,4.38H34.22a1.67,1.67,0,0,1,1.67,1.67V18.47" style="fill: #fff"/>
+      <path d="M35.89,35.4V42a1.67,1.67,0,0,1-1.67,1.67H9.38A1.67,1.67,0,0,1,7.71,42V6.05A1.67,1.67,0,0,1,9.38,4.38H34.22a1.67,1.67,0,0,1,1.67,1.67V18.47" style="fill: none;stroke: #b2bfcf;stroke-linecap: round;stroke-linejoin: round;stroke-width: 0.761164470037343px"/>
+      <line x1="13.07" y1="16.45" x2="29.17" y2="16.45" style="fill: none;stroke: #b2bfcf;stroke-linecap: round;stroke-linejoin: round;stroke-width: 0.988128344792352px"/>
+      <line x1="10.73" y1="16.45" x2="10.73" y2="16.45" style="fill: none;stroke: #b2bfcf;stroke-linecap: round;stroke-linejoin: round;stroke-width: 0.988128344792352px"/>
+      <line x1="13.07" y1="20.48" x2="27.09" y2="20.48" style="fill: none;stroke: #b2bfcf;stroke-linecap: round;stroke-linejoin: round;stroke-width: 0.988128344792352px"/>
+      <line x1="10.73" y1="20.48" x2="10.73" y2="20.48" style="fill: none;stroke: #b2bfcf;stroke-linecap: round;stroke-linejoin: round;stroke-width: 0.988128344792352px"/>
+      <line x1="13.07" y1="24.5" x2="25.15" y2="24.5" style="fill: none;stroke: #b2bfcf;stroke-linecap: round;stroke-linejoin: round;stroke-width: 0.988128344792352px"/>
+      <line x1="10.73" y1="24.5" x2="10.73" y2="24.5" style="fill: none;stroke: #b2bfcf;stroke-linecap: round;stroke-linejoin: round;stroke-width: 0.988128344792352px"/>
+      <line x1="13.07" y1="28.53" x2="25.15" y2="28.53" style="fill: none;stroke: #b2bfcf;stroke-linecap: round;stroke-linejoin: round;stroke-width: 0.988128344792352px"/>
+      <line x1="10.73" y1="28.53" x2="10.73" y2="28.53" style="fill: none;stroke: #b2bfcf;stroke-linecap: round;stroke-linejoin: round;stroke-width: 0.988128344792352px"/>
+      <line x1="13.07" y1="32.55" x2="26.15" y2="32.55" style="fill: none;stroke: #b2bfcf;stroke-linecap: round;stroke-linejoin: round;stroke-width: 0.988128344792352px"/>
+      <line x1="10.73" y1="32.55" x2="10.73" y2="32.55" style="fill: none;stroke: #b2bfcf;stroke-linecap: round;stroke-linejoin: round;stroke-width: 0.988128344792352px"/>
+      <line x1="13.07" y1="36.58" x2="29.17" y2="36.58" style="fill: none;stroke: #b2bfcf;stroke-linecap: round;stroke-linejoin: round;stroke-width: 0.988128344792352px"/>
+      <line x1="10.73" y1="36.58" x2="10.73" y2="36.58" style="fill: none;stroke: #b2bfcf;stroke-linecap: round;stroke-linejoin: round;stroke-width: 0.988128344792352px"/>
+      <line x1="10.73" y1="11.25" x2="22.81" y2="11.25" style="fill: none;stroke: #b2bfcf;stroke-linecap: round;stroke-linejoin: round;stroke-width: 0.988128344792352px"/>
+      <path d="M33.83,19.72a8.31,8.31,0,0,0-1.31.13,7,7,0,1,0,8.25,5.58.57.57,0,0,0-.62-.5.56.56,0,0,0-.5.61.35.35,0,0,0,0,.11A5.93,5.93,0,1,1,37,21.72a.56.56,0,1,0,.63-.92l0,0a7.12,7.12,0,0,0-3.72-1.05Z" style="fill: #0093dd"/>
+      <path d="M42.46,20.06a.58.58,0,0,0-.34.14l-9.18,8L31.18,26a.56.56,0,0,0-.79-.09.55.55,0,0,0-.09.79l2.13,2.65a.56.56,0,0,0,.79.08h0l9.63-8.33a.56.56,0,0,0-.4-1Z" style="fill: #0093dd"/>
+    </g>
+  </g>
+</svg>

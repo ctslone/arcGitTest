@@ -1,0 +1,52 @@
+<svg id="d66ea08c-1635-4950-b3af-372e09a1e938" data-name="NEED VECTOR" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48">
+  <defs>
+    <style>
+      .\30 61f13cb-ea44-45a7-b834-4b99cb49c035 {
+        fill: url(#cdabeffd-d066-4766-aa18-568d172fce02);
+      }
+
+      .dd27157f-a2eb-42f0-8bd9-7e6d7a1a0007 {
+        opacity: 0.83;
+        fill: url(#cc9face7-97ff-44f0-a391-5696fcf469a8);
+      }
+
+      .\31 799cf17-278d-447b-b581-1245043cc666 {
+        opacity: 0.92;
+        fill: url(#0094a9d9-eb05-43aa-9095-0082d2fdb481);
+      }
+    </style>
+    <linearGradient id="cdabeffd-d066-4766-aa18-568d172fce02" x1="8.51" y1="23.08" x2="39.58" y2="23.08" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#435f34"/>
+      <stop offset="0.08" stop-color="#557715"/>
+      <stop offset="0.55" stop-color="#b7cf7a"/>
+      <stop offset="0.63" stop-color="#b3cb77"/>
+      <stop offset="0.71" stop-color="#a6be70"/>
+      <stop offset="0.79" stop-color="#90aa63"/>
+      <stop offset="0.87" stop-color="#728d51"/>
+      <stop offset="0.96" stop-color="#4c6839"/>
+      <stop offset="0.98" stop-color="#435f34"/>
+      <stop offset="1" stop-color="#7fb452"/>
+    </linearGradient>
+    <linearGradient id="cc9face7-97ff-44f0-a391-5696fcf469a8" x1="8.42" y1="20.74" x2="32.45" y2="20.74" gradientUnits="userSpaceOnUse">
+      <stop offset="0.97" stop-color="#4a568a"/>
+      <stop offset="1" stop-color="#a0b4cd"/>
+    </linearGradient>
+    <linearGradient id="0094a9d9-eb05-43aa-9095-0082d2fdb481" x1="8.54" y1="18.13" x2="23.56" y2="18.13" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#6d1d26"/>
+      <stop offset="0.34" stop-color="#c46f42"/>
+      <stop offset="0.77" stop-color="#dec24d"/>
+      <stop offset="0.99" stop-color="#e3d469"/>
+      <stop offset="1" stop-color="#e9ea89"/>
+    </linearGradient>
+  </defs>
+  <title>dynamics ax</title>
+  <g>
+    <path d="M19.43,38.83l-.81,2.43h-1l2.63-7.72h1.2l2.63,7.72H23l-.83-2.43ZM22,38.05l-.76-2.22c-.17-.51-.28-1-.4-1.41h0c-.12.46-.24.93-.39,1.4l-.76,2.23Z"/>
+    <path d="M29.25,41.26l-1-1.71c-.4-.65-.65-1.08-.89-1.52h0c-.22.44-.44.86-.84,1.53l-.93,1.7H24.44l2.36-3.91-2.27-3.81h1.16l1,1.81c.28.5.5.89.71,1.3h0c.22-.46.41-.81.7-1.3l1.05-1.81h1.15L28,37.29l2.41,4Z"/>
+  </g>
+  <g>
+    <path class="061f13cb-ea44-45a7-b834-4b99cb49c035" d="M38.93,32.69A48.61,48.61,0,0,0,23.08,30.1,43.83,43.83,0,0,0,8.51,32.67V30.29c.5-.06,13.25-2.22,19.64-7.12A96.25,96.25,0,0,0,39,13.47l.55.4,0,18.63Z"/>
+    <path class="dd27157f-a2eb-42f0-8bd9-7e6d7a1a0007" d="M31.72,29.61a28.23,28.23,0,0,0-12.95-.15A49.69,49.69,0,0,0,8.42,32.81V30.23a71.85,71.85,0,0,0,13.36-8.16,33.38,33.38,0,0,0,10-13.4l.64.37-.08,20.37Z"/>
+    <path class="1799cf17-278d-447b-b581-1245043cc666" d="M23.53,27.51A38.15,38.15,0,0,0,15,29.38a23.09,23.09,0,0,0-6.6,3.43V30.23a39,39,0,0,0,9.21-11.5c5.26-9.9,6-15.27,6-15.27l.68.44-.12,23.41Z"/>
+  </g>
+</svg>

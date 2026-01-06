@@ -1,0 +1,107 @@
+table.o-table {
+  width: 100%;
+}
+
+table.o-table th,
+table.o-table td {
+  padding: 9px 6.5px;
+  border-top: 1px solid #dddddd;
+  border-right: 1px solid #dddddd;
+  white-space: nowrap;
+  overflow: hidden;
+  overflow-wrap: break-word;
+}
+
+table.o-table th {
+  border-bottom: 1px solid #dddddd;
+}
+
+table.o-table th:first-child,
+table.o-table td:first-child {
+  border-left: 1px solid #dddddd;
+}
+
+table.o-table thead th {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: #f1f1f1;
+}
+
+table.o-table tfoot td {
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  z-index: 1;
+  background: #f1f1f1 !important;
+  border-bottom: 1px solid #dddddd;
+  font-weight: 700;
+}
+
+table.o-table thead th.o-sorting_asc,
+table.o-table thead th.o-sorting_desc,
+table.o-table thead th.o-sorting {
+  padding-right: 30px;
+  cursor: pointer;
+}
+
+table.o-table thead .o-sorting::after,
+table.o-table thead .o-sorting_asc::after,
+table.o-table thead .o-sorting_desc::after,
+table.o-table thead .o-sorting::before,
+table.o-table thead .o-sorting_asc::before,
+table.o-table thead .o-sorting_desc::before {
+  position: absolute;
+  display: block;
+  opacity: .2;
+  right: 10px;
+  line-height: 9px;
+  font-size: 16px;
+}
+
+table.o-table thead .o-sorting::before,
+table.o-table thead .o-sorting_asc::before,
+table.o-table thead .o-sorting_desc::before {
+  bottom: 50%;
+  content: "▴";
+}
+
+table.o-table thead .o-sorting::after,
+table.o-table thead .o-sorting_asc::after,
+table.o-table thead .o-sorting_desc::after {
+  top: 50%;
+  content: "▾";
+}
+
+table.o-table thead .o-sorting_asc::before,
+table.o-table thead .o-sorting_desc::after {
+  opacity: .9;
+}
+
+table.o-table .o-group {
+  min-width: 150px;
+}
+
+.o-table tbody td.o-group {
+  background: #fafafa;
+  color: #9c9c9c;
+}
+
+table.o-table .o-dimension {
+  min-width: 150px;
+}
+
+table.o-table .o-metric {
+  min-width: 180px;
+}
+
+table.o-table .o-subtotal td {
+  color: #9c9c9c;
+  background: #fafafa !important;
+}
+
+table.o-table .o-empty td {
+  text-align: center;
+  background: #fafafa !important;
+}

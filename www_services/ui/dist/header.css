@@ -1,0 +1,1173 @@
+#navbarcontainer{position:fixed;top:0;left:0;z-index:10;height:100vh}body{padding-top:0 !important;padding-left:6rem !important}body.debug #debug,body.safe-mode #safeMode{top:0px;display:block !important;visibility:visible !important;position:fixed;width:120px;background:#ff0;text-align:center;right:150px;font-weight:600;box-shadow:0 3px 10px 0 rgba(0,0,0,.5)}.arc-navbar{flex-wrap:nowrap !important}.arc-navbar .navbar-brand{padding-top:5px;padding-bottom:5px}.arc-navbar .arc-navbar-body{overflow-y:auto;scrollbar-width:thin}.arc-navbar .arc-navbar-body::-webkit-scrollbar{width:8px;opacity:.5;background-color:rgba(0,0,0,0)}.arc-navbar .arc-navbar-body::-webkit-scrollbar-thumb{background-color:var(--cdata-border-strong);border-radius:12px}.arc-navbar .arc-navbar-body::-webkit-scrollbar-thumb:hover{background-color:var(--cdata-border-strong-hover)}.arc-navbar .arc-navbar-body::-webkit-scrollbar-thumb:active{background-color:var(--cdata-border-strong-pressed)}.arc-navbar .dropdown-user{width:100%}.arc-navbar .dropdown-user>a{padding:0 !important}.arc-navbar .dropdown-user>a::after{display:none}
+:root {
+  --cdata-background-default: #F5F7F8;
+  --cdata-background-layer-primary: #FFF;
+  --cdata-background-layer-primary-gradient: #FFF;
+  --cdata-background-layer-primary-hover: #F5F7F8;
+  --cdata-background-layer-primary-pressed: #E0E6EA;
+  --cdata-background-layer-secondary: #F5F7F8;
+  --cdata-background-layer-secondary-gradient: #F5F7F8;
+  --cdata-background-navigation: #20272B;
+  --cdata-background-navigation-hover: #323D43;
+  --cdata-background-navigation-pressed: #3F4D55;
+  --cdata-background-utility-info: #F5F7F8;
+  --cdata-background-utility-success: #EDF9F3;
+  --cdata-background-utility-warning: #FFF5F0;
+  --cdata-background-utility-error: #FDF4F5;
+  --cdata-background-inverse: #20272B;
+  --cdata-background-inverse-hover: #323D43;
+  --cdata-background-inverse-pressed: #3F4D55;
+  --cdata-background-user-avatar: #00629D;
+  --cdata-background-user-avatar-hover: #004F7E;
+  --cdata-background-user-avatar-pressed: #003F64;
+  --cdata-background-placeholder: #E0E6EA;
+  --cdata-background-highlight-strong: #0077BD;
+  --cdata-background-highlight-subtle: #EDF8FF;
+  --cdata-border-strong: #607581;
+  --cdata-border-strong-hover: #50616A;
+  --cdata-border-strong-pressed: #3F4D55;
+  --cdata-border-subtle: #E0E6EA;
+  --cdata-border-subtle-hover: #BECBD4;
+  --cdata-border-subtle-pressed: #7C97A7;
+  --cdata-border-active: #0077BD;
+  --cdata-border-utility-info: #E0E6EA;
+  --cdata-border-utility-success-subtle: #C8EEDA;
+  --cdata-border-utility-success-strong: #00843F;
+  --cdata-border-utility-warning: #FCE0D1;
+  --cdata-border-utility-error-subtle: #FADFE0;
+  --cdata-border-utility-error-strong: #DC262E;
+  --cdata-border-navigation-active: #00A0FF;
+  --cdata-text-primary: #323D43;
+  --cdata-text-secondary: #50616A;
+  --cdata-text-header: #20272B;
+  --cdata-text-active: #00629D;
+  --cdata-text-placeholder: #BECBD4;
+  --cdata-text-navigation-active: #FFF;
+  --cdata-text-navigation-inactive: #BECBD4;
+  --cdata-text-navigation-hover: #E0E6EA;
+  --cdata-text-navigation-pressed: #F5F7F8;
+  --cdata-text-on-color-primary: #FFF;
+  --cdata-text-on-color-secondary: #BECBD4;
+  --cdata-link-strong: #00629D;
+  --cdata-link-strong-hover: #004F7E;
+  --cdata-link-strong-pressed: #003F64;
+  --cdata-link-subtle: #50616A;
+  --cdata-link-subtle-hover: #3F4D55;
+  --cdata-link-subtle-pressed: #323D43;
+  --cdata-link-on-color: #FFF;
+  --cdata-link-on-color-hover: #F5F7F8;
+  --cdata-link-on-color-pressed: #E0E6EA;
+  --cdata-icon-primary: #50616A;
+  --cdata-icon-primary-hover: #3F4D55;
+  --cdata-icon-primary-pressed: #323D43;
+  --cdata-icon-active: #00629D;
+  --cdata-icon-active-hover: #004F7E;
+  --cdata-icon-active-pressed: #003F64;
+  --cdata-icon-subtle: #BECBD4;
+  --cdata-icon-on-color: #FFF;
+  --cdata-icon-on-color-hover: #F5F7F8;
+  --cdata-icon-on-color-pressed: #E0E6EA;
+  --cdata-button-primary: #00629D;
+  --cdata-button-primary-hover: #004F7E;
+  --cdata-button-primary-pressed: #003F64;
+  --cdata-button-secondary: #50616A;
+  --cdata-button-secondary-hover: #3F4D55;
+  --cdata-button-secondary-pressed: #323D43;
+  --cdata-button-on-color: #FFF;
+  --cdata-button-on-color-hover: #F5F7F8;
+  --cdata-button-on-color-pressed: #E0E6EA;
+  --cdata-utility-info: #50616A;
+  --cdata-utility-info-hover: #3F4D55;
+  --cdata-utility-info-pressed: #323D43;
+  --cdata-utility-success: #006D34;
+  --cdata-utility-success-hover: #00582A;
+  --cdata-utility-success-pressed: #004521;
+  --cdata-utility-warning: #9D4408;
+  --cdata-utility-warning-hover: #7C370C;
+  --cdata-utility-warning-pressed: #612D0D;
+  --cdata-utility-error: #B91D23;
+  --cdata-utility-error-hover: #95171D;
+  --cdata-utility-error-pressed: #771217;
+  --cdata-miscellaneous-highlight-strong: #0077BD;
+  --cdata-miscellaneous-highlight-subtle: #EDF8FF;
+  --cdata-miscellaneous-highlight-subtle-gradient: #EDF8FF;
+  --cdata-miscellaneous-accent-default: #0099F4;
+  --cdata-miscellaneous-field: #FFF;
+  --cdata-miscellaneous-field-inactive: #F5F7F8;
+  --cdata-miscellaneous-focus-outline: #0099F4;
+  --cdata-miscellaneous-focus-outline-rgba: rgba(0, 153, 244, 0.8);
+  --cdata-miscellaneous-focus-inset: #FFF;
+  --cdata-miscellaneous-required: #B91D23;
+  --cdata-miscellaneous-overlay: #20272B;
+  --cdata-miscellaneous-shadow: #20272B;
+  --cdata-font-family: Roboto;
+  --cdata-fs-xs: 0.75rem;
+  --cdata-fs-sm: 0.875rem;
+  --cdata-fs-md: 1rem;
+  --cdata-fs-lg: 1.125rem;
+  --cdata-fs-xl: 1.5rem;
+  --cdata-fs-xxl: 1.75rem;
+  --cdata-fs-xxxl: 2rem;
+  --cdata-fs-xxxxl: 2.5rem;
+  --cdata-fw-regular: 400;
+  --cdata-fw-medium: 500;
+  --cdata-fw-bold: 700;
+  --cdata-lh-sm: 1;
+  --cdata-lh-md: 1.2;
+  --cdata-lh-lg: 1.5;
+  --cdata-display-font-size-1: 2.5rem;
+  --cdata-display-font-size-2: 2rem;
+  --cdata-display-font-weight-1: 700;
+  --cdata-display-font-weight-2: 700;
+  --cdata-heading-font-size-1: 1.75rem;
+  --cdata-heading-font-size-2: 1.5rem;
+  --cdata-heading-font-size-3: 1.125rem;
+  --cdata-heading-font-size-4: 1rem;
+  --cdata-heading-font-size-5: 0.875rem;
+  --cdata-heading-font-size-6: 0.875rem;
+  --cdata-heading-font-weight-1: 700;
+  --cdata-heading-font-weight-2: 500;
+  --cdata-heading-font-weight-3: 500;
+  --cdata-heading-font-weight-4: 700;
+  --cdata-heading-font-weight-5: 700;
+  --cdata-heading-font-weight-6: 500;
+  --cdata-body-font-size-large: 1.125rem;
+  --cdata-body-font-size-medium: 1rem;
+  --cdata-body-font-size-small: 0.875rem;
+  --cdata-link-font-size-large: 1.125rem;
+  --cdata-link-font-size-medium: 1rem;
+  --cdata-link-font-size-small: 0.875rem;
+  --cdata-link-font-size-xsmall: 0.75rem;
+  --cdata-box-shadow-none: none;
+  --cdata-box-shadow-small: 0 2px 8px 0 rgba(32, 39, 43, 0.15);
+  --cdata-box-shadow-medium: 0 2px 12px 0 rgba(32, 39, 43, 0.05);
+  --cdata-box-shadow-large: 0 2px 20px 0 rgba(32, 39, 43, 0.1);
+  --cdata-focus-box-shadow: 0 0 0 2px var(--cdata-miscellaneous-focus-outline-rgba);
+  --cdata-border-width-1: 1px;
+  --cdata-border-width-2: 2px;
+  --cdata-border-width-3: 3px;
+  --cdata-border-color: #607581;
+  --cdata-border-radius-0: 0;
+  --cdata-border-radius-1: 0.625rem;
+  --cdata-border-radius-2: 6.25rem;
+  --cdata-height-0: 0rem;
+  --cdata-height-4: 0.25rem;
+  --cdata-height-8: 0.5rem;
+  --cdata-height-12: 0.75rem;
+  --cdata-height-16: 1rem;
+  --cdata-height-20: 1.25rem;
+  --cdata-height-24: 1.5rem;
+  --cdata-height-28: 1.75rem;
+  --cdata-height-32: 2rem;
+  --cdata-height-36: 2.25rem;
+  --cdata-height-40: 2.5rem;
+  --cdata-height-44: 2.75rem;
+  --cdata-height-48: 3rem;
+  --cdata-height-52: 3.25rem;
+  --cdata-height-56: 3.5rem;
+  --cdata-height-60: 3.75rem;
+  --cdata-height-64: 4rem;
+  --cdata-height-68: 4.25rem;
+  --cdata-height-72: 4.5rem;
+  --cdata-height-76: 4.75rem;
+  --cdata-height-80: 5rem;
+  --cdata-height-84: 5.25rem;
+  --cdata-height-88: 5.5rem;
+  --cdata-height-92: 5.75rem;
+  --cdata-height-96: 6rem;
+  --cdata-height-100: 6.25rem;
+  --cdata-height-104: 6.5rem;
+  --cdata-height-108: 6.75rem;
+  --cdata-height-112: 7rem;
+  --cdata-height-116: 7.25rem;
+  --cdata-height-120: 7.5rem;
+  --cdata-height-124: 7.75rem;
+  --cdata-height-128: 8rem;
+  --cdata-height-132: 8.25rem;
+  --cdata-height-136: 8.5rem;
+  --cdata-height-140: 8.75rem;
+  --cdata-height-144: 9rem;
+  --cdata-height-148: 9.25rem;
+  --cdata-height-152: 9.5rem;
+  --cdata-height-156: 9.75rem;
+  --cdata-height-160: 10rem;
+  --cdata-height-164: 10.25rem;
+  --cdata-height-168: 10.5rem;
+  --cdata-height-172: 10.75rem;
+  --cdata-height-176: 11rem;
+  --cdata-height-180: 11.25rem;
+  --cdata-height-184: 11.5rem;
+  --cdata-height-188: 11.75rem;
+  --cdata-height-192: 12rem;
+  --cdata-height-196: 12.25rem;
+  --cdata-height-200: 12.5rem;
+  --cdata-height-204: 12.75rem;
+  --cdata-height-208: 13rem;
+  --cdata-height-212: 13.25rem;
+  --cdata-height-216: 13.5rem;
+  --cdata-height-220: 13.75rem;
+  --cdata-height-224: 14rem;
+  --cdata-height-228: 14.25rem;
+  --cdata-height-232: 14.5rem;
+  --cdata-height-236: 14.75rem;
+  --cdata-height-240: 15rem;
+  --cdata-height-244: 15.25rem;
+  --cdata-height-248: 15.5rem;
+  --cdata-height-252: 15.75rem;
+  --cdata-height-256: 16rem;
+  --cdata-height-260: 16.25rem;
+  --cdata-height-264: 16.5rem;
+  --cdata-height-268: 16.75rem;
+  --cdata-height-272: 17rem;
+  --cdata-height-276: 17.25rem;
+  --cdata-height-280: 17.5rem;
+  --cdata-height-284: 17.75rem;
+  --cdata-height-288: 18rem;
+  --cdata-height-292: 18.25rem;
+  --cdata-height-296: 18.5rem;
+  --cdata-height-300: 18.75rem;
+  --cdata-height-304: 19rem;
+  --cdata-height-308: 19.25rem;
+  --cdata-height-312: 19.5rem;
+  --cdata-height-316: 19.75rem;
+  --cdata-height-320: 20rem;
+  --cdata-height-324: 20.25rem;
+  --cdata-height-328: 20.5rem;
+  --cdata-height-332: 20.75rem;
+  --cdata-height-336: 21rem;
+  --cdata-height-340: 21.25rem;
+  --cdata-height-344: 21.5rem;
+  --cdata-height-348: 21.75rem;
+  --cdata-height-352: 22rem;
+  --cdata-height-356: 22.25rem;
+  --cdata-height-360: 22.5rem;
+  --cdata-height-364: 22.75rem;
+  --cdata-height-368: 23rem;
+  --cdata-height-372: 23.25rem;
+  --cdata-height-376: 23.5rem;
+  --cdata-height-380: 23.75rem;
+  --cdata-height-384: 24rem;
+  --cdata-height-388: 24.25rem;
+  --cdata-height-392: 24.5rem;
+  --cdata-height-396: 24.75rem;
+  --cdata-height-400: 25rem;
+  --cdata-height-404: 25.25rem;
+  --cdata-height-408: 25.5rem;
+  --cdata-height-412: 25.75rem;
+  --cdata-height-416: 26rem;
+  --cdata-height-420: 26.25rem;
+  --cdata-height-424: 26.5rem;
+  --cdata-height-428: 26.75rem;
+  --cdata-height-432: 27rem;
+  --cdata-height-436: 27.25rem;
+  --cdata-height-440: 27.5rem;
+  --cdata-height-444: 27.75rem;
+  --cdata-height-448: 28rem;
+  --cdata-height-452: 28.25rem;
+  --cdata-height-456: 28.5rem;
+  --cdata-height-460: 28.75rem;
+  --cdata-height-464: 29rem;
+  --cdata-height-468: 29.25rem;
+  --cdata-height-472: 29.5rem;
+  --cdata-height-476: 29.75rem;
+  --cdata-height-480: 30rem;
+  --cdata-height-484: 30.25rem;
+  --cdata-height-488: 30.5rem;
+  --cdata-height-492: 30.75rem;
+  --cdata-height-496: 31rem;
+  --cdata-height-500: 31.25rem;
+  --cdata-height-504: 31.5rem;
+  --cdata-height-508: 31.75rem;
+  --cdata-height-512: 32rem;
+  --cdata-width-0: 0rem;
+  --cdata-width-4: 0.25rem;
+  --cdata-width-8: 0.5rem;
+  --cdata-width-12: 0.75rem;
+  --cdata-width-16: 1rem;
+  --cdata-width-20: 1.25rem;
+  --cdata-width-24: 1.5rem;
+  --cdata-width-28: 1.75rem;
+  --cdata-width-32: 2rem;
+  --cdata-width-36: 2.25rem;
+  --cdata-width-40: 2.5rem;
+  --cdata-width-44: 2.75rem;
+  --cdata-width-48: 3rem;
+  --cdata-width-52: 3.25rem;
+  --cdata-width-56: 3.5rem;
+  --cdata-width-60: 3.75rem;
+  --cdata-width-64: 4rem;
+  --cdata-width-68: 4.25rem;
+  --cdata-width-72: 4.5rem;
+  --cdata-width-76: 4.75rem;
+  --cdata-width-80: 5rem;
+  --cdata-width-84: 5.25rem;
+  --cdata-width-88: 5.5rem;
+  --cdata-width-92: 5.75rem;
+  --cdata-width-96: 6rem;
+  --cdata-width-100: 6.25rem;
+  --cdata-width-104: 6.5rem;
+  --cdata-width-108: 6.75rem;
+  --cdata-width-112: 7rem;
+  --cdata-width-116: 7.25rem;
+  --cdata-width-120: 7.5rem;
+  --cdata-width-124: 7.75rem;
+  --cdata-width-128: 8rem;
+  --cdata-width-132: 8.25rem;
+  --cdata-width-136: 8.5rem;
+  --cdata-width-140: 8.75rem;
+  --cdata-width-144: 9rem;
+  --cdata-width-148: 9.25rem;
+  --cdata-width-152: 9.5rem;
+  --cdata-width-156: 9.75rem;
+  --cdata-width-160: 10rem;
+  --cdata-width-164: 10.25rem;
+  --cdata-width-168: 10.5rem;
+  --cdata-width-172: 10.75rem;
+  --cdata-width-176: 11rem;
+  --cdata-width-180: 11.25rem;
+  --cdata-width-184: 11.5rem;
+  --cdata-width-188: 11.75rem;
+  --cdata-width-192: 12rem;
+  --cdata-width-196: 12.25rem;
+  --cdata-width-200: 12.5rem;
+  --cdata-width-204: 12.75rem;
+  --cdata-width-208: 13rem;
+  --cdata-width-212: 13.25rem;
+  --cdata-width-216: 13.5rem;
+  --cdata-width-220: 13.75rem;
+  --cdata-width-224: 14rem;
+  --cdata-width-228: 14.25rem;
+  --cdata-width-232: 14.5rem;
+  --cdata-width-236: 14.75rem;
+  --cdata-width-240: 15rem;
+  --cdata-width-244: 15.25rem;
+  --cdata-width-248: 15.5rem;
+  --cdata-width-252: 15.75rem;
+  --cdata-width-256: 16rem;
+  --cdata-width-260: 16.25rem;
+  --cdata-width-264: 16.5rem;
+  --cdata-width-268: 16.75rem;
+  --cdata-width-272: 17rem;
+  --cdata-width-276: 17.25rem;
+  --cdata-width-280: 17.5rem;
+  --cdata-width-284: 17.75rem;
+  --cdata-width-288: 18rem;
+  --cdata-width-292: 18.25rem;
+  --cdata-width-296: 18.5rem;
+  --cdata-width-300: 18.75rem;
+  --cdata-width-304: 19rem;
+  --cdata-width-308: 19.25rem;
+  --cdata-width-312: 19.5rem;
+  --cdata-width-316: 19.75rem;
+  --cdata-width-320: 20rem;
+  --cdata-width-324: 20.25rem;
+  --cdata-width-328: 20.5rem;
+  --cdata-width-332: 20.75rem;
+  --cdata-width-336: 21rem;
+  --cdata-width-340: 21.25rem;
+  --cdata-width-344: 21.5rem;
+  --cdata-width-348: 21.75rem;
+  --cdata-width-352: 22rem;
+  --cdata-width-356: 22.25rem;
+  --cdata-width-360: 22.5rem;
+  --cdata-width-364: 22.75rem;
+  --cdata-width-368: 23rem;
+  --cdata-width-372: 23.25rem;
+  --cdata-width-376: 23.5rem;
+  --cdata-width-380: 23.75rem;
+  --cdata-width-384: 24rem;
+  --cdata-width-388: 24.25rem;
+  --cdata-width-392: 24.5rem;
+  --cdata-width-396: 24.75rem;
+  --cdata-width-400: 25rem;
+  --cdata-width-404: 25.25rem;
+  --cdata-width-408: 25.5rem;
+  --cdata-width-412: 25.75rem;
+  --cdata-width-416: 26rem;
+  --cdata-width-420: 26.25rem;
+  --cdata-width-424: 26.5rem;
+  --cdata-width-428: 26.75rem;
+  --cdata-width-432: 27rem;
+  --cdata-width-436: 27.25rem;
+  --cdata-width-440: 27.5rem;
+  --cdata-width-444: 27.75rem;
+  --cdata-width-448: 28rem;
+  --cdata-width-452: 28.25rem;
+  --cdata-width-456: 28.5rem;
+  --cdata-width-460: 28.75rem;
+  --cdata-width-464: 29rem;
+  --cdata-width-468: 29.25rem;
+  --cdata-width-472: 29.5rem;
+  --cdata-width-476: 29.75rem;
+  --cdata-width-480: 30rem;
+  --cdata-width-484: 30.25rem;
+  --cdata-width-488: 30.5rem;
+  --cdata-width-492: 30.75rem;
+  --cdata-width-496: 31rem;
+  --cdata-width-500: 31.25rem;
+  --cdata-width-504: 31.5rem;
+  --cdata-width-508: 31.75rem;
+  --cdata-width-512: 32rem;
+}
+
+.avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  overflow: hidden;
+  user-select: none;
+  width: var(--cdata-avatar-size);
+  min-width: var(--cdata-avatar-size);
+  height: var(--cdata-avatar-size);
+  min-height: var(--cdata-avatar-size);
+  padding: 0.75rem 0.75rem;
+  border: var(--cdata-avatar-border);
+  border-radius: var(--cdata-border-radius-2);
+  color: var(--cdata-avatar-color);
+  background-color: var(--cdata-avatar-bg-color);
+  box-shadow: var(--cdata-avatar-box-shadow);
+}
+.avatar:focus {
+  --cdata-avatar-box-shadow: var(--cdata-focus-box-shadow);
+}
+
+.avatar-text {
+  font-size: var(--cdata-avatar-font-size);
+  font-weight: var(--cdata-avatar-font-weight);
+  line-height: var(--cdata-avatar-line-height);
+}
+.avatar-text > i {
+  font-size: var(--cdata-avatar-img-size);
+}
+
+.avatar-img {
+  width: var(--cdata-avatar-img-size);
+  height: var(--cdata-avatar-img-size);
+}
+
+.avatar-primary {
+  --cdata-avatar-color: var(--cdata-text-on-color-primary);
+  --cdata-avatar-bg-color: var(--cdata-background-user-avatar);
+}
+.avatar-primary:hover {
+  --cdata-avatar-bg-color: var(--cdata-background-user-avatar-hover);
+}
+.avatar-primary:active, .avatar-primary:focus {
+  --cdata-avatar-bg-color: var(--cdata-background-user-avatar-pressed);
+}
+
+.avatar-secondary {
+  --cdata-avatar-color: var(--cdata-text-secondary);
+  --cdata-avatar-bg-color: var(--cdata-background-layer-primary);
+  --cdata-avatar-border: var(--cdata-border-width-1) solid var(--cdata-border-subtle);
+}
+.avatar-secondary:hover {
+  --cdata-avatar-bg-color: var(--cdata-background-layer-primary-hover);
+}
+.avatar-secondary:active, .avatar-secondary:focus {
+  --cdata-avatar-bg-color: var(--cdata-background-layer-primary-pressed);
+}
+
+.avatar-xs {
+  --cdata-avatar-size: 1.5rem;
+  --cdata-avatar-font-size: 1rem;
+  --cdata-avatar-font-weight: 500;
+  --cdata-avatar-line-height: 1;
+  --cdata-avatar-img-size: 0.75rem;
+}
+
+.avatar-sm {
+  --cdata-avatar-size: 2rem;
+  --cdata-avatar-font-size: 1.125rem;
+  --cdata-avatar-font-weight: 500;
+  --cdata-avatar-line-height: 1;
+  --cdata-avatar-img-size: 1rem;
+  padding: 0.5rem 0.5rem;
+}
+
+.avatar-md {
+  --cdata-avatar-size: 2.5rem;
+  --cdata-avatar-font-size: 1.5rem;
+  --cdata-avatar-font-weight: 500;
+  --cdata-avatar-line-height: 1;
+  --cdata-avatar-img-size: 1.25rem;
+}
+
+.avatar-lg {
+  --cdata-avatar-size: 3rem;
+  --cdata-avatar-font-size: 1.75rem;
+  --cdata-avatar-font-weight: 700;
+  --cdata-avatar-line-height: 1;
+  --cdata-avatar-img-size: 1.5rem;
+}
+
+.avatar-group {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+}
+.avatar-group > .avatar-sm:not(:first-child) {
+  margin-left: -0.5rem;
+}
+.avatar-group > .avatar-md:not(:first-child) {
+  margin-left: -0.5rem;
+}
+.avatar-group > .avatar-lg:not(:first-child) {
+  margin-left: -0.75rem;
+}
+
+/* Roboto */
+@font-face {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/5dd918926d41224c8142.ttf) format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: Roboto;
+  font-style: italic;
+  font-weight: 400;
+  src: url(fonts/c58a86b450e831fb3d3e.ttf) format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  src: url(fonts/116fcd4fd987818c5d98.ttf) format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: Roboto;
+  font-style: italic;
+  font-weight: 500;
+  src: url(fonts/a4e38056cca427132ea4.ttf) format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  src: url(fonts/cb02a42f24299e95adb5.ttf) format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: Roboto;
+  font-style: italic;
+  font-weight: 700;
+  src: url(fonts/430e4278f26f3ee9f717.ttf) format("truetype");
+  font-display: swap;
+}
+/* Roboto Mono */
+@font-face {
+  font-family: "Roboto Mono", monospace;
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/94ffabb10cbc81ee42ba.ttf) format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto Mono", monospace;
+  font-style: italic;
+  font-weight: 400;
+  src: url(fonts/3cf8ca3e53a0ed6c6917.ttf) format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto Mono", monospace;
+  font-style: normal;
+  font-weight: 500;
+  src: url(fonts/275e41b58d96111c1152.ttf) format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto Mono", monospace;
+  font-style: italic;
+  font-weight: 500;
+  src: url(fonts/cdbe51a19ce2897078b0.ttf) format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto Mono", monospace;
+  font-style: normal;
+  font-weight: 700;
+  src: url(fonts/7211ab61a8b83177865a.ttf) format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto Mono", monospace;
+  font-style: italic;
+  font-weight: 700;
+  src: url(fonts/93aa05f8e36217573b30.ttf) format("truetype");
+  font-display: swap;
+}
+/* Roboto Condensed */
+@font-face {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/72f32aff4124468d86a4.ttf) format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto Condensed";
+  font-style: italic;
+  font-weight: 400;
+  src: url(fonts/fbda169ae9cc23842d5f.ttf) format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 500;
+  src: url(fonts/ff190f979bb05ae7bee6.ttf) format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto Condensed";
+  font-style: italic;
+  font-weight: 500;
+  src: url(fonts/1fa08afc6e3cceaf56bb.ttf) format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 700;
+  src: url(fonts/b151d2e8beef32d5bd12.ttf) format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto Condensed";
+  font-style: italic;
+  font-weight: 700;
+  src: url(fonts/59a05e72ae493428e848.ttf) format("truetype");
+  font-display: swap;
+}
+:root {
+  --cdata-background-default: #F5F7F8;
+  --cdata-background-layer-primary: #FFF;
+  --cdata-background-layer-primary-gradient: #FFF;
+  --cdata-background-layer-primary-hover: #F5F7F8;
+  --cdata-background-layer-primary-pressed: #E0E6EA;
+  --cdata-background-layer-secondary: #F5F7F8;
+  --cdata-background-layer-secondary-gradient: #F5F7F8;
+  --cdata-background-navigation: #20272B;
+  --cdata-background-navigation-hover: #323D43;
+  --cdata-background-navigation-pressed: #3F4D55;
+  --cdata-background-utility-info: #F5F7F8;
+  --cdata-background-utility-success: #EDF9F3;
+  --cdata-background-utility-warning: #FFF5F0;
+  --cdata-background-utility-error: #FDF4F5;
+  --cdata-background-inverse: #20272B;
+  --cdata-background-inverse-hover: #323D43;
+  --cdata-background-inverse-pressed: #3F4D55;
+  --cdata-background-user-avatar: #00629D;
+  --cdata-background-user-avatar-hover: #004F7E;
+  --cdata-background-user-avatar-pressed: #003F64;
+  --cdata-background-placeholder: #E0E6EA;
+  --cdata-background-highlight-strong: #0077BD;
+  --cdata-background-highlight-subtle: #EDF8FF;
+  --cdata-border-strong: #607581;
+  --cdata-border-strong-hover: #50616A;
+  --cdata-border-strong-pressed: #3F4D55;
+  --cdata-border-subtle: #E0E6EA;
+  --cdata-border-subtle-hover: #BECBD4;
+  --cdata-border-subtle-pressed: #7C97A7;
+  --cdata-border-active: #0077BD;
+  --cdata-border-utility-info: #E0E6EA;
+  --cdata-border-utility-success-subtle: #C8EEDA;
+  --cdata-border-utility-success-strong: #00843F;
+  --cdata-border-utility-warning: #FCE0D1;
+  --cdata-border-utility-error-subtle: #FADFE0;
+  --cdata-border-utility-error-strong: #DC262E;
+  --cdata-border-navigation-active: #00A0FF;
+  --cdata-text-primary: #323D43;
+  --cdata-text-secondary: #50616A;
+  --cdata-text-header: #20272B;
+  --cdata-text-active: #00629D;
+  --cdata-text-placeholder: #BECBD4;
+  --cdata-text-navigation-active: #FFF;
+  --cdata-text-navigation-inactive: #BECBD4;
+  --cdata-text-navigation-hover: #E0E6EA;
+  --cdata-text-navigation-pressed: #F5F7F8;
+  --cdata-text-on-color-primary: #FFF;
+  --cdata-text-on-color-secondary: #BECBD4;
+  --cdata-link-strong: #00629D;
+  --cdata-link-strong-hover: #004F7E;
+  --cdata-link-strong-pressed: #003F64;
+  --cdata-link-subtle: #50616A;
+  --cdata-link-subtle-hover: #3F4D55;
+  --cdata-link-subtle-pressed: #323D43;
+  --cdata-link-on-color: #FFF;
+  --cdata-link-on-color-hover: #F5F7F8;
+  --cdata-link-on-color-pressed: #E0E6EA;
+  --cdata-icon-primary: #50616A;
+  --cdata-icon-primary-hover: #3F4D55;
+  --cdata-icon-primary-pressed: #323D43;
+  --cdata-icon-active: #00629D;
+  --cdata-icon-active-hover: #004F7E;
+  --cdata-icon-active-pressed: #003F64;
+  --cdata-icon-subtle: #BECBD4;
+  --cdata-icon-on-color: #FFF;
+  --cdata-icon-on-color-hover: #F5F7F8;
+  --cdata-icon-on-color-pressed: #E0E6EA;
+  --cdata-button-primary: #00629D;
+  --cdata-button-primary-hover: #004F7E;
+  --cdata-button-primary-pressed: #003F64;
+  --cdata-button-secondary: #50616A;
+  --cdata-button-secondary-hover: #3F4D55;
+  --cdata-button-secondary-pressed: #323D43;
+  --cdata-button-on-color: #FFF;
+  --cdata-button-on-color-hover: #F5F7F8;
+  --cdata-button-on-color-pressed: #E0E6EA;
+  --cdata-utility-info: #50616A;
+  --cdata-utility-info-hover: #3F4D55;
+  --cdata-utility-info-pressed: #323D43;
+  --cdata-utility-success: #006D34;
+  --cdata-utility-success-hover: #00582A;
+  --cdata-utility-success-pressed: #004521;
+  --cdata-utility-warning: #9D4408;
+  --cdata-utility-warning-hover: #7C370C;
+  --cdata-utility-warning-pressed: #612D0D;
+  --cdata-utility-error: #B91D23;
+  --cdata-utility-error-hover: #95171D;
+  --cdata-utility-error-pressed: #771217;
+  --cdata-miscellaneous-highlight-strong: #0077BD;
+  --cdata-miscellaneous-highlight-subtle: #EDF8FF;
+  --cdata-miscellaneous-highlight-subtle-gradient: #EDF8FF;
+  --cdata-miscellaneous-accent-default: #0099F4;
+  --cdata-miscellaneous-field: #FFF;
+  --cdata-miscellaneous-field-inactive: #F5F7F8;
+  --cdata-miscellaneous-focus-outline: #0099F4;
+  --cdata-miscellaneous-focus-outline-rgba: rgba(0, 153, 244, 0.8);
+  --cdata-miscellaneous-focus-inset: #FFF;
+  --cdata-miscellaneous-required: #B91D23;
+  --cdata-miscellaneous-overlay: #20272B;
+  --cdata-miscellaneous-shadow: #20272B;
+  --cdata-font-family: Roboto;
+  --cdata-fs-xs: 0.75rem;
+  --cdata-fs-sm: 0.875rem;
+  --cdata-fs-md: 1rem;
+  --cdata-fs-lg: 1.125rem;
+  --cdata-fs-xl: 1.5rem;
+  --cdata-fs-xxl: 1.75rem;
+  --cdata-fs-xxxl: 2rem;
+  --cdata-fs-xxxxl: 2.5rem;
+  --cdata-fw-regular: 400;
+  --cdata-fw-medium: 500;
+  --cdata-fw-bold: 700;
+  --cdata-lh-sm: 1;
+  --cdata-lh-md: 1.2;
+  --cdata-lh-lg: 1.5;
+  --cdata-display-font-size-1: 2.5rem;
+  --cdata-display-font-size-2: 2rem;
+  --cdata-display-font-weight-1: 700;
+  --cdata-display-font-weight-2: 700;
+  --cdata-heading-font-size-1: 1.75rem;
+  --cdata-heading-font-size-2: 1.5rem;
+  --cdata-heading-font-size-3: 1.125rem;
+  --cdata-heading-font-size-4: 1rem;
+  --cdata-heading-font-size-5: 0.875rem;
+  --cdata-heading-font-size-6: 0.875rem;
+  --cdata-heading-font-weight-1: 700;
+  --cdata-heading-font-weight-2: 500;
+  --cdata-heading-font-weight-3: 500;
+  --cdata-heading-font-weight-4: 700;
+  --cdata-heading-font-weight-5: 700;
+  --cdata-heading-font-weight-6: 500;
+  --cdata-body-font-size-large: 1.125rem;
+  --cdata-body-font-size-medium: 1rem;
+  --cdata-body-font-size-small: 0.875rem;
+  --cdata-link-font-size-large: 1.125rem;
+  --cdata-link-font-size-medium: 1rem;
+  --cdata-link-font-size-small: 0.875rem;
+  --cdata-link-font-size-xsmall: 0.75rem;
+  --cdata-box-shadow-none: none;
+  --cdata-box-shadow-small: 0 2px 8px 0 rgba(32, 39, 43, 0.15);
+  --cdata-box-shadow-medium: 0 2px 12px 0 rgba(32, 39, 43, 0.05);
+  --cdata-box-shadow-large: 0 2px 20px 0 rgba(32, 39, 43, 0.1);
+  --cdata-focus-box-shadow: 0 0 0 2px var(--cdata-miscellaneous-focus-outline-rgba);
+  --cdata-border-width-1: 1px;
+  --cdata-border-width-2: 2px;
+  --cdata-border-width-3: 3px;
+  --cdata-border-color: #607581;
+  --cdata-border-radius-0: 0;
+  --cdata-border-radius-1: 0.625rem;
+  --cdata-border-radius-2: 6.25rem;
+  --cdata-height-0: 0rem;
+  --cdata-height-4: 0.25rem;
+  --cdata-height-8: 0.5rem;
+  --cdata-height-12: 0.75rem;
+  --cdata-height-16: 1rem;
+  --cdata-height-20: 1.25rem;
+  --cdata-height-24: 1.5rem;
+  --cdata-height-28: 1.75rem;
+  --cdata-height-32: 2rem;
+  --cdata-height-36: 2.25rem;
+  --cdata-height-40: 2.5rem;
+  --cdata-height-44: 2.75rem;
+  --cdata-height-48: 3rem;
+  --cdata-height-52: 3.25rem;
+  --cdata-height-56: 3.5rem;
+  --cdata-height-60: 3.75rem;
+  --cdata-height-64: 4rem;
+  --cdata-height-68: 4.25rem;
+  --cdata-height-72: 4.5rem;
+  --cdata-height-76: 4.75rem;
+  --cdata-height-80: 5rem;
+  --cdata-height-84: 5.25rem;
+  --cdata-height-88: 5.5rem;
+  --cdata-height-92: 5.75rem;
+  --cdata-height-96: 6rem;
+  --cdata-height-100: 6.25rem;
+  --cdata-height-104: 6.5rem;
+  --cdata-height-108: 6.75rem;
+  --cdata-height-112: 7rem;
+  --cdata-height-116: 7.25rem;
+  --cdata-height-120: 7.5rem;
+  --cdata-height-124: 7.75rem;
+  --cdata-height-128: 8rem;
+  --cdata-height-132: 8.25rem;
+  --cdata-height-136: 8.5rem;
+  --cdata-height-140: 8.75rem;
+  --cdata-height-144: 9rem;
+  --cdata-height-148: 9.25rem;
+  --cdata-height-152: 9.5rem;
+  --cdata-height-156: 9.75rem;
+  --cdata-height-160: 10rem;
+  --cdata-height-164: 10.25rem;
+  --cdata-height-168: 10.5rem;
+  --cdata-height-172: 10.75rem;
+  --cdata-height-176: 11rem;
+  --cdata-height-180: 11.25rem;
+  --cdata-height-184: 11.5rem;
+  --cdata-height-188: 11.75rem;
+  --cdata-height-192: 12rem;
+  --cdata-height-196: 12.25rem;
+  --cdata-height-200: 12.5rem;
+  --cdata-height-204: 12.75rem;
+  --cdata-height-208: 13rem;
+  --cdata-height-212: 13.25rem;
+  --cdata-height-216: 13.5rem;
+  --cdata-height-220: 13.75rem;
+  --cdata-height-224: 14rem;
+  --cdata-height-228: 14.25rem;
+  --cdata-height-232: 14.5rem;
+  --cdata-height-236: 14.75rem;
+  --cdata-height-240: 15rem;
+  --cdata-height-244: 15.25rem;
+  --cdata-height-248: 15.5rem;
+  --cdata-height-252: 15.75rem;
+  --cdata-height-256: 16rem;
+  --cdata-height-260: 16.25rem;
+  --cdata-height-264: 16.5rem;
+  --cdata-height-268: 16.75rem;
+  --cdata-height-272: 17rem;
+  --cdata-height-276: 17.25rem;
+  --cdata-height-280: 17.5rem;
+  --cdata-height-284: 17.75rem;
+  --cdata-height-288: 18rem;
+  --cdata-height-292: 18.25rem;
+  --cdata-height-296: 18.5rem;
+  --cdata-height-300: 18.75rem;
+  --cdata-height-304: 19rem;
+  --cdata-height-308: 19.25rem;
+  --cdata-height-312: 19.5rem;
+  --cdata-height-316: 19.75rem;
+  --cdata-height-320: 20rem;
+  --cdata-height-324: 20.25rem;
+  --cdata-height-328: 20.5rem;
+  --cdata-height-332: 20.75rem;
+  --cdata-height-336: 21rem;
+  --cdata-height-340: 21.25rem;
+  --cdata-height-344: 21.5rem;
+  --cdata-height-348: 21.75rem;
+  --cdata-height-352: 22rem;
+  --cdata-height-356: 22.25rem;
+  --cdata-height-360: 22.5rem;
+  --cdata-height-364: 22.75rem;
+  --cdata-height-368: 23rem;
+  --cdata-height-372: 23.25rem;
+  --cdata-height-376: 23.5rem;
+  --cdata-height-380: 23.75rem;
+  --cdata-height-384: 24rem;
+  --cdata-height-388: 24.25rem;
+  --cdata-height-392: 24.5rem;
+  --cdata-height-396: 24.75rem;
+  --cdata-height-400: 25rem;
+  --cdata-height-404: 25.25rem;
+  --cdata-height-408: 25.5rem;
+  --cdata-height-412: 25.75rem;
+  --cdata-height-416: 26rem;
+  --cdata-height-420: 26.25rem;
+  --cdata-height-424: 26.5rem;
+  --cdata-height-428: 26.75rem;
+  --cdata-height-432: 27rem;
+  --cdata-height-436: 27.25rem;
+  --cdata-height-440: 27.5rem;
+  --cdata-height-444: 27.75rem;
+  --cdata-height-448: 28rem;
+  --cdata-height-452: 28.25rem;
+  --cdata-height-456: 28.5rem;
+  --cdata-height-460: 28.75rem;
+  --cdata-height-464: 29rem;
+  --cdata-height-468: 29.25rem;
+  --cdata-height-472: 29.5rem;
+  --cdata-height-476: 29.75rem;
+  --cdata-height-480: 30rem;
+  --cdata-height-484: 30.25rem;
+  --cdata-height-488: 30.5rem;
+  --cdata-height-492: 30.75rem;
+  --cdata-height-496: 31rem;
+  --cdata-height-500: 31.25rem;
+  --cdata-height-504: 31.5rem;
+  --cdata-height-508: 31.75rem;
+  --cdata-height-512: 32rem;
+  --cdata-width-0: 0rem;
+  --cdata-width-4: 0.25rem;
+  --cdata-width-8: 0.5rem;
+  --cdata-width-12: 0.75rem;
+  --cdata-width-16: 1rem;
+  --cdata-width-20: 1.25rem;
+  --cdata-width-24: 1.5rem;
+  --cdata-width-28: 1.75rem;
+  --cdata-width-32: 2rem;
+  --cdata-width-36: 2.25rem;
+  --cdata-width-40: 2.5rem;
+  --cdata-width-44: 2.75rem;
+  --cdata-width-48: 3rem;
+  --cdata-width-52: 3.25rem;
+  --cdata-width-56: 3.5rem;
+  --cdata-width-60: 3.75rem;
+  --cdata-width-64: 4rem;
+  --cdata-width-68: 4.25rem;
+  --cdata-width-72: 4.5rem;
+  --cdata-width-76: 4.75rem;
+  --cdata-width-80: 5rem;
+  --cdata-width-84: 5.25rem;
+  --cdata-width-88: 5.5rem;
+  --cdata-width-92: 5.75rem;
+  --cdata-width-96: 6rem;
+  --cdata-width-100: 6.25rem;
+  --cdata-width-104: 6.5rem;
+  --cdata-width-108: 6.75rem;
+  --cdata-width-112: 7rem;
+  --cdata-width-116: 7.25rem;
+  --cdata-width-120: 7.5rem;
+  --cdata-width-124: 7.75rem;
+  --cdata-width-128: 8rem;
+  --cdata-width-132: 8.25rem;
+  --cdata-width-136: 8.5rem;
+  --cdata-width-140: 8.75rem;
+  --cdata-width-144: 9rem;
+  --cdata-width-148: 9.25rem;
+  --cdata-width-152: 9.5rem;
+  --cdata-width-156: 9.75rem;
+  --cdata-width-160: 10rem;
+  --cdata-width-164: 10.25rem;
+  --cdata-width-168: 10.5rem;
+  --cdata-width-172: 10.75rem;
+  --cdata-width-176: 11rem;
+  --cdata-width-180: 11.25rem;
+  --cdata-width-184: 11.5rem;
+  --cdata-width-188: 11.75rem;
+  --cdata-width-192: 12rem;
+  --cdata-width-196: 12.25rem;
+  --cdata-width-200: 12.5rem;
+  --cdata-width-204: 12.75rem;
+  --cdata-width-208: 13rem;
+  --cdata-width-212: 13.25rem;
+  --cdata-width-216: 13.5rem;
+  --cdata-width-220: 13.75rem;
+  --cdata-width-224: 14rem;
+  --cdata-width-228: 14.25rem;
+  --cdata-width-232: 14.5rem;
+  --cdata-width-236: 14.75rem;
+  --cdata-width-240: 15rem;
+  --cdata-width-244: 15.25rem;
+  --cdata-width-248: 15.5rem;
+  --cdata-width-252: 15.75rem;
+  --cdata-width-256: 16rem;
+  --cdata-width-260: 16.25rem;
+  --cdata-width-264: 16.5rem;
+  --cdata-width-268: 16.75rem;
+  --cdata-width-272: 17rem;
+  --cdata-width-276: 17.25rem;
+  --cdata-width-280: 17.5rem;
+  --cdata-width-284: 17.75rem;
+  --cdata-width-288: 18rem;
+  --cdata-width-292: 18.25rem;
+  --cdata-width-296: 18.5rem;
+  --cdata-width-300: 18.75rem;
+  --cdata-width-304: 19rem;
+  --cdata-width-308: 19.25rem;
+  --cdata-width-312: 19.5rem;
+  --cdata-width-316: 19.75rem;
+  --cdata-width-320: 20rem;
+  --cdata-width-324: 20.25rem;
+  --cdata-width-328: 20.5rem;
+  --cdata-width-332: 20.75rem;
+  --cdata-width-336: 21rem;
+  --cdata-width-340: 21.25rem;
+  --cdata-width-344: 21.5rem;
+  --cdata-width-348: 21.75rem;
+  --cdata-width-352: 22rem;
+  --cdata-width-356: 22.25rem;
+  --cdata-width-360: 22.5rem;
+  --cdata-width-364: 22.75rem;
+  --cdata-width-368: 23rem;
+  --cdata-width-372: 23.25rem;
+  --cdata-width-376: 23.5rem;
+  --cdata-width-380: 23.75rem;
+  --cdata-width-384: 24rem;
+  --cdata-width-388: 24.25rem;
+  --cdata-width-392: 24.5rem;
+  --cdata-width-396: 24.75rem;
+  --cdata-width-400: 25rem;
+  --cdata-width-404: 25.25rem;
+  --cdata-width-408: 25.5rem;
+  --cdata-width-412: 25.75rem;
+  --cdata-width-416: 26rem;
+  --cdata-width-420: 26.25rem;
+  --cdata-width-424: 26.5rem;
+  --cdata-width-428: 26.75rem;
+  --cdata-width-432: 27rem;
+  --cdata-width-436: 27.25rem;
+  --cdata-width-440: 27.5rem;
+  --cdata-width-444: 27.75rem;
+  --cdata-width-448: 28rem;
+  --cdata-width-452: 28.25rem;
+  --cdata-width-456: 28.5rem;
+  --cdata-width-460: 28.75rem;
+  --cdata-width-464: 29rem;
+  --cdata-width-468: 29.25rem;
+  --cdata-width-472: 29.5rem;
+  --cdata-width-476: 29.75rem;
+  --cdata-width-480: 30rem;
+  --cdata-width-484: 30.25rem;
+  --cdata-width-488: 30.5rem;
+  --cdata-width-492: 30.75rem;
+  --cdata-width-496: 31rem;
+  --cdata-width-500: 31.25rem;
+  --cdata-width-504: 31.5rem;
+  --cdata-width-508: 31.75rem;
+  --cdata-width-512: 32rem;
+}
+
+.navbar {
+  --cdata-navbar-bg-color: var(--cdata-background-navigation);
+  --cdata-navbar-item-color: var(--cdata-text-navigation-inactive);
+  --cdata-navbar-item-color-hover: var(--cdata-text-navigation-hover);
+  --cdata-navbar-item-color-focus: var(--cdata-text-navigation-pressed);
+  --cdata-navbar-item-color-active: var(--cdata-text-navigation-active);
+  --cdata-navbar-item-bg-color: var(--cdata-background-navigation);
+  --cdata-navbar-item-bg-color-hover: var(--cdata-background-navigation-hover);
+  --cdata-navbar-item-bg-color-focus: var(--cdata-background-navigation-pressed);
+  --cdata-navbar-item-bg-color-active: var(--cdata-background-navigation);
+  --cdata-navbar-border-color-active: var(--cdata-border-navigation-active);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  padding: 1.5rem 0;
+  height: 100%;
+  width: 6rem;
+  font-family: "Roboto Condensed";
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1;
+  background-color: var(--cdata-navbar-bg-color);
+  color: var(--cdata-text-navigation-inactive);
+}
+.navbar.light {
+  --cdata-navbar-bg-color: var(--cdata-background-layer-primary);
+  --cdata-navbar-item-color: var(--cdata-icon-primary);
+  --cdata-navbar-item-color-hover: var(--cdata-icon-primary-hover);
+  --cdata-navbar-item-color-focus: var(--cdata-icon-primary-pressed);
+  --cdata-navbar-item-color-active: var(--cdata-icon-active);
+  --cdata-navbar-item-bg-color: var(--cdata-background-layer-primary);
+  --cdata-navbar-item-bg-color-hover: var(--cdata-background-layer-primary-hover);
+  --cdata-navbar-item-bg-color-focus: var(--cdata-background-layer-primary-pressed);
+  --cdata-navbar-item-bg-color-active: var(--cdata-background-highlight-subtle);
+  --cdata-navbar-border-color-active: transparent;
+}
+.navbar > * {
+  width: 6rem;
+}
+
+.navbar-brand {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+  margin: 1.5rem 0;
+}
+.navbar-brand:first-child {
+  margin-top: 0rem;
+}
+
+.navbar-item-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  align-self: stretch;
+  padding: 0;
+  margin: 0;
+  flex-grow: 1;
+}
+
+.navbar-item {
+  min-height: 4rem;
+  display: flex;
+  padding: 0.5rem 0.5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  align-self: stretch;
+  color: var(--cdata-navbar-item-color);
+  background-color: var(--cdata-navbar-item-bg-color);
+}
+.navbar-item:hover {
+  --cdata-navbar-item-bg-color: var(--cdata-navbar-item-bg-color-hover);
+  --cdata-navbar-item-color: var(--cdata-navbar-item-color-hover);
+}
+.navbar-item:focus {
+  --cdata-navbar-item-bg-color: var(--cdata-navbar-item-bg-color-focus);
+  --cdata-navbar-item-color: var(--cdata-navbar-item-color-focus);
+  box-shadow: var(--cdata-focus-box-shadow);
+}
+.navbar-item.active {
+  --cdata-navbar-item-color: var(--cdata-navbar-item-color-active);
+  --cdata-navbar-item-bg-color: var(--cdata-navbar-item-bg-color-active);
+  border-left: var(--cdata-navbar-border-color-active) solid var(--cdata-border-width-3);
+  padding-left: calc(0.5rem - var(--cdata-border-width-3));
+}
+.navbar-item.disabled {
+  opacity: 50%;
+}
+.navbar-item i, .navbar-item svg {
+  font-size: 1.5rem;
+  line-height: 1;
+  text-align: center;
+  align-self: stretch;
+}
+
+.navbar-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  align-self: stretch;
+  color: var(--cdata-navbar-item-color) !important;
+}
+
+.arc-modal,.arc-modal *{scrollbar-width:thin;scrollbar-color:#8b8b8b #fff}.arc-modal::-webkit-scrollbar,.arc-modal ::-webkit-scrollbar{width:15px;border:8px solid #fff}.arc-modal::-webkit-scrollbar-thumb,.arc-modal ::-webkit-scrollbar-thumb{background-color:#8b8b8b;outline:3px solid #fff;outline-offset:-3px;-webkit-border-radius:8px}.arc-modal::-webkit-scrollbar-thumb:hover,.arc-modal ::-webkit-scrollbar-thumb:hover{background-color:#636363}.arc-modal::-webkit-scrollbar-track,.arc-modal ::-webkit-scrollbar-track{background:#fff}.arc-modal::-webkit-scrollbar-button:single-button,.arc-modal ::-webkit-scrollbar-button:single-button{display:block;border-style:solid;height:13px;width:15px}.arc-modal::-webkit-scrollbar-button:single-button:vertical:decrement,.arc-modal ::-webkit-scrollbar-button:single-button:vertical:decrement{outline:2px solid #fff;outline-offset:-2px;border-width:0 8px 8px 8px;border-color:rgba(0,0,0,0) rgba(0,0,0,0) #8c8c8c rgba(0,0,0,0)}.arc-modal::-webkit-scrollbar-button:single-button:vertical:decrement:hover,.arc-modal ::-webkit-scrollbar-button:single-button:vertical:decrement:hover{border-color:rgba(0,0,0,0) rgba(0,0,0,0) #626262 rgba(0,0,0,0)}.arc-modal::-webkit-scrollbar-button:single-button:vertical:increment,.arc-modal ::-webkit-scrollbar-button:single-button:vertical:increment{outline:2px solid #fff;outline-offset:-2px;border-width:8px 8px 0 8px;border-color:#8c8c8c rgba(0,0,0,0) rgba(0,0,0,0) rgba(0,0,0,0)}.arc-modal::-webkit-scrollbar-button:single-button:vertical:increment:hover,.arc-modal ::-webkit-scrollbar-button:single-button:vertical:increment:hover{border-color:#626262 rgba(0,0,0,0) rgba(0,0,0,0) rgba(0,0,0,0)}.arc-modal::-webkit-scrollbar-button:single-button:horizontal:decrement,.arc-modal ::-webkit-scrollbar-button:single-button:horizontal:decrement{outline:2px solid #fff;outline-offset:-2px;border-width:8px 8px 8px 0;border-color:rgba(0,0,0,0) #8c8c8c rgba(0,0,0,0) rgba(0,0,0,0)}.arc-modal::-webkit-scrollbar-button:single-button:horizontal:decrement:hover,.arc-modal ::-webkit-scrollbar-button:single-button:horizontal:decrement:hover{border-color:rgba(0,0,0,0) #626262 rgba(0,0,0,0) rgba(0,0,0,0)}.arc-modal::-webkit-scrollbar-button:single-button:horizontal:increment,.arc-modal ::-webkit-scrollbar-button:single-button:horizontal:increment{outline:2px solid #fff;outline-offset:-2px;border-width:8px 0 8px 8px;border-color:rgba(0,0,0,0) rgba(0,0,0,0) rgba(0,0,0,0) #8c8c8c}.arc-modal::-webkit-scrollbar-button:single-button:horizontal:increment:hover,.arc-modal ::-webkit-scrollbar-button:single-button:horizontal:increment:hover{border-color:rgba(0,0,0,0) rgba(0,0,0,0) rgba(0,0,0,0) #626262}.arc-modal .alert{margin-top:0px !important}.arc-modal form .form-label{font-weight:700}.arc-modal .lic-content{background-color:#fff !important;overflow-y:scroll;white-space:pre-wrap;max-height:500px}
+.arc-header-alerts .padding-legacy-node{padding-left:4px;padding-right:4px}

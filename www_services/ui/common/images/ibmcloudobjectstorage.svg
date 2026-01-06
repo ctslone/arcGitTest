@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <title>icon-</title>
+  <g id="ibmcloudstorage">
+    <g>
+      <path d="M36.18,29.18,25,35V23.5l11.2-5.87Z" style="fill: #8cd211"/>
+      <path d="M23.14,35,12.83,29.66V18.17L23.14,23.5Z" style="fill: #20343e"/>
+      <path d="M41.74,14.37,30.9,8.8l-3.61,1.84L37.9,16.09v19.5l3.84-2Z" style="fill: #5aaafa"/>
+      <path d="M36.18,31.14,24.09,37.42,6.32,28.24l-.06,5.45L24,42.75l12.21-6.22Z" style="fill: #8cd211"/>
+      <path d="M28.89,7.79,24,5.25,6.32,14.37,6.26,26.29l4.79,2.42V17Z" style="fill: #20343e"/>
+      <path d="M24.09,22l-9.42-4.86,10.72-5.51,9.36,4.86Z" style="fill: #5aaafa"/>
+    </g>
+  </g>
+</svg>

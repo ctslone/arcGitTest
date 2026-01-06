@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:rsb="http://www.rssbus.com/ns?RsbOps/v2/" xmlns:ls="http://www.microsoft.com/schemas/rss/core/2005" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:x="http://www.rssbus.com/ns?RsbOps/v2/anonymous/"  xmlns:data="http://www.rssbus.com/ns?RsbOps/v2/anonymous/" xmlns:info="http://www.rssbus.com/ns?RsbOps/v2/anonymous/"><channel>
+<ls:treatAs>list</ls:treatAs>
+<ls:listinfo>
+<ls:sort ns="http://www.rssbus.com/ns?RsbOps/v2/anonymous/" label="gz" CXMLElement="gz"/>
+<ls:sort ns="http://www.rssbus.com/ns?RsbOps/v2/anonymous/" label="zip" CXMLElement="zip"/>
+<ls:sort ns="http://www.rssbus.com/ns?RsbOps/v2/anonymous/" label="count" CXMLElement="count"/>
+<ls:sort ns="http://www.rssbus.com/ns?RsbOps/v2/anonymous/" label="time" CXMLElement="time"/>
+<ls:sort ns="http://www.rssbus.com/ns?RsbOps/v2/anonymous/" label="type" CXMLElement="type"/>
+<ls:sort ns="http://www.rssbus.com/ns?RsbOps/v2/anonymous/" label="tar" CXMLElement="tar"/>
+<ls:sort ns="http://www.rssbus.com/ns?RsbOps/v2/anonymous/" label="build" CXMLElement="build"/>
+<ls:sort ns="http://www.rssbus.com/ns?RsbOps/v2/anonymous/" label="id" CXMLElement="id"/>
+<ls:sort ns="http://www.rssbus.com/ns?RsbOps/v2/anonymous/" label="exe" CXMLElement="exe"/>
+<ls:sort ns="http://www.rssbus.com/ns?RsbOps/v2/anonymous/" label="version" CXMLElement="version"/>
+<ls:sort ns="http://www.rssbus.com/ns?RsbOps/v2/anonymous/" label="name" CXMLElement="name"/>
+<ls:sort ns="http://www.rssbus.com/ns?RsbOps/v2/anonymous/" label="part" CXMLElement="part"/>
+<ls:sort ns="http://www.rssbus.com/ns?RsbOps/v2/anonymous/" label="size" CXMLElement="size"/>
+<ls:sort ns="http://www.rssbus.com/ns?RsbOps/v2/anonymous/" label="id_index" CXMLElement="id_index"/>
+</ls:listinfo>
+<data:httpmethod>get</data:httpmethod>
+<data:useragent>rssbus - http://www.rssbus.com</data:useragent>
+<ls:listinfo/><ls:listinfo/><ls:treatas>list</ls:treatas>
+<ls:treatas>list</ls:treatas>
+<rsb:cached_date>Mon, 23 Sep 2019 16:36:34 GMT</rsb:cached_date>
+<description/><generator>RSSBus - http://www.rssbus.com</generator>
+<link>https://arc.cdata.com/scripts/ports_all.rsb?@html</link>
+<title>ports_all.rsb</title>
+<x:_opname>ports_all.rsb</x:_opname>
+<x:_path>D:\home\site\wwwroot\scripts</x:_path>
+<item>
+<description>&lt;table&gt;&lt;tr&gt;&lt;th&gt;Name&lt;/th&gt;&lt;th&gt;Value&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;build&lt;/td&gt;&lt;td&gt;7198&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;count&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;exe&lt;/td&gt;&lt;td&gt;true&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;gz&lt;/td&gt;&lt;td&gt;false&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;id&lt;/td&gt;&lt;td&gt;Infor&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;id_index&lt;/td&gt;&lt;td&gt;infor&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;name&lt;/td&gt;&lt;td&gt;Infor Port&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;part&lt;/td&gt;&lt;td&gt;AFWF-A&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;size&lt;/td&gt;&lt;td&gt;3233327&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;tar&lt;/td&gt;&lt;td&gt;false&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;time&lt;/td&gt;&lt;td&gt;09/16/2019 12:14:20&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;type&lt;/td&gt;&lt;td&gt;free&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;version&lt;/td&gt;&lt;td&gt;20.0&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;zip&lt;/td&gt;&lt;td&gt;true&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</description>
+<guid isPermaLink="false">f4G/6rInDTKz2IoBUYAfWgUcIzU=</guid>
+<x:build>7198</x:build>
+<x:count>2</x:count>
+<x:exe>true</x:exe>
+<x:gz>false</x:gz>
+<x:id>Infor</x:id>
+<x:id_index>infor</x:id_index>
+<x:name>Infor Port</x:name>
+<x:part>AFWF-A</x:part>
+<x:size>3233327</x:size>
+<x:tar>false</x:tar>
+<x:time>09/16/2019 12:14:20</x:time>
+<x:type>free</x:type>
+<x:version>20.0</x:version>
+<x:zip>true</x:zip>
+</item><item>
+<description>&lt;table&gt;&lt;tr&gt;&lt;th&gt;Name&lt;/th&gt;&lt;th&gt;Value&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;build&lt;/td&gt;&lt;td&gt;7198&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;count&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;exe&lt;/td&gt;&lt;td&gt;true&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;gz&lt;/td&gt;&lt;td&gt;false&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;id&lt;/td&gt;&lt;td&gt;Oracle&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;id_index&lt;/td&gt;&lt;td&gt;oracle&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;name&lt;/td&gt;&lt;td&gt;Oracle Port&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;part&lt;/td&gt;&lt;td&gt;AKWF-A&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;size&lt;/td&gt;&lt;td&gt;5829269&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;tar&lt;/td&gt;&lt;td&gt;false&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;time&lt;/td&gt;&lt;td&gt;09/16/2019 12:19:02&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;type&lt;/td&gt;&lt;td&gt;free&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;version&lt;/td&gt;&lt;td&gt;20.0&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;zip&lt;/td&gt;&lt;td&gt;true&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</description>
+<guid isPermaLink="false">Hm/QtrW/5IjuZ8HGUHFkMwDOkxI=</guid>
+<x:build>7198</x:build>
+<x:count>2</x:count>
+<x:exe>true</x:exe>
+<x:gz>false</x:gz>
+<x:id>Oracle</x:id>
+<x:id_index>oracle</x:id_index>
+<x:name>Oracle Port</x:name>
+<x:part>AKWF-A</x:part>
+<x:size>5829269</x:size>
+<x:tar>false</x:tar>
+<x:time>09/16/2019 12:19:02</x:time>
+<x:type>free</x:type>
+<x:version>20.0</x:version>
+<x:zip>true</x:zip>
+</item><item>
+<description>&lt;table&gt;&lt;tr&gt;&lt;th&gt;Name&lt;/th&gt;&lt;th&gt;Value&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;build&lt;/td&gt;&lt;td&gt;7198&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;count&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;exe&lt;/td&gt;&lt;td&gt;true&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;gz&lt;/td&gt;&lt;td&gt;false&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;id&lt;/td&gt;&lt;td&gt;PDF&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;id_index&lt;/td&gt;&lt;td&gt;pdf&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;name&lt;/td&gt;&lt;td&gt;PDF Port&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;part&lt;/td&gt;&lt;td&gt;AMWF-A&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;size&lt;/td&gt;&lt;td&gt;3364771&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;tar&lt;/td&gt;&lt;td&gt;false&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;time&lt;/td&gt;&lt;td&gt;09/16/2019 12:20:10&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;type&lt;/td&gt;&lt;td&gt;free&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;version&lt;/td&gt;&lt;td&gt;20.0&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;zip&lt;/td&gt;&lt;td&gt;true&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</description>
+<guid isPermaLink="false">GV0YqzfzQc8JL43q+sSKl/zgagw=</guid>
+<x:build>7198</x:build>
+<x:count>2</x:count>
+<x:exe>true</x:exe>
+<x:gz>false</x:gz>
+<x:id>PDF</x:id>
+<x:id_index>pdf</x:id_index>
+<x:name>PDF Port</x:name>
+<x:part>AMWF-A</x:part>
+<x:size>3364771</x:size>
+<x:tar>false</x:tar>
+<x:time>09/16/2019 12:20:10</x:time>
+<x:type>free</x:type>
+<x:version>20.0</x:version>
+<x:zip>true</x:zip>
+</item><item>
+<description>&lt;table&gt;&lt;tr&gt;&lt;th&gt;Name&lt;/th&gt;&lt;th&gt;Value&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;build&lt;/td&gt;&lt;td&gt;7198&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;count&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;exe&lt;/td&gt;&lt;td&gt;true&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;gz&lt;/td&gt;&lt;td&gt;false&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;id&lt;/td&gt;&lt;td&gt;MQTT&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;id_index&lt;/td&gt;&lt;td&gt;mqtt&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;name&lt;/td&gt;&lt;td&gt;MQTT Port&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;part&lt;/td&gt;&lt;td&gt;AOWF-A&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;size&lt;/td&gt;&lt;td&gt;3882798&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;tar&lt;/td&gt;&lt;td&gt;false&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;time&lt;/td&gt;&lt;td&gt;09/16/2019 12:17:45&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;type&lt;/td&gt;&lt;td&gt;free&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;version&lt;/td&gt;&lt;td&gt;20.0&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;zip&lt;/td&gt;&lt;td&gt;true&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</description>
+<guid isPermaLink="false">YYmdex5OpFHGtoObXLMjOvL4Asc=</guid>
+<x:build>7198</x:build>
+<x:count>2</x:count>
+<x:exe>true</x:exe>
+<x:gz>false</x:gz>
+<x:id>MQTT</x:id>
+<x:id_index>mqtt</x:id_index>
+<x:name>MQTT Port</x:name>
+<x:part>AOWF-A</x:part>
+<x:size>3882798</x:size>
+<x:tar>false</x:tar>
+<x:time>09/16/2019 12:17:45</x:time>
+<x:type>free</x:type>
+<x:version>20.0</x:version>
+<x:zip>true</x:zip>
+</item><item>
+<description>&lt;table&gt;&lt;tr&gt;&lt;th&gt;Name&lt;/th&gt;&lt;th&gt;Value&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;build&lt;/td&gt;&lt;td&gt;7198&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;count&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;exe&lt;/td&gt;&lt;td&gt;true&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;gz&lt;/td&gt;&lt;td&gt;false&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;id&lt;/td&gt;&lt;td&gt;SQLServer&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;id_index&lt;/td&gt;&lt;td&gt;sqlserver&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;name&lt;/td&gt;&lt;td&gt;SQLServer Port&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;part&lt;/td&gt;&lt;td&gt;AUWF-A&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;size&lt;/td&gt;&lt;td&gt;5829218&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;tar&lt;/td&gt;&lt;td&gt;false&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;time&lt;/td&gt;&lt;td&gt;09/16/2019 12:23:40&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;type&lt;/td&gt;&lt;td&gt;free&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;version&lt;/td&gt;&lt;td&gt;20.0&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;zip&lt;/td&gt;&lt;td&gt;true&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</description>
+<guid isPermaLink="false">HWnDS/SgnWbq4hNsv+rLLMxWKno=</guid>
+<x:build>7198</x:build>
+<x:count>2</x:count>
+<x:exe>true</x:exe>
+<x:gz>false</x:gz>
+<x:id>SQLServer</x:id>
+<x:id_index>sqlserver</x:id_index>
+<x:name>SQLServer Port</x:name>
+<x:part>AUWF-A</x:part>
+<x:size>5829218</x:size>
+<x:tar>false</x:tar>
+<x:time>09/16/2019 12:23:40</x:time>
+<x:type>free</x:type>
+<x:version>20.0</x:version>
+<x:zip>true</x:zip>
+</item><item>
+<description>&lt;table&gt;&lt;tr&gt;&lt;th&gt;Name&lt;/th&gt;&lt;th&gt;Value&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;build&lt;/td&gt;&lt;td&gt;7198&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;count&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;exe&lt;/td&gt;&lt;td&gt;true&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;gz&lt;/td&gt;&lt;td&gt;false&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;id&lt;/td&gt;&lt;td&gt;DataRobot&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;id_index&lt;/td&gt;&lt;td&gt;datarobot&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;name&lt;/td&gt;&lt;td&gt;DataRobot Port&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;part&lt;/td&gt;&lt;td&gt;AYWF-A&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;size&lt;/td&gt;&lt;td&gt;3423659&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;tar&lt;/td&gt;&lt;td&gt;false&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;time&lt;/td&gt;&lt;td&gt;09/16/2019 12:06:22&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;type&lt;/td&gt;&lt;td&gt;beta&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;version&lt;/td&gt;&lt;td&gt;20.0&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;zip&lt;/td&gt;&lt;td&gt;true&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</description>
+<guid isPermaLink="false">mEjs616gimoMro6RfM2I4ZbGpok=</guid>
+<x:build>7198</x:build>
+<x:count>2</x:count>
+<x:exe>true</x:exe>
+<x:gz>false</x:gz>
+<x:id>DataRobot</x:id>
+<x:id_index>datarobot</x:id_index>
+<x:name>DataRobot Port</x:name>
+<x:part>AYWF-A</x:part>
+<x:size>3423659</x:size>
+<x:tar>false</x:tar>
+<x:time>09/16/2019 12:06:22</x:time>
+<x:type>beta</x:type>
+<x:version>20.0</x:version>
+<x:zip>true</x:zip>
+</item></channel>
+</rss>

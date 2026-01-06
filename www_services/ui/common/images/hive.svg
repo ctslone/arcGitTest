@@ -1,0 +1,14 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="linear-gradient" x1="10.12" y1="12" x2="38.52" y2="12" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fcbf75"/>
+      <stop offset="1" stop-color="#ffa762"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="2.73" y1="24" x2="45.52" y2="24" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-3" x1="10.39" y1="36" x2="38.26" y2="36" xlink:href="#linear-gradient"/>
+  </defs>
+  <title>hive</title>
+  <rect x="10.12" y="8" width="28.4" height="8" rx="4" ry="4" style="fill: url(#linear-gradient)"/>
+  <rect x="2.73" y="20" width="42.8" height="8" rx="4" ry="4" style="fill: url(#linear-gradient-2)"/>
+  <path d="M34.26,32H14.39a4,4,0,0,0,0,8h6a3.85,3.85,0,0,1,7.51,0h6.38a4,4,0,0,0,0-8Z" style="fill: url(#linear-gradient-3)"/>
+</svg>

@@ -1,0 +1,3 @@
+:root {
+  --fa-width: auto !important; /* backwards compatibility for 6.* version */
+}
