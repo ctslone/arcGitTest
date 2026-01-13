@@ -6,12 +6,12 @@
 
 
   
-	<title>CData Arc - Connections | Version 26.1.9502</title>
+	<title>CData Arc - Connections | Version 26.1.9509</title>
   
   
   <link rel="stylesheet" href="assets/font/css/fontello-embedded.css">
   
-  <link rel="stylesheet" href="assets/css/just-the-docs.css?1767662960">
+  <link rel="stylesheet" href="assets/css/just-the-docs.css?1768266976">
   <script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
   
   <script type="text/javascript" src="assets/js/es6/dist/toc.js"></script>
@@ -20,7 +20,7 @@
   </script>
   
   
-    <script type="text/javascript" src="assets/js/site-app.js?1767662960"></script>
+    <script type="text/javascript" src="assets/js/site-app.js?1768266976"></script>
   
   
 
@@ -28,7 +28,7 @@
     <script type="text/javascript" src="assets/js/vendor/lunr.min.js"></script>
   
   
-    <script type="text/javascript" src="assets/js/just-the-docs-app.js?1767662960"></script>
+    <script type="text/javascript" src="assets/js/just-the-docs-app.js?1768266976"></script>
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -217,7 +217,7 @@
 <ul class="navigation-list-child-list"><li class="navigation-list-item"><span class="no-caret"></span>
             
             
-    		<a class="navigation-list-link" href="current.html" title="current">Current Release (26.1.9502)</a></li><li class="navigation-list-item"><span class="no-caret"></span>
+    		<a class="navigation-list-link" href="current.html" title="current">Current Release (26.1.9509)</a></li><li class="navigation-list-item"><span class="no-caret"></span>
             
             
     		<a class="navigation-list-link" href="2025-09.html" title="2025-09">September 2025 (25.2.9376)</a></li><li class="navigation-list-item"><span class="no-caret"></span>
@@ -1882,7 +1882,7 @@
 				<div class="title-sm">
 	<h1>Connections</h1>
 	
-		<p class="text-small text-grey-dk-100 mb-0 version-num">Version 26.1.9502</p>
+		<p class="text-small text-grey-dk-100 mb-0 version-num">Version 26.1.9509</p>
 	
     <hr>
 </div>
@@ -1890,10 +1890,11 @@
 
 <div id="table-of-contents" style="visibility: hidden;">
   
-	  <p class="text-small text-grey-dk-100 mb-0 version-num toc">Version 26.1.9502</p>
+	  <p class="text-small text-grey-dk-100 mb-0 version-num toc">Version 26.1.9509</p>
   
     <ul class="section-nav">
-<li class="toc-entry toc-h2"><a href="#connections">Connections</a></li>
+<li class="toc-entry toc-h2"><a href="#add-a-connection">Add a Connection</a></li>
+<li class="toc-entry toc-h2"><a href="#update-versions">Update Versions</a></li>
 </ul>
 </div>
 
@@ -1905,15 +1906,50 @@
         <hr>
     </div>
     
-    <h2 id="connections">Connections</h2>
-
-<p>The Connections tab lists configured connection parameters that can be shared among multiple Arc connectors. This allows for centralized connection management and simplified configuration in individual connectors that connect to the same source using the same credentials.</p>
+    <p>The <strong>Connections</strong> tab lists configured connection parameters that can be shared among multiple CData Arc connectors. This allows for centralized connection management and simplified configuration in individual connectors that connect to the same source using the same credentials.</p>
 
 <p><img src="./assets/images/settings_connections.png" width="800"></p>
 
-<p>To create a new shared connection, click <strong>Add Connection</strong> and select the connection target. The specific connection parameters vary by target, and might require OAuth redirection. Click <strong>Add and Test</strong> to save the connection. If the test fails, the connection is still saved, but you can continue to edit it.</p>
+<p><strong>Tip</strong>: It is useful to understand the difference between CData drivers and Arc connectors. The drivers provide the underlying connectivity to external systems, while connectors build on the drivers to handle data exchange, transformation, and routing within Arc. You configure the shared driver-level connection details on the <strong>Connections</strong> tab, which connectors then reference so the same connection can be reused consistently across multiple flows.</p>
+
+<h2 id="add-a-connection">Add a Connection</h2>
+
+<p>To create a new shared connection, click <strong>Add Connection</strong> and select the connection target. Arc ships CData drivers for some connectors with the application, but not all. On the <strong>Select Connector</strong> pane, if there is a download button on the connector you need (the CData Act-On connector in the following image has one), use it to download and install the driver, which enables the connector for use.</p>
+
+<p><img src="./assets/images/connection_select_new.png" width="500"></p>
+
+<p>After you click the download button, the <strong>Install Connector</strong> pane opens and specifies the version number. At this point, it asks whether you want to install manually or automatically. Typically you want to install automatically. However, if CData Support has provided you with a <code class="highlighter-rouge">.zip</code> file, you can select manual, then use <strong>Choose File</strong> to supply the <code class="highlighter-rouge">.zip</code> file from them.</p>
+
+<p><img src="./assets/images/connection_manual_install_driver.png" width="400"></p>
+
+<p><strong>Note</strong>: If you are installing to the <a href="./Windows-Edition.html">.NET edition</a>, you are warned that the application must restart.</p>
+
+<p>Once the installation is complete, or if you did not need to download and install the driver, you still need to provide the specific connection parameters. These vary by target, and might require OAuth redirection. Click <strong>Add and Test</strong> to save the connection. If the test fails, the connection is still saved, but you can continue to edit it to resolve any errors.</p>
 
 <p>Once the shared connection is created, you can select it from the <strong>Connection</strong> dropdown in connectors that support shared connections.</p>
+
+<h2 id="update-versions">Update Versions</h2>
+
+<p>Administrators can also use the <strong>Connections</strong> tab to update versions. You can update to a new version when one is available, or select a version that meets your needs. Do this by:</p>
+<ul>
+  <li>Clicking <strong>Add Connection</strong></li>
+  <li>Editing an already configured connection by clicking the link to the connection name</li>
+</ul>
+
+<p>When you use the <strong>Add Connection</strong> option, click the download button. This opens the <strong>Update Connector</strong> pane.</p>
+
+<p><img src="./assets/images/connection_update_by_download.png" width="400"></p>
+
+<p>Choose the type of update you want from <strong>Update Type</strong>, then click <strong>Update</strong>. The options are:</p>
+<ul>
+  <li>Automatically update connector.</li>
+  <li>Manually update connector: If you use this option, use the <strong>File</strong> field to upload the <code class="highlighter-rouge">.zip</code> file to install.</li>
+  <li>Select from available versions (only appears if the currently installed version is not the latest, or if multiple versions are available): If you use this option, use the <strong>Update Version</strong> field to select the version to install.</li>
+</ul>
+
+<p>When you edit an existing connection, update the driver using the <strong>Update</strong> button. Once clicked, the <strong>Update Connector</strong> pane opens with the same set of update options described above.</p>
+
+<p><img src="./assets/images/connection_update_by_edit.png" width="500"></p>
 
 
 </div>

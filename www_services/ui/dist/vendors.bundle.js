@@ -5181,6 +5181,79 @@ function getChildRef(element) {
 
 /***/ }),
 
+/***/ 27335:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  B: () => (/* reexport */ CDataIcon),
+  p: () => (/* reexport */ IconStyle)
+});
+
+;// CONCATENATED MODULE: ./node_modules/cdata-icon/dist/esm/types/index.js
+var IconStyle;
+(function (IconStyle) {
+    IconStyle["Solid"] = "solid";
+    IconStyle["Regular"] = "regular";
+    IconStyle["Light"] = "light";
+    IconStyle["Thin"] = "thin";
+    IconStyle["Duotone"] = "duotone";
+    IconStyle["Brands"] = "brands";
+})(IconStyle || (IconStyle = {}));
+
+// EXTERNAL MODULE: ./node_modules/react/index.js
+var react = __webpack_require__(96540);
+;// CONCATENATED MODULE: ./node_modules/cdata-icon/dist/esm/components/CDataIcon.js
+var __assign = (undefined && undefined.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __rest = (undefined && undefined.__rest) || function (s, e) {
+    var t = {};
+    for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
+        t[p] = s[p];
+    if (s != null && typeof Object.getOwnPropertySymbols === "function")
+        for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
+            if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
+                t[p[i]] = s[p[i]];
+        }
+    return t;
+};
+
+
+var CDataIcon = react.forwardRef(function CDataIcon(props, ref) {
+    var icon = props.icon, _a = props.iconStyle, iconStyle = _a === void 0 ? IconStyle.Solid : _a, spin = props.spin, spinPulse = props.spinPulse, spinReverse = props.spinReverse, size = props.size, rotation = props.rotation, className = props.className, rest = __rest(props, ["icon", "iconStyle", "spin", "spinPulse", "spinReverse", "size", "rotation", "className"]);
+    return react.createElement("i", __assign({ ref: ref, className: [
+            "fa-".concat(iconStyle),
+            "fa-".concat(icon.toLowerCase()),
+            className,
+            spin && "fa-spin",
+            spinPulse && "fa-spin-pulse",
+            spinReverse && "fa-spin-reverse",
+            size && "fa-".concat(size),
+            rotation && "fa-rotate-".concat(rotation)
+        ].filter(Boolean).join(" ") }, rest));
+});
+
+;// CONCATENATED MODULE: ./node_modules/cdata-icon/dist/esm/components/index.js
+
+
+;// CONCATENATED MODULE: ./node_modules/cdata-icon/dist/esm/index.js
+
+
+
+
+/***/ }),
+
 /***/ 40439:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -5263,7 +5336,7 @@ function useUpdaters(setTableState) {
 
 /***/ }),
 
-/***/ 29457:
+/***/ 87040:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -5920,6 +5993,67 @@ function useUrlParameters(props, state, nonce) {
     }); }, [dataFilters, sort, pagination, nonce]);
 }
 //# sourceMappingURL=useRemoteDataTable.js.map
+;// CONCATENATED MODULE: ./node_modules/cdata-table/dist/esm/hooks/useDataTable/persistedState.js
+var STORAGE_VERSION = 1;
+var STORAGE_KEY_PREFIX = "cdata-table-state";
+function getStorageKey(id) {
+    if (id) {
+        return "".concat(STORAGE_KEY_PREFIX, "-").concat(id);
+    }
+    return STORAGE_KEY_PREFIX;
+}
+function loadPersistedState(id) {
+    try {
+        var key = getStorageKey(id);
+        var stored = localStorage.getItem(key);
+        if (!stored) {
+            return {};
+        }
+        var parsed = JSON.parse(stored);
+        if (parsed.version !== STORAGE_VERSION) {
+            return {};
+        }
+        return {
+            openFilters: parsed.openFilters,
+            search: parsed.search,
+            filters: parsed.filters,
+            selectedFilters: parsed.selectedFilters,
+            sort: parsed.sort,
+            pagination: parsed.pagination,
+        };
+    }
+    catch (_a) {
+        return {};
+    }
+}
+function savePersistedState(id, state) {
+    try {
+        var persisted = {
+            version: STORAGE_VERSION,
+            openFilters: state.openFilters,
+            search: state.search,
+            filters: state.filters,
+            selectedFilters: state.selectedFilters,
+            sort: state.sort,
+            pagination: state.pagination,
+        };
+        var key = getStorageKey(id);
+        localStorage.setItem(key, JSON.stringify(persisted));
+    }
+    catch (_a) {
+        // Silently fail if localStorage is unavailable or quota exceeded
+    }
+}
+function clearPersistedState(id) {
+    try {
+        var key = getStorageKey(id);
+        localStorage.removeItem(key);
+    }
+    catch (_a) {
+        // Silently fail if localStorage is unavailable
+    }
+}
+//# sourceMappingURL=persistedState.js.map
 ;// CONCATENATED MODULE: ./node_modules/cdata-table/dist/esm/hooks/useDataTable/useDataTable.js
 var useDataTable_assign = (undefined && undefined.__assign) || function () {
     useDataTable_assign = Object.assign || function(t) {
@@ -5935,16 +6069,33 @@ var useDataTable_assign = (undefined && undefined.__assign) || function () {
 
 
 
+
 function useDataTable(props) {
-    var data = props.data;
+    var data = props.data, storageKey = props.storageKey, initialState = props.initialState;
     var propsWithDefaults = usePropsWithDefaults(props);
-    var localDataTable = useLocalDataTable(propsWithDefaults);
-    var remoteDataTable = useRemoteDataTable(propsWithDefaults);
+    var mergedInitialState = react.useMemo(function () {
+        if (!storageKey) {
+            return initialState;
+        }
+        var persisted = loadPersistedState(storageKey);
+        if (Object.keys(persisted).length === 0) {
+            return initialState;
+        }
+        return useDataTable_assign(useDataTable_assign({}, initialState), persisted);
+    }, [storageKey, initialState]);
+    var localDataTable = useLocalDataTable(useDataTable_assign(useDataTable_assign({}, propsWithDefaults), { initialState: mergedInitialState }));
+    var remoteDataTable = useRemoteDataTable(useDataTable_assign(useDataTable_assign({}, propsWithDefaults), { initialState: mergedInitialState }));
+    var childState = data ? localDataTable : remoteDataTable;
+    react.useEffect(function () {
+        if (storageKey) {
+            savePersistedState(storageKey, childState.state);
+        }
+    }, [childState.state, storageKey]);
     return react.useMemo(function () { return ({
-        table: useDataTable_assign(useDataTable_assign({}, propsWithDefaults), (data ? localDataTable : remoteDataTable)),
-        state: (data ? localDataTable : remoteDataTable).state,
-        setState: (data ? localDataTable : remoteDataTable).onStateChange,
-    }); }, [propsWithDefaults, data, localDataTable, remoteDataTable]);
+        table: useDataTable_assign(useDataTable_assign({}, propsWithDefaults), childState),
+        state: childState.state,
+        setState: childState.onStateChange,
+    }); }, [propsWithDefaults, childState]);
 }
 function usePropsWithDefaults(props) {
     return react.useMemo(function () { return (useDataTable_assign({ refreshable: props.onFetch ? true : false, rowSize: "md", borderless: false, enablePagination: true }, props)); }, [props]);

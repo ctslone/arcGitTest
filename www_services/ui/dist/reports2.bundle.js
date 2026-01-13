@@ -1,4 +1,4 @@
-(self["webpackChunkcdata_arc"] = self["webpackChunkcdata_arc"] || []).push([["reports2","vendors-node_modules_codemirror_autocomplete_dist_index_js-node_modules_codemirror_commands_d-ffc779","vendors-node_modules_codemirror_language_dist_index_js","vendors-node_modules_cdata-icon_dist_esm_index_js-node_modules_cdata-ui_dist_esm_index_js","vendors-node_modules_react-hook-form_dist_index_esm_mjs"],{
+(self["webpackChunkcdata_arc"] = self["webpackChunkcdata_arc"] || []).push([["reports2","vendors-node_modules_codemirror_autocomplete_dist_index_js-node_modules_codemirror_commands_d-53935c","vendors-node_modules_cdata-ui_dist_esm_index_js"],{
 
 /***/ 20928:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
@@ -455,79 +455,6 @@ const xmlParser = new Parser();
 module.exports = {
   xmlParser,
 };
-
-
-/***/ }),
-
-/***/ 27335:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-
-// EXPORTS
-__webpack_require__.d(__webpack_exports__, {
-  B: () => (/* reexport */ CDataIcon),
-  p: () => (/* reexport */ IconStyle)
-});
-
-;// CONCATENATED MODULE: ./node_modules/cdata-icon/dist/esm/types/index.js
-var IconStyle;
-(function (IconStyle) {
-    IconStyle["Solid"] = "solid";
-    IconStyle["Regular"] = "regular";
-    IconStyle["Light"] = "light";
-    IconStyle["Thin"] = "thin";
-    IconStyle["Duotone"] = "duotone";
-    IconStyle["Brands"] = "brands";
-})(IconStyle || (IconStyle = {}));
-
-// EXTERNAL MODULE: ./node_modules/react/index.js
-var react = __webpack_require__(96540);
-;// CONCATENATED MODULE: ./node_modules/cdata-icon/dist/esm/components/CDataIcon.js
-var __assign = (undefined && undefined.__assign) || function () {
-    __assign = Object.assign || function(t) {
-        for (var s, i = 1, n = arguments.length; i < n; i++) {
-            s = arguments[i];
-            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
-                t[p] = s[p];
-        }
-        return t;
-    };
-    return __assign.apply(this, arguments);
-};
-var __rest = (undefined && undefined.__rest) || function (s, e) {
-    var t = {};
-    for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
-        t[p] = s[p];
-    if (s != null && typeof Object.getOwnPropertySymbols === "function")
-        for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
-            if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
-                t[p[i]] = s[p[i]];
-        }
-    return t;
-};
-
-
-var CDataIcon = react.forwardRef(function CDataIcon(props, ref) {
-    var icon = props.icon, _a = props.iconStyle, iconStyle = _a === void 0 ? IconStyle.Solid : _a, spin = props.spin, spinPulse = props.spinPulse, spinReverse = props.spinReverse, size = props.size, rotation = props.rotation, className = props.className, rest = __rest(props, ["icon", "iconStyle", "spin", "spinPulse", "spinReverse", "size", "rotation", "className"]);
-    return react.createElement("i", __assign({ ref: ref, className: [
-            "fa-".concat(iconStyle),
-            "fa-".concat(icon.toLowerCase()),
-            className,
-            spin && "fa-spin",
-            spinPulse && "fa-spin-pulse",
-            spinReverse && "fa-spin-reverse",
-            size && "fa-".concat(size),
-            rotation && "fa-rotate-".concat(rotation)
-        ].filter(Boolean).join(" ") }, rest));
-});
-
-;// CONCATENATED MODULE: ./node_modules/cdata-icon/dist/esm/components/index.js
-
-
-;// CONCATENATED MODULE: ./node_modules/cdata-icon/dist/esm/index.js
-
-
 
 
 /***/ }),
@@ -1279,7 +1206,7 @@ __webpack_require__.d(__webpack_exports__, {
   FH: () => (/* reexport */ useWatch)
 });
 
-// UNUSED EXPORTS: PortalContextProvider, TableDefaults, Toast, overridePreventDefault, useClose, useControllerInstance, useFormState, usePortalContext
+// UNUSED EXPORTS: PortalContextProvider, TableDefaults, Toast, ToastDefaults, overridePreventDefault, useClose, useControllerInstance, useFormState, usePortalContext
 
 // NAMESPACE OBJECT: ./node_modules/prettier/plugins/babel.mjs
 var babel_namespaceObject = {};
@@ -2988,6 +2915,119 @@ var Stack = react.forwardRef(function Stack(props, ref) {
     return (react.createElement("div", Stack_assign({ ref: ref, className: [className, direction === "horizontal" ? "hstack" : "vstack", "gap-".concat(gap)].filter(Boolean).join(" ") }, restProps), children));
 });
 //# sourceMappingURL=index.js.map
+;// CONCATENATED MODULE: ./node_modules/cdata-ui/dist/esm/components/Card/CardContext.js
+
+var CardInstanceContext = react.createContext({
+    onPopup: undefined,
+    helpLocation: undefined,
+    onControlledActionBarChange: function () { },
+});
+function useCardInstance() {
+    return react.useContext(CardInstanceContext);
+}
+function CardInstanceProvider(_a) {
+    var children = _a.children, instance = _a.instance;
+    return react.createElement(CardInstanceContext.Provider, { value: instance }, children);
+}
+;
+//# sourceMappingURL=CardContext.js.map
+;// CONCATENATED MODULE: ./node_modules/cdata-ui/dist/esm/components/Card/CardActionBar.js
+var CardActionBar_assign = (undefined && undefined.__assign) || function () {
+    CardActionBar_assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return CardActionBar_assign.apply(this, arguments);
+};
+var CardActionBar_rest = (undefined && undefined.__rest) || function (s, e) {
+    var t = {};
+    for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
+        t[p] = s[p];
+    if (s != null && typeof Object.getOwnPropertySymbols === "function")
+        for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
+            if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
+                t[p[i]] = s[p[i]];
+        }
+    return t;
+};
+
+
+
+var CardActionBar = react.forwardRef(function CardActionBar(props, ref) {
+    var className = props.className, children = props.children, rest = CardActionBar_rest(props, ["className", "children"]);
+    var onControlledActionBarChange = useCardInstance().onControlledActionBarChange;
+    react.useEffect(function () {
+        onControlledActionBarChange(true);
+        return function () {
+            onControlledActionBarChange(false);
+        };
+    }, [onControlledActionBarChange]);
+    return (react.createElement(Stack, CardActionBar_assign({ ref: ref, gap: 8, direction: "horizontal", className: ["card-action-bar", className].filter(Boolean).join(" ") }, rest), children));
+});
+//# sourceMappingURL=CardActionBar.js.map
+;// CONCATENATED MODULE: ./node_modules/cdata-ui/dist/esm/components/Card/CardBody.js
+var CardBody_assign = (undefined && undefined.__assign) || function () {
+    CardBody_assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return CardBody_assign.apply(this, arguments);
+};
+var CardBody_rest = (undefined && undefined.__rest) || function (s, e) {
+    var t = {};
+    for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
+        t[p] = s[p];
+    if (s != null && typeof Object.getOwnPropertySymbols === "function")
+        for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
+            if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
+                t[p[i]] = s[p[i]];
+        }
+    return t;
+};
+
+var CardBody = react.forwardRef(function CardBody(props, ref) {
+    var className = props.className, children = props.children, restProps = CardBody_rest(props, ["className", "children"]);
+    return (react.createElement("div", CardBody_assign({ ref: ref, className: ["card-body", className].filter(Boolean).join(" ") }, restProps), children));
+});
+//# sourceMappingURL=CardBody.js.map
+;// CONCATENATED MODULE: ./node_modules/cdata-ui/dist/esm/components/Card/CardAction.js
+var CardAction_assign = (undefined && undefined.__assign) || function () {
+    CardAction_assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return CardAction_assign.apply(this, arguments);
+};
+var CardAction_rest = (undefined && undefined.__rest) || function (s, e) {
+    var t = {};
+    for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
+        t[p] = s[p];
+    if (s != null && typeof Object.getOwnPropertySymbols === "function")
+        for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
+            if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
+                t[p[i]] = s[p[i]];
+        }
+    return t;
+};
+
+
+var CardAction = react.forwardRef(function CardAction(props, ref) {
+    var className = props.className, children = props.children, rest = CardAction_rest(props, ["className", "children"]);
+    return (react.createElement(namespaceButton, CardAction_assign({}, rest, { ref: ref, className: ["card-action", className].filter(Boolean).join(" "), variant: "borderless", size: "sm", icon: true }), children));
+});
+//# sourceMappingURL=CardAction.js.map
 ;// CONCATENATED MODULE: ./node_modules/@radix-ui/react-use-escape-keydown/dist/index.mjs
 // packages/react/use-escape-keydown/src/useEscapeKeydown.tsx
 
@@ -4557,121 +4597,6 @@ function TooltipProvider_TooltipProvider(props) {
 
 
 //# sourceMappingURL=index.js.map
-;// CONCATENATED MODULE: ./node_modules/cdata-ui/dist/esm/components/Card/CardContext.js
-
-var CardInstanceContext = react.createContext({
-    onPopup: undefined,
-    helpLocation: undefined,
-    onControlledActionBarChange: function () { },
-});
-function useCardInstance() {
-    return react.useContext(CardInstanceContext);
-}
-function CardInstanceProvider(_a) {
-    var children = _a.children, instance = _a.instance;
-    return react.createElement(CardInstanceContext.Provider, { value: instance }, children);
-}
-;
-//# sourceMappingURL=CardContext.js.map
-;// CONCATENATED MODULE: ./node_modules/cdata-ui/dist/esm/components/Card/CardActionBar.js
-var CardActionBar_assign = (undefined && undefined.__assign) || function () {
-    CardActionBar_assign = Object.assign || function(t) {
-        for (var s, i = 1, n = arguments.length; i < n; i++) {
-            s = arguments[i];
-            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
-                t[p] = s[p];
-        }
-        return t;
-    };
-    return CardActionBar_assign.apply(this, arguments);
-};
-var CardActionBar_rest = (undefined && undefined.__rest) || function (s, e) {
-    var t = {};
-    for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
-        t[p] = s[p];
-    if (s != null && typeof Object.getOwnPropertySymbols === "function")
-        for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
-            if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
-                t[p[i]] = s[p[i]];
-        }
-    return t;
-};
-
-
-
-
-var CardActionBar = react.forwardRef(function CardActionBar(props, ref) {
-    var className = props.className, children = props.children, rest = CardActionBar_rest(props, ["className", "children"]);
-    var onControlledActionBarChange = useCardInstance().onControlledActionBarChange;
-    react.useEffect(function () {
-        onControlledActionBarChange(true);
-        return function () {
-            onControlledActionBarChange(false);
-        };
-    }, [onControlledActionBarChange]);
-    return (react.createElement(Stack, CardActionBar_assign({ ref: ref, gap: 8, direction: "horizontal", className: ["card-action-bar", className].filter(Boolean).join(" ") }, rest),
-        react.createElement(TooltipProvider_TooltipProvider, null, children)));
-});
-//# sourceMappingURL=CardActionBar.js.map
-;// CONCATENATED MODULE: ./node_modules/cdata-ui/dist/esm/components/Card/CardBody.js
-var CardBody_assign = (undefined && undefined.__assign) || function () {
-    CardBody_assign = Object.assign || function(t) {
-        for (var s, i = 1, n = arguments.length; i < n; i++) {
-            s = arguments[i];
-            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
-                t[p] = s[p];
-        }
-        return t;
-    };
-    return CardBody_assign.apply(this, arguments);
-};
-var CardBody_rest = (undefined && undefined.__rest) || function (s, e) {
-    var t = {};
-    for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
-        t[p] = s[p];
-    if (s != null && typeof Object.getOwnPropertySymbols === "function")
-        for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
-            if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
-                t[p[i]] = s[p[i]];
-        }
-    return t;
-};
-
-var CardBody = react.forwardRef(function CardBody(props, ref) {
-    var className = props.className, children = props.children, restProps = CardBody_rest(props, ["className", "children"]);
-    return (react.createElement("div", CardBody_assign({ ref: ref, className: ["card-body", className].filter(Boolean).join(" ") }, restProps), children));
-});
-//# sourceMappingURL=CardBody.js.map
-;// CONCATENATED MODULE: ./node_modules/cdata-ui/dist/esm/components/Card/CardAction.js
-var CardAction_assign = (undefined && undefined.__assign) || function () {
-    CardAction_assign = Object.assign || function(t) {
-        for (var s, i = 1, n = arguments.length; i < n; i++) {
-            s = arguments[i];
-            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
-                t[p] = s[p];
-        }
-        return t;
-    };
-    return CardAction_assign.apply(this, arguments);
-};
-var CardAction_rest = (undefined && undefined.__rest) || function (s, e) {
-    var t = {};
-    for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
-        t[p] = s[p];
-    if (s != null && typeof Object.getOwnPropertySymbols === "function")
-        for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
-            if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
-                t[p[i]] = s[p[i]];
-        }
-    return t;
-};
-
-
-var CardAction = react.forwardRef(function CardAction(props, ref) {
-    var className = props.className, children = props.children, rest = CardAction_rest(props, ["className", "children"]);
-    return (react.createElement(namespaceButton, CardAction_assign({}, rest, { ref: ref, className: ["card-action", className].filter(Boolean).join(" "), variant: "borderless", size: "sm", icon: true }), children));
-});
-//# sourceMappingURL=CardAction.js.map
 ;// CONCATENATED MODULE: ./node_modules/cdata-ui/dist/esm/components/Card/CardHelpAction.js
 var CardHelpAction_assign = (undefined && undefined.__assign) || function () {
     CardHelpAction_assign = Object.assign || function(t) {
@@ -6887,11 +6812,9 @@ var ModalActionBar_rest = (undefined && undefined.__rest) || function (s, e) {
 };
 
 
-
 var ModalActionBar = react.forwardRef(function ModalActionBar(props, ref) {
     var className = props.className, children = props.children, rest = ModalActionBar_rest(props, ["className", "children"]);
-    return (react.createElement(TooltipProvider_TooltipProvider, null,
-        react.createElement(Stack, ModalActionBar_assign({ ref: ref, gap: 8, direction: "horizontal", className: ["modal-action-bar", className].filter(Boolean).join(" ") }, rest), children)));
+    return (react.createElement(Stack, ModalActionBar_assign({ ref: ref, gap: 8, direction: "horizontal", className: ["modal-action-bar", className].filter(Boolean).join(" ") }, rest), children));
 });
 //# sourceMappingURL=ModalActionBar.js.map
 ;// CONCATENATED MODULE: ./node_modules/cdata-ui/dist/esm/components/Modal/ModalBody.js
@@ -7981,7 +7904,11 @@ var DropdownSearchItem = react.forwardRef(function DropdownSearchItem(props, ref
     }, [onSearchTextChange]);
     var handleKeyDown = react.useCallback(function (event) {
         event.stopPropagation();
-    }, []);
+        if (event.key === "Escape") {
+            event.preventDefault();
+            onSearchTextChange === null || onSearchTextChange === void 0 ? void 0 : onSearchTextChange("");
+        }
+    }, [onSearchTextChange]);
     react.useEffect(function () {
         if (!open) {
             onSearchTextChange === null || onSearchTextChange === void 0 ? void 0 : onSearchTextChange("");
@@ -8142,6 +8069,7 @@ var DropdownContent = react.forwardRef(function DropdownContent(props, ref) {
     }, [menuRef, autoHideLabels, items]);
     return (react.createElement(react_popover_dist_Content2, { asChild: true, forceMount: forceMount, align: align, side: side, sideOffset: 4, avoidCollisions: avoidCollisions, onOpenAutoFocus: onOpenAutoFocus, onCloseAutoFocus: onCloseAutoFocus },
         react.createElement("div", null,
+            react.createElement("div", { "data-bs-toggle": "dropdown", className: "cdata-native-bootstrap-hacker" }, "Hack native Bootstrap. ARCESB-12298"),
             react.createElement("div", DropdownMenu_assign({}, rest, { ref: (0,utils/* updateRef */.du)(menuRef, ref), className: ["dropdown-menu", className].filter(Boolean).join(" ") }),
                 search && (search !== "auto" || items.length >= 10) && (react.createElement("div", { className: ["dropdown-search-container", searchClassName].filter(Boolean).join(" ") },
                     react.createElement(DropdownSearchItem, { disabled: searchDisabled, placeholder: searchPlaceholder }))),
@@ -8594,19 +8522,17 @@ var EditorHeader_rest = (undefined && undefined.__rest) || function (s, e) {
 
 
 
-
 var EditorHeader = react.forwardRef(function EditorHeader(props, ref) {
     var className = props.className, children = props.children, rest = EditorHeader_rest(props, ["className", "children"]);
     var title = useEditorInstance().title;
     return (react.createElement("div", EditorHeader_assign({ ref: ref, className: ["editor-header", className].filter(Boolean).join(" ") }, rest),
-        react.createElement("span", { className: "editor-title" }, title),
-        react.createElement(TooltipProvider_TooltipProvider, null, children !== null && children !== void 0 ? children : (react.createElement(EditorActionBar, { className: "ms-auto" },
-            react.createElement(UndoAction, null),
-            react.createElement(RedoAction, null),
-            react.createElement(ClearAction, null),
-            react.createElement(CopyAction, null),
-            react.createElement(FormatAction, null),
-            react.createElement(HelpAction, null))))));
+        react.createElement("span", { className: "editor-title" }, title), children !== null && children !== void 0 ? children : (react.createElement(EditorActionBar, { className: "ms-auto" },
+        react.createElement(UndoAction, null),
+        react.createElement(RedoAction, null),
+        react.createElement(ClearAction, null),
+        react.createElement(CopyAction, null),
+        react.createElement(FormatAction, null),
+        react.createElement(HelpAction, null)))));
 });
 //# sourceMappingURL=EditorHeader.js.map
 ;// CONCATENATED MODULE: ./node_modules/cdata-ui/dist/esm/components/Editor/EditorBody.js
@@ -9941,9 +9867,10 @@ var ComplexValue = /** @class */ (function () {
 //# sourceMappingURL=types.js.map
 ;// CONCATENATED MODULE: ./node_modules/cdata-ui/dist/esm/components/Form/utils.js
 
-function isValueEquals(a, b) {
+function isValueEquals(a, b, caseInsensitive) {
     switch (typeof a) {
         case "string":
+            return caseInsensitive && typeof b === "string" ? a.toLowerCase() === b.toLowerCase() : a === b;
         case "number":
         case "boolean":
             return a === b;
@@ -9952,7 +9879,12 @@ function isValueEquals(a, b) {
                 return a.length === b.length && Array.from(a).every(function (file, index) { return (file.name === b[index].name && file.size === b[index].size && file.lastModified === b[index].lastModified); });
             }
             if (a instanceof ComplexValue && b instanceof ComplexValue) {
-                return a.valueOf() === b.valueOf();
+                var aValue = a.valueOf();
+                var bValue = b.valueOf();
+                if (caseInsensitive && typeof aValue === "string" && typeof bValue === "string") {
+                    return aValue.toLowerCase() === bValue.toLowerCase();
+                }
+                return aValue === bValue;
             }
             return false;
         default:
@@ -10028,11 +9960,11 @@ var FormCheckInput_spreadArray = (undefined && undefined.__spreadArray) || funct
 
 function FormCheckInputCore(props, ref) {
     var _a, _b, _c, _d;
-    var _e = props.type, type = _e === void 0 ? "checkbox" : _e, label = props.label, _f = props.labelAlign, labelAlign = _f === void 0 ? "middle" : _f, propValue = props.value, uncheckedValue = props.uncheckedValue, defaultValue = props.defaultValue, inline = props.inline, indeterminate = props.indeterminate, propId = props.id, propClassName = props.className, propName = props.name, propChecked = props.checked, valueNormalizer = props.valueNormalizer, propInvalid = props.invalid, partial = props.partial, propReadOnly = props.readOnly, propDisabled = props.disabled, propOnChange = props.onChange, propOnBlur = props.onBlur, rest = FormCheckInput_rest(props, ["type", "label", "labelAlign", "value", "uncheckedValue", "defaultValue", "inline", "indeterminate", "id", "className", "name", "checked", "valueNormalizer", "invalid", "partial", "readOnly", "disabled", "onChange", "onBlur"]);
+    var _e = props.type, type = _e === void 0 ? "checkbox" : _e, label = props.label, _f = props.labelAlign, labelAlign = _f === void 0 ? "middle" : _f, propValue = props.value, uncheckedValue = props.uncheckedValue, defaultValue = props.defaultValue, caseInsensitive = props.caseInsensitive, inline = props.inline, indeterminate = props.indeterminate, propId = props.id, propClassName = props.className, propName = props.name, propChecked = props.checked, valueNormalizer = props.valueNormalizer, propInvalid = props.invalid, partial = props.partial, propReadOnly = props.readOnly, propDisabled = props.disabled, propOnChange = props.onChange, propOnBlur = props.onBlur, rest = FormCheckInput_rest(props, ["type", "label", "labelAlign", "value", "uncheckedValue", "defaultValue", "caseInsensitive", "inline", "indeterminate", "id", "className", "name", "checked", "valueNormalizer", "invalid", "partial", "readOnly", "disabled", "onChange", "onBlur"]);
     var _g = (_a = useControllerInstance()) !== null && _a !== void 0 ? _a : { field: {}, fieldState: {} }, _h = _g.field, fieldId = _h.id, fieldClassName = _h.className, fieldName = _h.name, fieldValue = _h.value, fieldRef = _h.ref, fieldOnChange = _h.onChange, fieldOnBlur = _h.onBlur, field = FormCheckInput_rest(_h, ["id", "className", "name", "value", "ref", "onChange", "onBlur"]), fieldInvalid = _g.fieldState.invalid;
     var _j = (0,PreviewStateContext/* usePreviewState */.B)(), preview = _j.preview, checkedDisplay = _j.checkedDisplay, uncheckedDisplay = _j.uncheckedDisplay, emptyDisplay = _j.emptyDisplay;
     var finalValue = (_d = (_c = (_b = valueNormalizer === null || valueNormalizer === void 0 ? void 0 : valueNormalizer.parse) === null || _b === void 0 ? void 0 : _b.call(valueNormalizer, fieldValue)) !== null && _c !== void 0 ? _c : fieldValue) !== null && _d !== void 0 ? _d : defaultValue;
-    var checked = react.useMemo(function () { return propChecked !== null && propChecked !== void 0 ? propChecked : getChecked(finalValue, propValue); }, [propChecked, finalValue, propValue]);
+    var checked = react.useMemo(function () { return propChecked !== null && propChecked !== void 0 ? propChecked : getChecked(finalValue, propValue, caseInsensitive); }, [propChecked, finalValue, propValue, caseInsensitive]);
     var indeterminateRef = react.useRef(null);
     var idSuffix = "option" + react.useId();
     var id = propId !== null && propId !== void 0 ? propId : ((fieldId || "") + idSuffix);
@@ -10137,10 +10069,10 @@ function addValue(oldValue, value) {
         return value;
     }
 }
-function getChecked(currentValue, value) {
+function getChecked(currentValue, value, caseInsensitive) {
     if (currentValue === undefined)
         return undefined;
-    return (Array.isArray(currentValue) ? currentValue : [currentValue]).some(function (v) { return isValueEquals(v, value); });
+    return (Array.isArray(currentValue) ? currentValue : [currentValue]).some(function (v) { return isValueEquals(v, value, caseInsensitive); });
 }
 //# sourceMappingURL=FormCheckInput.js.map
 ;// CONCATENATED MODULE: ./node_modules/cdata-ui/dist/esm/components/Form/FormFeedback.js
@@ -10254,14 +10186,14 @@ var FormCheck_rest = (undefined && undefined.__rest) || function (s, e) {
 
 
 function FormCheckCore(props, ref) {
-    var name = props.name, type = props.type, label = props.label, inputClassName = props.inputClassName, inputLabel = props.inputLabel, inputLabelAlign = props.inputLabelAlign, options = props.options, text = props.text, rules = props.rules, className = props.className, children = props.children, rest = FormCheck_rest(props, ["name", "type", "label", "inputClassName", "inputLabel", "inputLabelAlign", "options", "text", "rules", "className", "children"]);
+    var name = props.name, type = props.type, label = props.label, inputClassName = props.inputClassName, inputLabel = props.inputLabel, inputLabelAlign = props.inputLabelAlign, options = props.options, caseInsensitive = props.caseInsensitive, text = props.text, rules = props.rules, className = props.className, children = props.children, rest = FormCheck_rest(props, ["name", "type", "label", "inputClassName", "inputLabel", "inputLabelAlign", "options", "caseInsensitive", "text", "rules", "className", "children"]);
     var controllerProps = FormCheck_rest(useController(FormCheck_assign(FormCheck_assign({}, rest), { name: name, rules: rules }), ref), []);
     var _a = (0,PreviewStateContext/* usePreviewState */.B)(), preview = _a.preview, checkedDisplay = _a.checkedDisplay;
     var useInputLabelAsLabel = !label && preview;
     return (react.createElement("div", { ref: ref, className: className },
         react.createElement(ControllerProvider, { value: FormCheck_assign(FormCheck_assign({}, controllerProps), { fieldRules: rules }) }, children || (react.createElement(react.Fragment, null,
             (label || preview) && react.createElement(FormCheckLabel, null, useInputLabelAsLabel ? inputLabel : label),
-            options && options.length > 0 ? (options.map(function (option, index) { return (react.createElement(FormCheckInput, FormCheck_assign({ key: index, name: name, type: type, partial: type !== "radio" }, option))); })) : (react.createElement(FormCheckInput, FormCheck_assign({}, rest, { className: inputClassName, label: useInputLabelAsLabel ? checkedDisplay : inputLabel, labelAlign: inputLabelAlign, name: name, type: type }))),
+            options && options.length > 0 ? (react.createElement("div", null, options.map(function (option, index) { return (react.createElement(FormCheckInput, FormCheck_assign({ key: index, name: name, type: type, partial: type !== "radio", caseInsensitive: caseInsensitive }, option))); }))) : (react.createElement(FormCheckInput, FormCheck_assign({}, rest, { className: inputClassName, label: useInputLabelAsLabel ? checkedDisplay : inputLabel, labelAlign: inputLabelAlign, name: name, type: type, caseInsensitive: caseInsensitive }))),
             react.createElement(FormFeedback, null),
             text && react.createElement(FormText/* FormText */.a, null, text))))));
 }
@@ -10561,7 +10493,7 @@ var FormSelectInput_spreadArray = (undefined && undefined.__spreadArray) || func
 
 function FormSelectInputCore(props, ref) {
     var _a;
-    var _b = props.options, propOptions = _b === void 0 ? [] : _b, propValue = props.value, propsDefaultValue = props.defaultValue, propDisplayValue = props.displayValue, propId = props.id, propClassName = props.className, propReadonly = props.readOnly, propInvalid = props.invalid, onSearchTextChange = props.onSearchTextChange, propOnChange = props.onChange, multiple = props.multiple, rest = FormSelectInput_rest(props, ["options", "value", "defaultValue", "displayValue", "id", "className", "readOnly", "invalid", "onSearchTextChange", "onChange", "multiple"]);
+    var _b = props.options, propOptions = _b === void 0 ? [] : _b, propValue = props.value, propsDefaultValue = props.defaultValue, propDisplayValue = props.displayValue, propCaseInsensitive = props.caseInsensitive, propId = props.id, propClassName = props.className, propReadonly = props.readOnly, propInvalid = props.invalid, onSearchTextChange = props.onSearchTextChange, propOnChange = props.onChange, multiple = props.multiple, rest = FormSelectInput_rest(props, ["options", "value", "defaultValue", "displayValue", "caseInsensitive", "id", "className", "readOnly", "invalid", "onSearchTextChange", "onChange", "multiple"]);
     var _c = (_a = useControllerInstance()) !== null && _a !== void 0 ? _a : { field: {}, fieldState: {} }, _d = _c.field, fieldId = _d.id, fieldClassName = _d.className, fieldValue = _d.value, fieldRef = _d.ref, fieldOnChange = _d.onChange, field = FormSelectInput_rest(_d, ["id", "className", "value", "ref", "onChange"]), fieldInvalid = _c.fieldState.invalid;
     var _e = react.useState(multiple ? undefined : propsDefaultValue), managedSingleValue = _e[0], setManagedSingleValue = _e[1];
     var _f = react.useState(multiple ? propsDefaultValue : undefined), managedMultipleValue = _f[0], setManagedMultipleValue = _f[1];
@@ -10579,7 +10511,7 @@ function FormSelectInputCore(props, ref) {
         return undefined;
     }, [multiple, propValue, fieldValue, managedMultipleValue]);
     var finalValue = react.useMemo(function () { return multiple ? finalMultipleValue : (finalSingleValue !== undefined ? [finalSingleValue] : undefined); }, [multiple, finalSingleValue, finalMultipleValue]);
-    var selectedOptions = react.useMemo(function () { return getSelectedOptions(propOptions, finalValue); }, [propOptions, finalValue]);
+    var selectedOptions = react.useMemo(function () { return getSelectedOptions(propOptions, finalValue, propCaseInsensitive); }, [propOptions, finalValue, propCaseInsensitive]);
     var selectedOptionValues = react.useMemo(function () { return selectedOptions.map(function (option) { return option.value; }).filter(function (value) { return value !== undefined; }); }, [selectedOptions]);
     var _g = react.useState(false), showDropdown = _g[0], setShowDropdown = _g[1];
     var _h = (0,PreviewStateContext/* usePreviewState */.B)(), preview = _h.preview, emptyDisplay = _h.emptyDisplay;
@@ -10635,8 +10567,8 @@ function MultiSelectDisplayLabel(props) {
         children,
         !readonly && react.createElement(CloseIcon, { className: "form-select-selected-label-icon", onClick: handleClick })));
 }
-function getSelectedOptions(options, values) {
-    return values ? (values.map(function (value) { return options.find(function (option) { return isValueEquals(option.value, value); }); }).filter(function (option) { return option !== undefined; })) : ([]);
+function getSelectedOptions(options, values, caseInsensitive) {
+    return values ? (values.map(function (value) { return options.find(function (option) { return isValueEquals(option.value, value, caseInsensitive); }); }).filter(function (option) { return option !== undefined; })) : ([]);
 }
 //# sourceMappingURL=FormSelectInput.js.map
 ;// CONCATENATED MODULE: ./node_modules/cdata-ui/dist/esm/components/Form/FormSelect.js
@@ -11834,11 +11766,9 @@ var OffcanvasActionBar_rest = (undefined && undefined.__rest) || function (s, e)
 };
 
 
-
 var OffcanvasActionBar = react.forwardRef(function OffcanvasActionBar(props, ref) {
     var className = props.className, children = props.children, rest = OffcanvasActionBar_rest(props, ["className", "children"]);
-    return (react.createElement(TooltipProvider_TooltipProvider, null,
-        react.createElement(Stack, OffcanvasActionBar_assign({ ref: ref, gap: 8, direction: "horizontal", className: ["offcanvas-action-bar", className].filter(Boolean).join(" ") }, rest), children)));
+    return (react.createElement(Stack, OffcanvasActionBar_assign({ ref: ref, gap: 8, direction: "horizontal", className: ["offcanvas-action-bar", className].filter(Boolean).join(" ") }, rest), children));
 });
 //# sourceMappingURL=OffcanvasActionBar.js.map
 ;// CONCATENATED MODULE: ./node_modules/cdata-ui/dist/esm/components/Offcanvas/OffcanvasBody.js
@@ -12095,12 +12025,14 @@ var PopupFormDefaults = {
     SubmitText: "Save",
     SubmittingText: "Saving...",
     ResetText: "Remove",
+    NoChangeTooltip: "No changes have been made."
 };
 function PopupFormCore(props, ref) {
     var _this = this;
     var _a = props.form, form = _a.form, preview = _a.preview, readonly = _a.readonly, popup = _a.popup, onPopupChange = _a.onPopupChange, formTitle = props.formTitle, formText = props.formText, formProps = props.formProps, previewText = props.previewText, previewProps = props.previewProps, popupSize = props.popupSize, helpLocation = props.helpLocation, _b = props.configureDisplay, configureDisplay = _b === void 0 ? PopupFormDefaults.ConfigureDisplay : _b, _c = props.configureText, configureText = _c === void 0 ? PopupFormDefaults.ConfigureText : _c, checkedDisplay = props.checkedDisplay, uncheckedDisplay = props.uncheckedDisplay, emptyDisplay = props.emptyDisplay, _d = props.cancelText, cancelText = _d === void 0 ? PopupFormDefaults.CancelText : _d, _e = props.submitText, submitText = _e === void 0 ? PopupFormDefaults.SubmitText : _e, _f = props.submittingText, submittingText = _f === void 0 ? PopupFormDefaults.SubmittingText : _f, _g = props.submitWhenDirty, submitWhenDirty = _g === void 0 ? true : _g, onSubmit = props.onSubmit, initial = props.initial, onReset = props.onReset, children = props.children, rest = PopupForm_rest(props, ["form", "formTitle", "formText", "formProps", "previewText", "previewProps", "popupSize", "helpLocation", "configureDisplay", "configureText", "checkedDisplay", "uncheckedDisplay", "emptyDisplay", "cancelText", "submitText", "submittingText", "submitWhenDirty", "onSubmit", "initial", "onReset", "children"]);
-    var _h = form.formState, isDirty = _h.isDirty, isSubmitting = _h.isSubmitting, errors = _h.errors, reset = form.reset;
+    var isSubmitting = form.formState.isSubmitting, reset = form.reset;
     var previewReset = preview.reset, previewGetValues = preview.getValues;
+    var _h = useSaveButtonState({ formState: form.formState, submitWhenDirty: submitWhenDirty }), saveDisabled = _h.disabled, saveDisableReason = _h.disableReason;
     var handleConfigure = react.useCallback(function () {
         onPopupChange(true);
     }, [onPopupChange]);
@@ -12171,10 +12103,38 @@ function PopupFormCore(props, ref) {
                     react.createElement(namespaceForm, PopupForm_assign({ form: form.form, text: formText, onSubmit: handleSubmit }, formProps), children)),
                 react.createElement(namespaceCard.Popup.Footer, null,
                     react.createElement(namespaceCard.Popup.Footer.Button, { variant: "secondary", onClick: function () { return handleCancel(); } }, cancelText),
-                    react.createElement(namespaceCard.Popup.Footer.Button, { variant: "primary", disabled: (submitWhenDirty && !isDirty) || (errors && Object.entries(errors).length > 0) || isSubmitting, onClick: function () { return form.submit(); } }, isSubmitting && submittingText ? submittingText : submitText))))));
+                    react.createElement(Tooltip_Tooltip, { content: saveDisableReason },
+                        react.createElement("span", null,
+                            react.createElement(namespaceCard.Popup.Footer.Button, { variant: "primary", disabled: saveDisabled, onClick: function () { return form.submit(); } }, isSubmitting && submittingText ? submittingText : submitText))))))));
 }
 ;
 var PopupForm = react.forwardRef(PopupFormCore);
+function useSaveButtonState(props) {
+    var _a = props.formState, isDirty = _a.isDirty, isSubmitting = _a.isSubmitting, errors = _a.errors, submitWhenDirty = props.submitWhenDirty;
+    return react.useMemo(function () {
+        var disabled = false;
+        var disableReason = undefined;
+        if (submitWhenDirty && !isDirty) {
+            disabled = true;
+            disableReason = PopupFormDefaults.NoChangeTooltip;
+        }
+        else if (errors && Object.entries(errors).length > 0) {
+            disabled = true;
+            disableReason = Object.entries(errors).map(function (_a) {
+                var error = _a[1];
+                return error === null || error === void 0 ? void 0 : error.message;
+            }).join("\n");
+        }
+        else if (isSubmitting) {
+            disabled = true;
+            disableReason = undefined;
+        }
+        return {
+            disabled: disabled,
+            disableReason: disableReason,
+        };
+    }, [submitWhenDirty, isDirty, isSubmitting, errors]);
+}
 //# sourceMappingURL=PopupForm.js.map
 ;// CONCATENATED MODULE: ./node_modules/cdata-ui/dist/esm/components/PopupForm/usePreviewState.js
 
@@ -12399,11 +12359,9 @@ var TableActionBar_rest = (undefined && undefined.__rest) || function (s, e) {
     return t;
 };
 
-
 var TableActionBar = react.forwardRef(function TableActionBar(props, ref) {
     var className = props.className, children = props.children, rest = TableActionBar_rest(props, ["className", "children"]);
-    return (react.createElement(TooltipProvider_TooltipProvider, null,
-        react.createElement("div", TableActionBar_assign({ ref: ref, className: ["table-action-bar", className].filter(Boolean).join(" ") }, rest), children)));
+    return (react.createElement("div", TableActionBar_assign({ ref: ref, className: ["table-action-bar", className].filter(Boolean).join(" ") }, rest), children));
 });
 //# sourceMappingURL=TableActionBar.js.map
 // EXTERNAL MODULE: ./node_modules/cdata-ui/dist/esm/components/Table/TableContext.js
@@ -15226,12 +15184,32 @@ var Toast_rest = (undefined && undefined.__rest) || function (s, e) {
 
 
 ;
+var ToastDefaults = {
+    CopyText: "Copy",
+    CopiedText: "Copied",
+};
 var Toast_Toast = react.forwardRef(function Toast(props, ref) {
     var open = props.open, onOpenChange = props.onOpenChange, _a = props.variant, variant = _a === void 0 ? "info" : _a, children = props.children, className = props.className, rest = Toast_rest(props, ["open", "onOpenChange", "variant", "children", "className"]);
+    var contentRef = react.useRef(null);
+    var _b = react.useState(false), copied = _b[0], setCopied = _b[1];
+    var resetCopiedTimerRef = react.useRef();
+    var handleCopy = react.useCallback(function () {
+        if (contentRef.current) {
+            navigator.clipboard.writeText(contentRef.current.textContent || "");
+            setCopied(true);
+            clearTimeout(resetCopiedTimerRef.current);
+            resetCopiedTimerRef.current = window.setTimeout(function () {
+                setCopied(false);
+            }, 2000);
+        }
+    }, [contentRef, resetCopiedTimerRef, setCopied]);
     return (react.createElement(react_toast_dist_Root2, { asChild: true, open: open, onOpenChange: onOpenChange },
         react.createElement("div", Toast_assign({ ref: ref, className: ["toast", className].filter(Boolean).join(" ") }, rest),
             react.createElement(ToastIcon, { variant: variant, className: ["toast-icon", variant && "toast-icon-".concat(variant)].filter(Boolean).join(" ") }),
-            react.createElement("span", { className: "toast-content text-break" }, children),
+            react.createElement("div", { className: "toast-content text-break" },
+                react.createElement("span", { ref: contentRef }, children),
+                react.createElement("span", { className: "toast-content-copy" },
+                    react.createElement("a", { role: "button", onClick: handleCopy }, copied ? ToastDefaults.CopiedText : ToastDefaults.CopyText))),
             react.createElement(react_toast_dist_Close, { asChild: true },
                 react.createElement("button", { className: "toast-close", type: "button", "aria-label": "Close" },
                     react.createElement(CloseIcon, null))))));
@@ -24520,6 +24498,8 @@ var _ref = function () {
     return [function (resId, lastModified) {
       var _window2, _window2$setResourceL;
       if (!lastModified) return;
+      if (isNaN(new Date(lastModified))) lastModified = lastModified.split(", ").slice(-2).join(", ");
+      if (!lastModified || isNaN(new Date(lastModified))) return;
       (_window2 = window) === null || _window2 === void 0 || (_window2 = _window2.rsb) === null || _window2 === void 0 || (_window2$setResourceL = _window2.setResourceLastModified) === null || _window2$setResourceL === void 0 || _window2$setResourceL.call(_window2, resId, lastModified);
       resLastModifiedCache.set(resId, lastModified);
       _defaultLastModified = _getLatestLastModified(lastModified, _defaultLastModified);
@@ -26550,6 +26530,7 @@ var SettingDefOtherNames;
     SettingDefOtherNames["SelectOptionHiddenWhen"] = "OptionHiddenWhen";
     // eslint-disable-next-line @typescript-eslint/no-duplicate-enum-values
     SettingDefOtherNames["SelectDisplayType"] = "DisplayType";
+    SettingDefOtherNames["SelectCaseInsensitiveValue"] = "SelectCaseInsensitiveValue";
     SettingDefOtherNames["ExecutionScript"] = "ExecutionScript";
     SettingDefOtherNames["ExecutionExecutingLabel"] = "ExecutionExecutingLabel";
     SettingDefOtherNames["ExecutionLabelIcon"] = "ExecutionLabelIcon";
@@ -26576,6 +26557,7 @@ var SettingDefOtherNames;
     SettingDefOtherNames["PGPKeyPasswordConfig"] = "PGPKeyPasswordConfig";
     SettingDefOtherNames["KeyValuePlaceholder"] = "KeyValuePlaceholder";
     SettingDefOtherNames["KeyValueAddText"] = "KeyValueAddText";
+    SettingDefOtherNames["MultiSelectCaseInsensitiveValue"] = "MultiSelectCaseInsensitiveValue";
     SettingDefOtherNames["TestTestingLabel"] = "TestTestingLabel";
     SettingDefOtherNames["TestLabelIcon"] = "TestLabelIcon";
     SettingDefOtherNames["InitValue"] = "InitValue";
@@ -28872,8 +28854,8 @@ if (typeof window.beforeEach === "function") {
 ;// CONCATENATED MODULE: ./src/data/reports/index.ts
 
 
-// EXTERNAL MODULE: ./node_modules/cdata-table/dist/esm/index.js + 14 modules
-var dist_esm = __webpack_require__(29457);
+// EXTERNAL MODULE: ./node_modules/cdata-table/dist/esm/index.js + 15 modules
+var dist_esm = __webpack_require__(87040);
 ;// CONCATENATED MODULE: ./src/reports2/constants.ts
 const Tokens = {
     Reports: "Reports",
@@ -29080,8 +29062,6 @@ const LinkTokens = {
 var axios = __webpack_require__(29029);
 // EXTERNAL MODULE: ./src/components/utils/index.js + 1 modules
 var components_utils = __webpack_require__(25337);
-// EXTERNAL MODULE: ./src/data/connectors2/prototypes/index.ts + 10 modules
-var connectors2_prototypes = __webpack_require__(10094);
 ;// CONCATENATED MODULE: ./src/reports2/utils.ts
 var utils_awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
@@ -29092,7 +29072,6 @@ var utils_awaiter = (undefined && undefined.__awaiter) || function (thisArg, _ar
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
-
 
 
 
@@ -29267,12 +29246,9 @@ const columnNameMap = {
 };
 const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 function useReadReportFunc() {
-    const prototypes = (0,connectors2_prototypes/* useConnectorPrototypesStore */.ps)(state => state.prototypes);
     const tryReadReport = react.useCallback((report, isTempReport) => utils_awaiter(this, void 0, void 0, function* () {
         var _a, _b, _c, _d, _e;
         let options = null;
-        if (prototypes.size < 1)
-            return { options, state: { state: "loading" } };
         const response = yield axios/* default */.A.get("src/readReport.rsb?@json&Name=" + encodeURIComponent(report.name) + "&IsTempReport=" + encodeURIComponent(isTempReport) + "&version=1&" + ((_b = (_a = window.arc) === null || _a === void 0 ? void 0 : _a.hooks) === null || _b === void 0 ? void 0 : _b.nextSnowflake));
         const error = (0,components_utils/* getResultErrorMessage */.hz)(response.data.items);
         if (error) {
@@ -29282,7 +29258,6 @@ function useReadReportFunc() {
             options = { columns: [], data: [], summary: { total: false, avg: false, min: false, max: false } };
             const result = JSON.parse(response.data.items[0].data);
             const groupRows = report.groupColumns.map(group => group.toLowerCase());
-            let hasConnectorType = false;
             report.columns.forEach(column => {
                 const lowerColumn = column.toLowerCase();
                 if (result.length > 0 && result[0][lowerColumn] != null) {
@@ -29339,9 +29314,6 @@ function useReadReportFunc() {
                                 columnOptions.formatter = "timespan";
                             }
                         }
-                        if (lowerColumn === COLUMNS_CONNECTOR_TYPE) {
-                            hasConnectorType = true;
-                        }
                         options.columns.push(columnOptions);
                     }
                     else if (column.startsWith("MessageHeader:")) {
@@ -29392,12 +29364,6 @@ function useReadReportFunc() {
                     options.columns[options.columns.length - 1].type = 0;
                 }
             }
-            if (hasConnectorType) {
-                result.forEach((item) => {
-                    var _a, _b;
-                    item.connectortype = (_b = (_a = prototypes.get(item.connectortype)) === null || _a === void 0 ? void 0 : _a.name) !== null && _b !== void 0 ? _b : item.connectortype;
-                });
-            }
             options.data = result;
             const lowerSummaries = report.summaries ? report.summaries.map(summary => summary.toLowerCase()) : [];
             options.summary.total = lowerSummaries.includes("total");
@@ -29406,7 +29372,7 @@ function useReadReportFunc() {
             options.summary.min = lowerSummaries.includes("minimum");
         }
         return { options, state: { state: response.data.items[0].status } };
-    }), [prototypes]);
+    }), []);
     const readReport = react.useCallback((report, isTempReport, setState, setOptions) => utils_awaiter(this, void 0, void 0, function* () {
         let result = yield tryReadReport(report, isTempReport);
         if (result.state.state === "normal" || result.state.state === "empty" || result.state.state === "notExist" || result.state.state === "error") {
@@ -29533,6 +29499,16 @@ function getDefaultFilters(filters) {
                 column: "MessageHeader:EDI-Incoming-TX-Type",
                 values: filter.values
             };
+        }
+        else if (filter.column === "ConnectorType") {
+            const typeList = filter.values.filter(value => value !== "AS4" && value !== "AS4V2");
+            if (typeList.length < filter.values.length) {
+                return {
+                    column: "ConnectorType",
+                    values: [...typeList, "AS4V2"]
+                };
+            }
+            return filter;
         }
         else {
             return filter;
@@ -29736,14 +29712,21 @@ function getDefaultSidebarValues(report) {
 function parseSidebarFilters(filters) {
     const workspaceFilter = filters.find(filter => filter.column === "WorkspaceId" && filter.values.length > 0);
     const connectorIdFilter = filters.find(filter => filter.column === "ConnectorId" && filter.values.length > 0);
+    const connectorTypeFilter = filters.find(filter => filter.column === "ConnectorType" && filter.values.length > 0);
+    let newFilter = [...filters];
     if (workspaceFilter && !connectorIdFilter) {
-        const newFilter = filters.filter(filter => filter.column !== "WorkspaceId" && filter.column !== "ConnectorId");
+        newFilter = filters.filter(filter => filter.column !== "WorkspaceId" && filter.column !== "ConnectorId");
         newFilter.push({ column: "ConnectorId", values: workspaceFilter.values.map(value => `${value}:*`) });
-        return newFilter;
     }
-    else {
-        return filters;
+    if (connectorTypeFilter) {
+        const typeList = connectorTypeFilter.values.filter(value => value !== "AS4" && value !== "AS4V2");
+        if (typeList.length !== connectorTypeFilter.values.length) {
+            typeList.push("AS4");
+            typeList.push("AS4V2");
+            connectorTypeFilter.values = typeList;
+        }
     }
+    return newFilter;
 }
 function notifyReportAfterLoading(name, isNotify) {
     const params = new URLSearchParams();
@@ -30194,7 +30177,8 @@ const ReportTable = react.forwardRef(function ReportTable(props, ref) {
         rowSize: "lg",
         refreshable: true,
         multiSelect: isAdmin,
-        initialState: { fetching: true }
+        initialState: { fetching: true },
+        storageKey: "reports",
     });
     react.useEffect(() => {
         table.setState(prev => (Object.assign(Object.assign({}, prev), { fetching: !ready || loading })));
@@ -30651,6 +30635,8 @@ var useDrag = __webpack_require__(58410);
 var useDrop = __webpack_require__(5079);
 // EXTERNAL MODULE: ./src/data/workspaces/index.ts + 1 modules
 var data_workspaces = __webpack_require__(44338);
+// EXTERNAL MODULE: ./src/data/connectors2/prototypes/index.ts + 10 modules
+var connectors2_prototypes = __webpack_require__(10094);
 // EXTERNAL MODULE: ./src/data/partners/index.ts
 var data_partners = __webpack_require__(77544);
 // EXTERNAL MODULE: ./src/data/documents/index.ts + 2 modules
@@ -31218,8 +31204,21 @@ function StatusFilter() {
 }
 function FilterItemSelector({ column, options, showNoSelectedLabel, title, placeHolder }) {
     const { setValue } = (0,esm/* useFormInstance */.hq)();
+    const prototypes = (0,connectors2_prototypes/* useConnectorPrototypesStore */.ps)(state => state.prototypes);
     const filters = (0,esm/* useWatch */.FH)({ name: "filters" });
     const filterValues = react.useMemo(() => { var _a, _b; return (_b = (_a = filters.find(filter => filter.column === column)) === null || _a === void 0 ? void 0 : _a.values) !== null && _b !== void 0 ? _b : []; }, [column, filters]);
+    const filterLabels = react.useMemo(() => {
+        if (column === "ConnectorType") {
+            return filterValues.map(value => {
+                var _a;
+                const prototype = prototypes.get(value);
+                return (_a = prototype === null || prototype === void 0 ? void 0 : prototype.name) !== null && _a !== void 0 ? _a : value;
+            });
+        }
+        else {
+            return filterValues;
+        }
+    }, [column, prototypes, filterValues]);
     const onFilterChange = react.useCallback((filters) => {
         setValue("filters", filters, { shouldDirty: true });
     }, [setValue]);
@@ -31245,8 +31244,8 @@ function FilterItemSelector({ column, options, showNoSelectedLabel, title, place
             react.createElement(esm/* Button */.$n, { size: "sm", icon: true, className: "ms-auto", variant: "borderless", onClick: handleRemove },
                 react.createElement(cdata_icon_dist_esm/* CDataIcon */.B, { icon: "trash-can", iconStyle: cdata_icon_dist_esm/* IconStyle */.p.Regular }))),
         react.createElement(esm/* Form */.lV.Select.Input, { multiple: true, value: filterValues, onChange: handleOnChange, options: options }),
-        react.createElement("div", { className: "d-flex flex-wrap gap-8" }, filterValues.length > 0 ?
-            react.createElement(react.Fragment, null, filterValues.map(value => react.createElement(esm/* Badge */.Ex, { key: value, variant: "info" }, value))) :
+        react.createElement("div", { className: "d-flex flex-wrap gap-8" }, filterLabels.length > 0 ?
+            react.createElement(react.Fragment, null, filterLabels.map(value => react.createElement(esm/* Badge */.Ex, { key: value, variant: "info" }, value))) :
             react.createElement(react.Fragment, null, showNoSelectedLabel ?
                 react.createElement("span", { className: "text-secondary" }, Tokens.NoSelected.replace("{0}", column)) :
                 react.createElement(esm/* Badge */.Ex, { variant: "info" }, placeHolder !== null && placeHolder !== void 0 ? placeHolder : `${Tokens.All} ${title !== null && title !== void 0 ? title : column}`)))));
@@ -31839,6 +31838,8 @@ function OTable({ options }) {
         const column = columns === null || columns === void 0 ? void 0 : columns.find(function (c) { return c.data == columnData; });
         if (!column)
             return;
+        if (!column.sort)
+            column.sort = 0;
         if ((_a = options === null || options === void 0 ? void 0 : options.settings) === null || _a === void 0 ? void 0 : _a.multipleSort) {
             column.sort = (column.sort + 1) % 3;
         }
@@ -32155,13 +32156,12 @@ const ReportDetails = react.forwardRef(function ReportDetails(props, ref) {
     if (!ready)
         return react.createElement(ReportDetails_LoadingPage, null);
     return (react.createElement(ReportProvider, { report: reportCtx },
-        react.createElement(esm/* TooltipProvider */.Bc, null,
-            react.createElement("div", { className: "d-flex flex-row flex-fill" },
-                react.createElement(esm/* Container */.mc, { ref: ref, className: "d-flex flex-column flex-fill-basis-0 min-width-0" },
-                    react.createElement(esm/* Stack */.BJ, { gap: 24 },
-                        react.createElement(ReportDetailHeader, null),
-                        react.createElement(ReportDetailBody, null))),
-                isAdmin && react.createElement(ReportSidebar, { show: showSidebar, onClick: () => setShowSidebar(!showSidebar) })))));
+        react.createElement("div", { className: "d-flex flex-row flex-fill" },
+            react.createElement(esm/* Container */.mc, { ref: ref, className: "d-flex flex-column flex-fill-basis-0 min-width-0" },
+                react.createElement(esm/* Stack */.BJ, { gap: 24 },
+                    react.createElement(ReportDetailHeader, null),
+                    react.createElement(ReportDetailBody, null))),
+            isAdmin && react.createElement(ReportSidebar, { show: showSidebar, onClick: () => setShowSidebar(!showSidebar) }))));
 });
 function ReportDetails_LoadingPage() {
     return (react.createElement("div", { className: "d-flex flex-grow-1 align-self-center" },

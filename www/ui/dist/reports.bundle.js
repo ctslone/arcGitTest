@@ -2728,6 +2728,8 @@ var _ref = function () {
     return [function (resId, lastModified) {
       var _window2, _window2$setResourceL;
       if (!lastModified) return;
+      if (isNaN(new Date(lastModified))) lastModified = lastModified.split(", ").slice(-2).join(", ");
+      if (!lastModified || isNaN(new Date(lastModified))) return;
       (_window2 = window) === null || _window2 === void 0 || (_window2 = _window2.rsb) === null || _window2 === void 0 || (_window2$setResourceL = _window2.setResourceLastModified) === null || _window2$setResourceL === void 0 || _window2$setResourceL.call(_window2, resId, lastModified);
       resLastModifiedCache.set(resId, lastModified);
       _defaultLastModified = _getLatestLastModified(lastModified, _defaultLastModified);

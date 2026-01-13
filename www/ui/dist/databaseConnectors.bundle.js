@@ -1,4 +1,4 @@
-(self["webpackChunkcdata_arc"] = self["webpackChunkcdata_arc"] || []).push([["databaseConnectors","src_connectors_mapping-editor_CodeEditor_tsx-_80190","src_connectors_mapping-editor_CodeEditor_tsx-_80191","src_components_arc-query-builder_index_scss-src_components_arc-tree_index_scss-src_components-c9910e","src_connectors_mapping-editor_MappingTestModal_tsx","src_connectors_database_mapping_TemplateStructureEditorModal_tsx-src_components_arc-query-bui-25468f","src_connectors_database_mapping_TableSettingsModal_tsx-src_components_arc-query-builder_index-6faa3b","src_components_arc-codemirror_index_jsx","src_connectors_mapping-editor_CodeEditor_tsx-_80192","vendors-node_modules_codemirror_autocomplete_dist_index_js-node_modules_codemirror_commands_d-ffc779","vendors-node_modules_codemirror_language_dist_index_js","vendors-node_modules_codemirror_lang-sql_dist_index_js-node_modules_codemirror_dist_index_js","vendors-node_modules_rc-tree_es_index_js-node_modules_react-bootstrap_esm_Badge_js-node_modul-5e9688","src_components_arc-codemirror_CopyCodeButton_jsx-src_components_arc-codemirror_FormatCodeButton_jsx","src_connectors_mapping-editor_components_tsx"],{
+(self["webpackChunkcdata_arc"] = self["webpackChunkcdata_arc"] || []).push([["databaseConnectors","src_connectors_mapping-editor_CodeEditor_tsx-_80190","src_components_arc-query-builder_index_scss-src_components_arc-tree_index_scss-src_components-c9910e","src_connectors_mapping-editor_MappingTestModal_tsx","src_connectors_database_mapping_TemplateStructureEditorModal_tsx-src_components_arc-query-bui-25468f","src_connectors_database_mapping_TableSettingsModal_tsx-src_components_arc-query-builder_index-6faa3b","src_components_arc-codemirror_index_jsx","src_connectors_mapping-editor_CodeEditor_tsx-_80192","src_connectors_mapping-editor_CodeEditor_tsx-_80191","vendors-node_modules_codemirror_lang-sql_dist_index_js-node_modules_codemirror_dist_index_js","vendors-node_modules_codemirror_autocomplete_dist_index_js-node_modules_codemirror_commands_d-53935c","vendors-node_modules_rc-tree_es_index_js-node_modules_react-bootstrap_esm_Badge_js-node_modul-5e9688","vendors-node_modules_codemirror_dist_index_js","src_components_arc-codemirror_CopyCodeButton_jsx-src_components_arc-codemirror_FormatCodeButton_jsx","src_connectors_mapping-editor_components_tsx"],{
 
 /***/ 20928:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
@@ -20282,6 +20282,8 @@ var _ref = function () {
     return [function (resId, lastModified) {
       var _window2, _window2$setResourceL;
       if (!lastModified) return;
+      if (isNaN(new Date(lastModified))) lastModified = lastModified.split(", ").slice(-2).join(", ");
+      if (!lastModified || isNaN(new Date(lastModified))) return;
       (_window2 = window) === null || _window2 === void 0 || (_window2 = _window2.rsb) === null || _window2 === void 0 || (_window2$setResourceL = _window2.setResourceLastModified) === null || _window2$setResourceL === void 0 || _window2$setResourceL.call(_window2, resId, lastModified);
       resLastModifiedCache.set(resId, lastModified);
       _defaultLastModified = _getLatestLastModified(lastModified, _defaultLastModified);
@@ -26061,7 +26063,7 @@ function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t =
 
 
 var RSBCodeMirror = /*#__PURE__*/react.lazy(function () {
-  return Promise.all(/* import() */[__webpack_require__.e("react"), __webpack_require__.e("vendors-node_modules_codemirror_autocomplete_dist_index_js-node_modules_codemirror_commands_d-ffc779"), __webpack_require__.e("vendors-node_modules_codemirror_lang-sql_dist_index_js-node_modules_codemirror_dist_index_js"), __webpack_require__.e("src_components_arc-codemirror_CopyCodeButton_jsx-src_components_arc-codemirror_FormatCodeButton_jsx"), __webpack_require__.e("src_connectors_mapping-editor_RSBCodeMirror_jsx")]).then(__webpack_require__.bind(__webpack_require__, 14739));
+  return Promise.all(/* import() */[__webpack_require__.e("react"), __webpack_require__.e("vendors-node_modules_codemirror_lang-sql_dist_index_js-node_modules_codemirror_dist_index_js"), __webpack_require__.e("vendors-node_modules_codemirror_autocomplete_dist_index_js-node_modules_codemirror_commands_d-53935c"), __webpack_require__.e("src_components_arc-codemirror_CopyCodeButton_jsx-src_components_arc-codemirror_FormatCodeButton_jsx"), __webpack_require__.e("src_connectors_mapping-editor_RSBCodeMirror_jsx")]).then(__webpack_require__.bind(__webpack_require__, 14739));
 });
 var DEFAULT_QUERY = {
   combinator: "and",
@@ -26535,10 +26537,10 @@ function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == 
 
 
 var CodeEditor = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.lazy(function () {
-  return Promise.all(/* import() */[__webpack_require__.e("react"), __webpack_require__.e("vendors-node_modules_codemirror_autocomplete_dist_index_js-node_modules_codemirror_commands_d-ffc779"), __webpack_require__.e("vendors-node_modules_codemirror_lang-sql_dist_index_js-node_modules_codemirror_dist_index_js"), __webpack_require__.e("src_components_arc-codemirror_CopyCodeButton_jsx-src_components_arc-codemirror_FormatCodeButton_jsx"), __webpack_require__.e("src_connectors_mapping-editor_CodeEditor_tsx-_80190")]).then(__webpack_require__.bind(__webpack_require__, 63625));
+  return Promise.all(/* import() */[__webpack_require__.e("react"), __webpack_require__.e("vendors-node_modules_codemirror_lang-sql_dist_index_js-node_modules_codemirror_dist_index_js"), __webpack_require__.e("vendors-node_modules_codemirror_autocomplete_dist_index_js-node_modules_codemirror_commands_d-53935c"), __webpack_require__.e("src_components_arc-codemirror_CopyCodeButton_jsx-src_components_arc-codemirror_FormatCodeButton_jsx"), __webpack_require__.e("src_connectors_mapping-editor_CodeEditor_tsx-_80190")]).then(__webpack_require__.bind(__webpack_require__, 63625));
 });
 var RSBCodeMirror = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.lazy(function () {
-  return Promise.all(/* import() */[__webpack_require__.e("react"), __webpack_require__.e("vendors-node_modules_codemirror_autocomplete_dist_index_js-node_modules_codemirror_commands_d-ffc779"), __webpack_require__.e("vendors-node_modules_codemirror_lang-sql_dist_index_js-node_modules_codemirror_dist_index_js"), __webpack_require__.e("src_components_arc-codemirror_CopyCodeButton_jsx-src_components_arc-codemirror_FormatCodeButton_jsx"), __webpack_require__.e("src_connectors_mapping-editor_RSBCodeMirror_jsx")]).then(__webpack_require__.bind(__webpack_require__, 14739));
+  return Promise.all(/* import() */[__webpack_require__.e("react"), __webpack_require__.e("vendors-node_modules_codemirror_lang-sql_dist_index_js-node_modules_codemirror_dist_index_js"), __webpack_require__.e("vendors-node_modules_codemirror_autocomplete_dist_index_js-node_modules_codemirror_commands_d-53935c"), __webpack_require__.e("src_components_arc-codemirror_CopyCodeButton_jsx-src_components_arc-codemirror_FormatCodeButton_jsx"), __webpack_require__.e("src_connectors_mapping-editor_RSBCodeMirror_jsx")]).then(__webpack_require__.bind(__webpack_require__, 14739));
 });
 var VariableItemDesc = function VariableItemDesc(_ref) {
   var _mapping$const, _mapping$xpath, _mapping$vault, _mapping$header;
@@ -29150,7 +29152,7 @@ function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 
 
 var ArcCodeMirror = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.lazy(function () {
-  return Promise.all(/* import() */[__webpack_require__.e("react"), __webpack_require__.e("vendors-node_modules_codemirror_autocomplete_dist_index_js-node_modules_codemirror_commands_d-ffc779"), __webpack_require__.e("vendors-node_modules_codemirror_language_dist_index_js"), __webpack_require__.e("src_components_arc-codemirror_CopyCodeButton_jsx-src_components_arc-codemirror_FormatCodeButton_jsx"), __webpack_require__.e("src_components_arc-codemirror_index_jsx")]).then(__webpack_require__.bind(__webpack_require__, 98251));
+  return Promise.all(/* import() */[__webpack_require__.e("react"), __webpack_require__.e("src_components_arc-codemirror_CopyCodeButton_jsx-src_components_arc-codemirror_FormatCodeButton_jsx"), __webpack_require__.e("src_components_arc-codemirror_index_jsx")]).then(__webpack_require__.bind(__webpack_require__, 98251));
 });
 var validateInput = function validateInput(xml) {
   var _xml;
@@ -30368,7 +30370,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-const CodeEditor = react__WEBPACK_IMPORTED_MODULE_0__.lazy(() => Promise.all(/* import() */[__webpack_require__.e("react"), __webpack_require__.e("vendors-node_modules_codemirror_autocomplete_dist_index_js-node_modules_codemirror_commands_d-ffc779"), __webpack_require__.e("vendors-node_modules_codemirror_lang-sql_dist_index_js-node_modules_codemirror_dist_index_js"), __webpack_require__.e("src_components_arc-codemirror_CopyCodeButton_jsx-src_components_arc-codemirror_FormatCodeButton_jsx"), __webpack_require__.e("src_connectors_mapping-editor_CodeEditor_tsx-_80190")]).then(__webpack_require__.bind(__webpack_require__, 63625)));
+const CodeEditor = react__WEBPACK_IMPORTED_MODULE_0__.lazy(() => Promise.all(/* import() */[__webpack_require__.e("react"), __webpack_require__.e("vendors-node_modules_codemirror_lang-sql_dist_index_js-node_modules_codemirror_dist_index_js"), __webpack_require__.e("src_components_arc-codemirror_CopyCodeButton_jsx-src_components_arc-codemirror_FormatCodeButton_jsx"), __webpack_require__.e("src_connectors_mapping-editor_CodeEditor_tsx-_80191")]).then(__webpack_require__.bind(__webpack_require__, 63625)));
 var OrderBySortOpt;
 (function (OrderBySortOpt) {
     OrderBySortOpt["ASC"] = "ASC";
@@ -30780,7 +30782,7 @@ var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _argume
 
 
 
-const CodeEditor = react__WEBPACK_IMPORTED_MODULE_0__.lazy(() => Promise.all(/* import() */[__webpack_require__.e("react"), __webpack_require__.e("vendors-node_modules_codemirror_autocomplete_dist_index_js-node_modules_codemirror_commands_d-ffc779"), __webpack_require__.e("vendors-node_modules_codemirror_lang-sql_dist_index_js-node_modules_codemirror_dist_index_js"), __webpack_require__.e("src_components_arc-codemirror_CopyCodeButton_jsx-src_components_arc-codemirror_FormatCodeButton_jsx"), __webpack_require__.e("src_connectors_mapping-editor_CodeEditor_tsx-_80192")]).then(__webpack_require__.bind(__webpack_require__, 63625)));
+const CodeEditor = react__WEBPACK_IMPORTED_MODULE_0__.lazy(() => Promise.all(/* import() */[__webpack_require__.e("react"), __webpack_require__.e("vendors-node_modules_codemirror_lang-sql_dist_index_js-node_modules_codemirror_dist_index_js"), __webpack_require__.e("src_components_arc-codemirror_CopyCodeButton_jsx-src_components_arc-codemirror_FormatCodeButton_jsx"), __webpack_require__.e("src_connectors_mapping-editor_CodeEditor_tsx-_80192")]).then(__webpack_require__.bind(__webpack_require__, 63625)));
 const TemplateStructureEditorContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(null);
 const xmlToTemplateDef = (document, tableMap) => {
     var _a, _b, _c;
@@ -34680,7 +34682,7 @@ var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _argume
 
 
 
-const CodeEditor = react__WEBPACK_IMPORTED_MODULE_0__.lazy(() => Promise.all(/* import() */[__webpack_require__.e("react"), __webpack_require__.e("vendors-node_modules_codemirror_autocomplete_dist_index_js-node_modules_codemirror_commands_d-ffc779"), __webpack_require__.e("vendors-node_modules_codemirror_language_dist_index_js"), __webpack_require__.e("vendors-node_modules_codemirror_lang-sql_dist_index_js-node_modules_codemirror_dist_index_js"), __webpack_require__.e("src_components_arc-codemirror_CopyCodeButton_jsx-src_components_arc-codemirror_FormatCodeButton_jsx"), __webpack_require__.e("src_connectors_mapping-editor_CodeEditor_tsx-_80191")]).then(__webpack_require__.bind(__webpack_require__, 63625)));
+const CodeEditor = react__WEBPACK_IMPORTED_MODULE_0__.lazy(() => Promise.all(/* import() */[__webpack_require__.e("react"), __webpack_require__.e("vendors-node_modules_codemirror_lang-sql_dist_index_js-node_modules_codemirror_dist_index_js"), __webpack_require__.e("vendors-node_modules_codemirror_autocomplete_dist_index_js-node_modules_codemirror_commands_d-53935c"), __webpack_require__.e("src_components_arc-codemirror_CopyCodeButton_jsx-src_components_arc-codemirror_FormatCodeButton_jsx"), __webpack_require__.e("src_connectors_mapping-editor_CodeEditor_tsx-_80190")]).then(__webpack_require__.bind(__webpack_require__, 63625)));
 function BaseModal(props) {
     var _a, _b, _c, _d, _e;
     return (react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_bootstrap_Modal__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .A, { show: props.show, onHide: props.onHide, backdrop: props.backdrop, size: (props.size || "lg"), className: `react-bootstrap-modal mapping-modal ${(_a = props.className) !== null && _a !== void 0 ? _a : ""}`, onEscapeKeyDown: props.onHide },

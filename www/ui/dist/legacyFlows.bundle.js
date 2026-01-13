@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkcdata_arc"] = self["webpackChunkcdata_arc"] || []).push([["legacyFlows","vendors-node_modules_react-hook-form_dist_index_esm_mjs"],{
+(self["webpackChunkcdata_arc"] = self["webpackChunkcdata_arc"] || []).push([["legacyFlows"],{
 
 /***/ 29029:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -5318,6 +5318,8 @@ var _ref = function () {
     return [function (resId, lastModified) {
       var _window2, _window2$setResourceL;
       if (!lastModified) return;
+      if (isNaN(new Date(lastModified))) lastModified = lastModified.split(", ").slice(-2).join(", ");
+      if (!lastModified || isNaN(new Date(lastModified))) return;
       (_window2 = window) === null || _window2 === void 0 || (_window2 = _window2.rsb) === null || _window2 === void 0 || (_window2$setResourceL = _window2.setResourceLastModified) === null || _window2$setResourceL === void 0 || _window2$setResourceL.call(_window2, resId, lastModified);
       resLastModifiedCache.set(resId, lastModified);
       _defaultLastModified = _getLatestLastModified(lastModified, _defaultLastModified);

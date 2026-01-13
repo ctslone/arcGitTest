@@ -7687,6 +7687,8 @@ var _ref = function () {
     return [function (resId, lastModified) {
       var _window2, _window2$setResourceL;
       if (!lastModified) return;
+      if (isNaN(new Date(lastModified))) lastModified = lastModified.split(", ").slice(-2).join(", ");
+      if (!lastModified || isNaN(new Date(lastModified))) return;
       (_window2 = window) === null || _window2 === void 0 || (_window2 = _window2.rsb) === null || _window2 === void 0 || (_window2$setResourceL = _window2.setResourceLastModified) === null || _window2$setResourceL === void 0 || _window2$setResourceL.call(_window2, resId, lastModified);
       resLastModifiedCache.set(resId, lastModified);
       _defaultLastModified = _getLatestLastModified(lastModified, _defaultLastModified);
@@ -11633,7 +11635,7 @@ function PolicyCard_asyncToGenerator(n) { return function () { var t = this, e =
 
 
 var JsonEditor = /*#__PURE__*/react.lazy(function () {
-  return Promise.all(/* import() */[__webpack_require__.e("vendors-node_modules_codemirror_autocomplete_dist_index_js-node_modules_codemirror_commands_d-ffc779"), __webpack_require__.e("vendors-node_modules_codemirror_language_dist_index_js"), __webpack_require__.e("src_components_arc-codemirror_CopyCodeButton_jsx-src_components_arc-codemirror_FormatCodeButton_jsx"), __webpack_require__.e("src_settings_roles_JsonEditor_jsx")]).then(__webpack_require__.bind(__webpack_require__, 8263));
+  return Promise.all(/* import() */[__webpack_require__.e("vendors-node_modules_codemirror_autocomplete_dist_index_js-node_modules_codemirror_commands_d-53935c"), __webpack_require__.e("vendors-node_modules_codemirror_dist_index_js"), __webpack_require__.e("src_components_arc-codemirror_CopyCodeButton_jsx-src_components_arc-codemirror_FormatCodeButton_jsx"), __webpack_require__.e("src_settings_roles_JsonEditor_jsx")]).then(__webpack_require__.bind(__webpack_require__, 8263));
 });
 var PolicyCardContext = /*#__PURE__*/react.createContext({});
 var buildPolicyJson = /*#__PURE__*/function () {
